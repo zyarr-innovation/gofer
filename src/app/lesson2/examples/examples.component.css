@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lesson-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .example {
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+  }
+  
+  code {
+    font-family: "Courier New", monospace;
+    color: #d6336c;
+    font-size: 0.9em;
+  }
+  
+  .lesson-container pre code {
+    display: block;
+  }
+  
+  .example:hover {
+    background-color: #f0f8ff;
+    border-left: 4px solid #0078d4;
+    padding-left: 6px;
+  }
+  
+  @media (max-width: 600px) {
+    .lesson-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    pre {
+      font-size: 0.85em;
+    }
+  }
+  

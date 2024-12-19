@@ -1,0 +1,154 @@
+<div class="gofer-component">
+    <h2 class="title">Gofer Component Examples</h2>
+    
+    <div class="example-section">
+      <h3>1. Simple Expressions</h3>
+      <pre class="gofer-code">
+        ? 2
+        2 : Int
+  
+        ? 2 + 2
+        4 : Int
+  
+        ? 2 * 3
+        6 : Int
+  
+        ? 2 + 3.5
+        ERROR: Type error in application
+        *** expression : 2 + 3.5
+        *** term : 3.5
+        *** type : Float
+        *** does not match : Int
+      </pre>
+      <p class="explanation">
+        Explanation: Integer operations like <code>2 + 2</code> result in an integer, but adding an integer and a float, like <code>2 + 3.5</code>, causes a type error.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>2. Boolean Expressions</h3>
+      <pre class="gofer-code">
+        ? True
+        True : Bool
+  
+        ? False
+        False : Bool
+  
+        ? 2 > 1
+        True : Bool
+  
+        ? 3 < 2
+        False : Bool
+      </pre>
+      <p class="explanation">
+        Explanation: <code>True</code> and <code>False</code> are boolean values. Expressions like <code>2 > 1</code> evaluate to <code>True</code>.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>3. Character Expressions</h3>
+      <pre class="gofer-code">
+        ? 'a'
+        'a' : Char
+  
+        ? '2'
+        '2' : Char
+  
+        ? ' '
+        ' ' : Char
+      </pre>
+      <p class="explanation">
+        Explanation: Characters such as <code>'a'</code>, <code>'2'</code>, and <code>' '</code> are of type <code>Char</code>.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>4. Expressions with Exponentiation</h3>
+      <pre class="gofer-code">
+        ? 2^5
+        32 : Int
+  
+        ? 2.0^5
+        32.0 : Float
+  
+        ? 2^5.0
+        ERROR: Type error in application
+        *** expression : 2^5.0
+        *** term : 5.0
+        *** type : Float
+        *** does not match : Int
+      </pre>
+      <p class="explanation">
+        Explanation: The operation <code>2^5</code> results in an integer, while <code>2.0^5</code> results in a float. Type errors occur when the base and exponent are mismatched in types.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>5. Equality and Inequality Expressions</h3>
+      <pre class="gofer-code">
+        ? 2 + 2 == 4
+        True : Bool
+  
+        ? 2 + 2 == 5
+        False : Bool
+  
+        ? 2 /= 3
+        True : Bool
+  
+        ? 2 /= 4
+        False : Bool
+  
+        ? True == False
+        False : Bool
+  
+        ? True /= False
+        True : Bool
+      </pre>
+      <p class="explanation">
+        Explanation: Simple equality and inequality checks are demonstrated with operations like <code>2 + 2 == 4</code> and <code>2 /= 3</code>.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>6. String Expressions</h3>
+      <pre class="gofer-code">
+        ? "hello, world!"
+        "hello, world!" : String
+  
+        ? :t "hello"
+        "hello" : String
+      </pre>
+      <p class="explanation">
+        Explanation: Strings like <code>"hello, world!"</code> are of type <code>String</code>, and the type is shown with the <code>:t</code> operator.
+      </p>
+    </div>
+  
+    <div class="example-section">
+      <h3>7. Set and Unset Type Display</h3>
+      <pre class="gofer-code">
+        ? :set –t
+        ? 2:Int
+        2 : Int
+  
+        ? 2.1:Float
+        2.1 : Float
+  
+        ? '2':Char
+        '2' : Char
+  
+        ? 2+2: Int
+        4 : Int
+  
+        ? 2.5^2: Float
+        6.25 : Float
+      </pre>
+      <p class="explanation">
+        Explanation: The <code>:set -t</code> option hides type information for cleaner output, while <code>:t</code> displays types explicitly.
+      </p>
+    </div>
+  
+    <div class="conclusion">
+      <p>These examples provide a solid foundation for understanding simple datatypes in Gofer. As you continue exploring, you'll learn about defining functions and more compound expressions.</p>
+    </div>
+  </div>
+  

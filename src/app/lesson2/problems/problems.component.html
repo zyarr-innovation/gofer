@@ -1,0 +1,355 @@
+<div class="problem">
+  <h2>Problem 1</h2>
+  <p>Create a tuple containing an integer, a character, and a Boolean.</p>
+  <pre>tuple1 = (42, 'X', True)
+-- Result: (42, 'X', True) : (Int, Char, Bool)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 2</h2>
+  <p>Extract the first element of a tuple (100, 200, 300).</p>
+  <pre>tuple2 = (100, 200, 300)
+fst3 = fst tuple2
+-- Result: Error, since fst works on pairs, not triples. Use pattern matching instead:
+(a, b, c) = tuple2
+-- a = 100</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 3</h2>
+  <p>Create a tuple containing another tuple and a string.</p>
+  <pre>nestedTuple = ((1, 2), "Hello")
+-- Result: ((1, 2), "Hello") : ((Int, Int), String)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 4</h2>
+  <p>Create a tuple containing a list and another tuple.</p>
+  <pre>mixedTuple = ([1, 2, 3], (True, 4.5))
+-- Result: ([1, 2, 3], (True, 4.5)) : ([Int], (Bool, Float))</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 5</h2>
+  <p>Write a function to swap elements of a pair (a, b) -> (b, a).</p>
+  <pre>swap (x, y) = (y, x)
+-- swap (1, "a") = ("a", 1)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 6</h2>
+  <p>Represent employee details using tuples: name, age, salary.</p>
+  <pre>employee = ("Alice", 30, 60000)
+-- Result: ("Alice", 30, 60000) : (String, Int, Int)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 7</h2>
+  <p>Create a tuple of three pairs.</p>
+  <pre>tuplePairs = ((1, 2), (3, 4), (5, 6))
+-- Result: ((1, 2), (3, 4), (5, 6)) : ((Int, Int), (Int, Int), (Int, Int))</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 8</h2>
+  <p>Create a tuple where one element is a list.</p>
+  <pre>tupleWithList = ([1, 2, 3], 'a')
+-- Result: ([1, 2, 3], 'a') : ([Int], Char)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 9</h2>
+  <p>Check if tuples have a fixed length.</p>
+  <pre>Tuples always have a fixed length. For example:
+
+t1 = (1, 2)
+t2 = (1, 2, 3)
+-- t1 and t2 have lengths 2 and 3 respectively.</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 10</h2>
+  <p>Create a tuple (True, False, 5 > 2).</p>
+  <pre>boolTuple = (True, False, 5 > 2)
+-- Result: (True, False, True) : (Bool, Bool, Bool)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 11</h2>
+  <p>Can you compare tuples (1, 2) and (3, 4)?</p>
+  <pre>(1, 2) < (3, 4) -- True
+(1, 2) == (1, 2) -- True</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 12</h2>
+  <p>Use pattern matching to access elements of a tuple (10, 20).</p>
+  <pre>(a, b) = (10, 20)
+-- a = 10, b = 20</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 13</h2>
+  <p>Create a tuple containing another tuple.</p>
+  <pre>tupleInside = ((1, 2), (3, 4))
+-- Result: ((1, 2), (3, 4)) : ((Int, Int), (Int, Int))</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 14</h2>
+  <p>What is the type of ([1, 2], [3, 4])?</p>
+  <pre>-- Type: ([Int], [Int])</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 15</h2>
+  <p>Add two tuples element-wise.</p>
+  <pre>addTuples (x1, y1) (x2, y2) = (x1 + x2, y1 + y2)
+-- addTuples (1, 2) (3, 4) = (4, 6)</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 16</h2>
+  <p>What is the type of ()?</p>
+  <pre>-- Type: ()</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 17</h2>
+  <p>Compare ((1, 2), 3) and ((1, 2), 4).</p>
+  <pre>((1, 2), 3) < ((1, 2), 4) -- True</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 18</h2>
+  <p>Combine (1, 'a') and ("b", True).</p>
+  <pre>combined = ((1, 'a'), ("b", True))
+-- Result: ((1, 'a'), ("b", True)) : ((Int, Char), (String, Bool))</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 19</h2>
+  <p>What is the type of (a, b)?</p>
+  <pre>-- Type: (a, b), where a and b are type variables.</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 20</h2>
+  <p>Can you access tuple elements by index?</p>
+  <pre>Tuples do not support direct indexing. Use pattern matching instead.</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 21</h2>
+  <p>Create a list of integers from 1 to 10.</p>
+  <pre>list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+-- Result: [1,2,3,4,5,6,7,8,9,10] : [Int]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 22</h2>
+  <p>Combine two lists [1, 2, 3] and [4, 5, 6].</p>
+  <pre>list2 = [1, 2, 3] ++ [4, 5, 6]
+-- Result: [1,2,3,4,5,6]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 23</h2>
+  <p>Find the first element of the list [10, 20, 30].</p>
+  <pre>headElement = head [10, 20, 30]
+-- Result: 10</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 24</h2>
+  <p>Get all elements except the first from the list [10, 20, 30].</p>
+  <pre>tailElements = tail [10, 20, 30]
+-- Result: [20,30]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 25</h2>
+  <p>Find the length of [1, 2, 3, 4, 5].</p>
+  <pre>listLength = length [1, 2, 3, 4, 5]
+-- Result: 5</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 26</h2>
+  <p>Reverse the list [1, 2, 3, 4, 5].</p>
+  <pre>reversedList = reverse [1, 2, 3, 4, 5]
+-- Result: [5,4,3,2,1]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 27</h2>
+  <p>Access the 3rd element of [10, 20, 30, 40].</p>
+  <pre>element = [10, 20, 30, 40] !! 2
+-- Result: 30</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 28</h2>
+  <p>Get the first three elements of [1, 2, 3, 4, 5].</p>
+  <pre>slice = take 3 [1, 2, 3, 4, 5]
+-- Result: [1,2,3]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 29</h2>
+  <p>Remove the first three elements of [1, 2, 3, 4, 5].</p>
+  <pre>dropped = drop 3 [1, 2, 3, 4, 5]
+-- Result: [4,5]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 30</h2>
+  <p>Calculate the sum of [1, 2, 3, 4, 5].</p>
+  <pre>listSum = sum [1, 2, 3, 4, 5]
+-- Result: 15</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 31</h2>
+  <p>Find the product of [1, 2, 3, 4].</p>
+  <pre>listProduct = product [1, 2, 3, 4]
+-- Result: 24</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 32</h2>
+  <p>Check if a list is empty.</p>
+  <pre>isEmpty = null []
+-- Result: True</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 33</h2>
+  <p>Generate a list of squares of numbers from 1 to 5.</p>
+  <pre>squares = [x^2 | x <- [1..5]]
+-- Result: [1,4,9,16,25]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 34</h2>
+  <p>Get all even numbers from 1 to 10.</p>
+  <pre>evens = [x | x <- [1..10], even x]
+-- Result: [2,4,6,8,10]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 35</h2>
+  <p>Filter out all numbers greater than 5 from [1, 6, 3, 8].</p>
+  <pre>filtered = [x | x <- [1, 6, 3, 8], x <= 5]
+-- Result: [1,3]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 36</h2>
+  <p>Generate a list of pairs (x, y) for x in [1, 2] and y in [3, 4].</p>
+  <pre>pairs = [(x, y) | x <- [1, 2], y <- [3, 4]]
+-- Result: [(1,3),(1,4),(2,3),(2,4)]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 37</h2>
+  <p>Double each element in [1, 2, 3].</p>
+  <pre>doubled = map (*2) [1, 2, 3]
+-- Result: [2,4,6]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 38</h2>
+  <p>Keep only odd numbers from [1, 2, 3, 4, 5].</p>
+  <pre>odds = filter odd [1, 2, 3, 4, 5]
+-- Result: [1,3,5]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 39</h2>
+  <p>Sum elements of [1, 2, 3] using foldr.</p>
+  <pre>foldSum = foldr (+) 0 [1, 2, 3]
+-- Result: 6</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 40</h2>
+  <p>Create an infinite list of ones.</p>
+  <pre>ones = repeat 1
+-- Access elements with take: take 5 ones = [1,1,1,1,1]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 41</h2>
+  <p>Combine [1, 2, 3] and [4, 5, 6] into pairs.</p>
+  <pre>zipped = zip [1, 2, 3] [4, 5, 6]
+-- Result: [(1,4),(2,5),(3,6)]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 42</h2>
+  <p>Separate [(1, 'a'), (2, 'b')] into two lists.</p>
+  <pre>unzipped = unzip [(1, 'a'), (2, 'b')]
+-- Result: ([1,2],['a','b'])</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 43</h2>
+  <p>Insert - between elements of [1, 2, 3].</p>
+  <pre>import Data.List (intersperse)
+interspersed = intersperse '-' "123"
+-- Result: "1-2-3"</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 44</h2>
+  <p>Find permutations of [1, 2, 3].</p>
+  <pre>import Data.List (permutations)
+perms = permutations [1, 2, 3]
+-- Result: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 45</h2>
+  <p>Sort [3, 1, 2].</p>
+  <pre>import Data.List (sort)
+sorted = sort [3, 1, 2]
+-- Result: [1,2,3]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 46</h2>
+  <p>Find the smallest number in [10, 3, 5].</p>
+  <pre>minValue = minimum [10, 3, 5]
+-- Result: 3</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 47</h2>
+  <p>Find the largest number in [10, 3, 5].</p>
+  <pre>maxValue = maximum [10, 3, 5]
+-- Result: 10</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 48</h2>
+  <p>Separate even and odd numbers in [1, 2, 3, 4].</p>
+  <pre>import Data.List (partition)
+(evens, odds) = partition even [1, 2, 3, 4]
+-- Result: ([2,4],[1,3])</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 49</h2>
+  <p>Generate an infinite list of numbers starting from 0 with a step of 2.</p>
+  <pre>arithmeticSeq = [0,2..]
+-- Access with take: take 5 arithmeticSeq = [0,2,4,6,8]</pre>
+</div>
+
+<div class="problem">
+  <h2>Problem 50</h2>
+  <p>Generate the first 10 Fibonacci numbers.</p>
+  <pre>fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+first10Fibs = take 10 fibs
+-- Result: [0,1,1,2,3,5,8,13,21,34]</pre>
+</div>

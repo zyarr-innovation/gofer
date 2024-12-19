@@ -1,0 +1,43 @@
+/* Base styles for problem container */
+.problem {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for problem headers */
+.problem h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Styling for problem paragraphs */
+.problem p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Styling for code blocks */
+.problem pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid #2196F3;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin: 0;
+  color: #333;
+}
+
+/* Highlight code result */
+.problem pre::before {
+  content: "Result:";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}

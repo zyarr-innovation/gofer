@@ -1,0 +1,84 @@
+<div class="lesson-container">
+    <h1>Lesson 2: Compound Data Types in Gofer</h1>
+  
+    <section class="section">
+      <h2>What is a Tuple?</h2>
+      <p>
+        A <strong>tuple</strong> is a collection of values enclosed in parentheses <code>()</code>.
+        It can store multiple data types but has a fixed size.
+      </p>
+      <ul>
+        <li><strong>Example:</strong> <code>(4, 3.14, 'Z', True)</code></li>
+        <li>Type: <code>(Int, Float, Char, Bool)</code></li>
+      </ul>
+      <p>
+        Tuples can also be <strong>nested</strong>. For example: 
+        <code>((1, 2), (3.0, 'A'))</code> has the type <code>((Int, Int), (Float, Char))</code>.
+      </p>
+    </section>
+  
+    <section class="section">
+      <h2>What is a List?</h2>
+      <p>
+        A <strong>list</strong> is a sequence of values enclosed in square brackets <code>[]</code>.
+        All elements must be of the same type, but lists can grow or shrink.
+      </p>
+      <ul>
+        <li><strong>Example:</strong> <code>[1, 2, 3]</code></li>
+        <li>Type: <code>[Int]</code></li>
+      </ul>
+      <p>
+        Lists can also represent strings, where a string is a list of characters.
+        For example: <code>"hello" == ['h', 'e', 'l', 'l', 'o']</code>.
+      </p>
+    </section>
+  
+    <section class="section">
+      <h2>Comparing Tuples and Lists</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Tuples</th>
+            <th>Lists</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Symbols</td>
+            <td>Parentheses <code>()</code></td>
+            <td>Square Brackets <code>[]</code></td>
+          </tr>
+          <tr>
+            <td>Types</td>
+            <td>Can be mixed (heterogeneous)</td>
+            <td>Must be the same (homogeneous)</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>Fixed</td>
+            <td>Flexible</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+    <section class="section">
+      <h2>Operations on Lists</h2>
+      <ul>
+        <li><strong>Concatenation:</strong> Use <code>++</code> to join lists.
+          <ul>
+            <li><code>[1, 2] ++ [3, 4] → [1, 2, 3, 4]</code></li>
+            <li><code>"abc" ++ "def" → "abcdef"</code></li>
+          </ul>
+        </li>
+        <li><strong>Ranges:</strong> Quickly create sequences of numbers.
+          <ul>
+            <li><code>[1 ... 5] → [1, 2, 3, 4, 5]</code></li>
+            <li><code>[5, 4 ... 1] → [5, 4, 3, 2, 1]</code></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
