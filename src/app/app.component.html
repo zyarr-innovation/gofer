@@ -1,39 +1,27 @@
 <div class="container">
   <div class="sidebar" [class.collapsed]="isCollapsed">
     <button (click)="toggleSidebar()">Menu</button>
-    <ul>
-      <li><a routerLink="/intro" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Introduction</a>
-      </li>
-      <li><a routerLink="/intro" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Programming</a>
-        <ul>
-          <li><a routerLink="/prog" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Explanation</a>
-          </li>
-          <li><a routerLink="/prog-exam" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Example</a>
-          </li>
-          <li><a routerLink="/prog-prob" routerLinkActive="active"
-              [routerLinkActiveOptions]="{exact: true}">Problems</a></li>
-        </ul>
-      </li>
-      <li><a routerLink="/les1-exp" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Simple Data
-          Types</a>
-        <ul>
-          <li><a routerLink="/les1-exam" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Example</a>
-          </li>
-        </ul>
-      </li>
-      <li><a routerLink="/les2-exp" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Compound Data
-          Types</a>
-        <ul>
-          <li><a routerLink="/les2-exam" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Example</a>
-          </li>
-          <li><a routerLink="/les2-prob" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Problem</a>
-          </li>
-          <li><a routerLink="/les2-prob" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Quiz -
-              Missing</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of menuItems">
+        <mat-icon [class.disabled]="!item.submenu || item.submenu.length === 0"
+          (click)="item.submenu && item.submenu.length > 0 ? toggleSubMenu(item) : null">
+          {{ item.expanded ? 'expand_less' : 'expand_more' }}
+        </mat-icon>
+
+        <a [routerLink]="item.link" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">{{ item.name }}</a>
+
+        <!-- Submenu list -->
+        <mat-list *ngIf="item.expanded" class="submenu">
+          <mat-list-item *ngFor="let subItem of item.submenu">
+            <a [routerLink]="subItem.link" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">{{ subItem.name }}</a>
+
+          </mat-list-item>
+        </mat-list>
+      </mat-list-item>
+    </mat-nav-list>
   </div>
 
   <div class="content">
