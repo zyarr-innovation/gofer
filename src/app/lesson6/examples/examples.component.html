@@ -1,0 +1,179 @@
+<div class="examples-container">
+    <!-- Example 1: Sum of Natural Numbers -->
+    <div class="example">
+      <h3>Example 1: Sum of Natural Numbers</h3>
+      <p><b>Prove:</b> The sum <code>1 + 2 + ... + n = n(n+1)/2</code>.</p>
+      <h4>Solution:</h4>
+      <ol>
+        <li><b>Base Case:</b> For <code>n = 1</code>, <code>1 = 1(1+1)/2</code>, which holds true.</li>
+        <li><b>Induction Hypothesis:</b> Assume <code>1 + 2 + ... + k = k(k+1)/2</code> is true for some <code>k ≥ 1</code>.</li>
+        <li><b>Induction Step:</b>
+          <p>Prove <code>1 + 2 + ... + k + (k+1) = (k+1)(k+2)/2</code>.</p>
+          <pre>
+            LHS = k(k+1)/2 + (k+1)
+                = (k+1)(k+2)/2
+          </pre>
+        </li>
+      </ol>
+      <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 1</code>.</p>
+    </div>
+  
+    <!-- Example 2: Sum of Squares -->
+    <div class="example">
+      <h3>Example 2: Sum of Squares</h3>
+      <p><b>Prove:</b> The sum <code>1² + 2² + ... + n² = n(n+1)(2n+1)/6</code>.</p>
+      <h4>Solution:</h4>
+      <ol>
+        <li><b>Base Case:</b> For <code>n = 1</code>, <code>1² = 1(1+1)(2×1+1)/6</code>, which holds true.</li>
+        <li><b>Induction Hypothesis:</b> Assume <code>1² + 2² + ... + k² = k(k+1)(2k+1)/6</code>.</li>
+        <li><b>Induction Step:</b>
+          <p>Prove <code>1² + 2² + ... + k² + (k+1)² = (k+1)(k+2)(2(k+1)+1)/6</code>.</p>
+          <pre>
+            LHS = k(k+1)(2k+1)/6 + (k+1)²
+                = (k+1)(k(2k+1)/6 + (k+1))
+                = (k+1)(k+2)(2k+3)/6
+          </pre>
+        </li>
+      </ol>
+      <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 1</code>.</p>
+    </div>
+  
+    <!-- Example 3: Factorial -->
+    <div class="example">
+      <h3>Example 3: Factorial</h3>
+      <p><b>Prove:</b> <code>n! = n × (n-1)!</code> for all <code>n ≥ 1</code>.</p>
+      <h4>Solution:</h4>
+      <ol>
+        <li><b>Base Case:</b> For <code>n = 1</code>, <code>1! = 1</code>, which holds true.</li>
+        <li><b>Induction Hypothesis:</b> Assume <code>k! = k × (k-1)!</code> is true.</li>
+        <li><b>Induction Step:</b>
+          <p>Prove <code>(k+1)! = (k+1) × k!</code>.</p>
+          <pre>
+            LHS = (k+1) × k!
+                = (k+1)!
+          </pre>
+        </li>
+      </ol>
+      <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 1</code>.</p>
+    </div>
+  
+    <!-- Example 4: Fibonacci Sequence -->
+    <div class="example">
+      <h3>Example 4: Fibonacci Sequence</h3>
+      <p><b>Prove:</b> <code>F(n) = F(n-1) + F(n-2)</code> for <code>n ≥ 2</code>, where <code>F(0) = 0</code> and <code>F(1) = 1</code>.</p>
+      <h4>Solution:</h4>
+      <ol>
+        <li><b>Base Case:</b> For <code>n = 2</code>, <code>F(2) = F(1) + F(0) = 1 + 0 = 1</code>.</li>
+        <li><b>Induction Hypothesis:</b> Assume <code>F(k) = F(k-1) + F(k-2)</code>.</li>
+        <li><b>Induction Step:</b>
+          <p>Prove <code>F(k+1) = F(k) + F(k-1)</code>.</p>
+          <pre>
+            LHS = F(k) + F(k-1)
+                = F(k+1)
+          </pre>
+        </li>
+      </ol>
+      <p><b>Conclusion:</b> The recurrence holds for all <code>n ≥ 2</code>.</p>
+    </div>
+  
+    <!-- Example 5: Exponentiation -->
+    <div class="example">
+      <h3>Example 5: Exponentiation</h3>
+      <p><b>Prove:</b> <code>2^n = 2 × 2^n-1</code> for all <code>n ≥ 0</code>.</p>
+      <h4>Solution:</h4>
+      <ol>
+        <li><b>Base Case:</b> For <code>n = 0</code>, <code>2^0 = 1</code>, which matches the formula.</li>
+        <li><b>Induction Hypothesis:</b> Assume <code>2^k = 2 × 2^k-1</code>.</li>
+        <li><b>Induction Step:</b>
+          <p>Prove <code>2^(k+1) = 2 × 2^k</code>.</p>
+          <pre>
+            LHS = 2 × 2^k
+                = 2^(k+1)
+          </pre>
+        </li>
+      </ol>
+      <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 0</code>.</p>
+    </div>
+  
+    <!-- Add similar sections for Examples 6-9 -->
+     <!-- Example 6: Geometric Series -->
+<div class="example">
+    <h3>Example 6: Geometric Series</h3>
+    <p><b>Prove:</b> The sum <code>1 + r + r² + ... + r^n = (1 - r^(n+1)) / (1 - r)</code> for <code>r ≠ 1</code>.</p>
+    <h4>Solution:</h4>
+    <ol>
+      <li><b>Base Case:</b> For <code>n = 0</code>, <code>1 = (1 - r^(0+1)) / (1 - r) = 1</code>, which is true.</li>
+      <li><b>Induction Hypothesis:</b> Assume <code>1 + r + r² + ... + r^k = (1 - r^(k+1)) / (1 - r)</code> holds for some <code>k ≥ 0</code>.</li>
+      <li><b>Induction Step:</b>
+        <p>Prove <code>1 + r + ... + r^k + r^(k+1) = (1 - r^(k+2)) / (1 - r)</code>.</p>
+        <pre>
+          LHS = (1 - r^(k+1)) / (1 - r) + r^(k+1)
+              = (1 - r^(k+1) + r^(k+1)(1 - r)) / (1 - r)
+              = (1 - r^(k+2)) / (1 - r)
+        </pre>
+      </li>
+    </ol>
+    <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 0</code>.</p>
+  </div>
+  
+  <!-- Example 7: Even Numbers -->
+  <div class="example">
+    <h3>Example 7: Even Numbers</h3>
+    <p><b>Prove:</b> The sum of the first <code>n</code> even numbers is <code>2 + 4 + ... + 2n = n(n+1)</code>.</p>
+    <h4>Solution:</h4>
+    <ol>
+      <li><b>Base Case:</b> For <code>n = 1</code>, <code>2 = 1(1+1) = 2</code>, which holds true.</li>
+      <li><b>Induction Hypothesis:</b> Assume <code>2 + 4 + ... + 2k = k(k+1)</code> holds for some <code>k ≥ 1</code>.</li>
+      <li><b>Induction Step:</b>
+        <p>Prove <code>2 + 4 + ... + 2k + 2(k+1) = (k+1)((k+1)+1)</code>.</p>
+        <pre>
+          LHS = k(k+1) + 2(k+1)
+              = (k+1)(k+2)
+        </pre>
+      </li>
+    </ol>
+    <p><b>Conclusion:</b> The formula holds for all <code>n ≥ 1</code>.</p>
+  </div>
+  
+  <!-- Example 8: Divisibility -->
+  <div class="example">
+    <h3>Example 8: Divisibility</h3>
+    <p><b>Prove:</b> <code>3 | (4^n - 1)</code> for all <code>n ≥ 1</code>.</p>
+    <h4>Solution:</h4>
+    <ol>
+      <li><b>Base Case:</b> For <code>n = 1</code>, <code>4^1 - 1 = 3</code>, which is divisible by <code>3</code>.</li>
+      <li><b>Induction Hypothesis:</b> Assume <code>3 | (4^k - 1)</code> holds for some <code>k ≥ 1</code>.</li>
+      <li><b>Induction Step:</b>
+        <p>Prove <code>3 | (4^(k+1) - 1)</code>.</p>
+        <pre>
+          LHS = 4^(k+1) - 1
+              = 4 × 4^k - 1
+              = (4 × (4^k - 1)) + (4 - 1)
+              = divisible by 3
+        </pre>
+      </li>
+    </ol>
+    <p><b>Conclusion:</b> <code>3 | (4^n - 1)</code> for all <code>n ≥ 1</code>.</p>
+  </div>
+  
+  <!-- Example 9: Inequality -->
+  <div class="example">
+    <h3>Example 9: Inequality</h3>
+    <p><b>Prove:</b> <code>2^n > n²</code> for all <code>n ≥ 5</code>.</p>
+    <h4>Solution:</h4>
+    <ol>
+      <li><b>Base Case:</b> For <code>n = 5</code>, <code>2^5 = 32 > 25 = 5²</code>, which holds true.</li>
+      <li><b>Induction Hypothesis:</b> Assume <code>2^k > k²</code> for some <code>k ≥ 5</code>.</li>
+      <li><b>Induction Step:</b>
+        <p>Prove <code>2^(k+1) > (k+1)²</code>.</p>
+        <pre>
+          LHS = 2 × 2^k > 2 × k²
+              > (k+1)² for k ≥ 5
+        </pre>
+      </li>
+    </ol>
+    <p><b>Conclusion:</b> <code>2^n > n²</code> for all <code>n ≥ 5</code>.</p>
+  </div>
+  
+  </div>
+  

@@ -1,0 +1,66 @@
+<div class="lesson-container">
+    <h1>Lesson 4: Writing and Loading a Gofer Script</h1>
+  
+    <!-- Section 1: Introduction -->
+    <section class="introduction">
+      <h2>Introduction</h2>
+      <p>The Gofer interpreter operates interactively using the REPL (<strong>Read-Evaluate-Print Loop</strong>).</p>
+      <p>Even multi-line expressions are evaluated as single expressions in this environment.</p>
+    </section>
+  
+    <!-- Section 2: Names, Values, and Bindings -->
+    <section class="names-values">
+      <h2>Names, Values, and Bindings</h2>
+      <p>Bindings in Gofer use the "=" symbol, and they are immutable:</p>
+      <ul>
+        <li><code>height = 178</code></li>
+        <li><code>x = [1...4]</code></li>
+      </ul>
+      <p>Example of local bindings:</p>
+      <ul>
+        <li><code>let x = 10 in x + 2</code></li>
+        <li><code>x + y where (x, y) = (10, 20)</code></li>
+      </ul>
+    </section>
+  
+    <!-- Section 3: Gofer Scripts -->
+    <section class="scripts">
+      <h2>Gofer Scripts</h2>
+      <p>A script is a plaintext file with extension <code>.gs</code> containing definitions.</p>
+      <p>Example script:</p>
+      <pre>
+  p = 100
+  q = 10.0
+  r = [1...4]
+  z = y + 3
+  y = 2
+      </pre>
+      <p>Use the command <code>:load lsn04.gs</code> or <code>:l lsn04.gs</code> to load the script into the interpreter.</p>
+    </section>
+  
+    <!-- Section 4: Commands -->
+    <section class="commands">
+      <h2>Interpreter Commands</h2>
+      <p>Common commands:</p>
+      <ul>
+        <li><code>:load</code> or <code>:l</code>: Load a script</li>
+        <li><code>:reload</code> or <code>:r</code>: Reload the last loaded script</li>
+        <li><code>:type</code> or <code>:t</code>: Show the type of a variable or expression</li>
+        <li><code>:names</code> or <code>:n</code>: List all known names</li>
+        <li><code>:?</code>: Display help</li>
+      </ul>
+    </section>
+  
+    <!-- Section 5: Exercises -->
+    <section class="exercises">
+      <h2>Exercises</h2>
+      <p>Try the following:</p>
+      <ol>
+        <li>Create a Gofer script with variables and bindings as shown above.</li>
+        <li>Experiment with expressions like <code>p + y</code> or <code>p ^ 2</code>.</li>
+        <li>Swap the order of bindings (e.g., define <code>z = y + 3</code> before <code>y = 2</code>) and observe the behavior.</li>
+        <li>Test proper and improper alignments to learn about indentation errors.</li>
+      </ol>
+    </section>
+  </div>
+  

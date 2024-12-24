@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Lesson Container */
+  .lesson-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  /* Headings */
+  .lesson-container h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .lesson-container h2 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+  }
+  
+  /* Paragraphs */
+  .lesson-container p {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Highlight Code Blocks */
+  pre, code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 10px;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 10px 0;
+  }
+  
+  code {
+    display: inline;
+    padding: 2px 5px;
+  }
+  
+  /* Lists */
+  .lesson-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .lesson-container ol {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+  }
+  
+  /* Links */
+  .lesson-container a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  .lesson-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Highlight Notes */
+  .lesson-container .highlight {
+    background-color: #ffffe0;
+    border-left: 4px solid #ffeb3b;
+    padding: 1px;
+    margin: 2px ;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lesson-container {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .lesson-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .lesson-container h2 {
+      font-size: 1.3rem;
+    }
+  }
+  

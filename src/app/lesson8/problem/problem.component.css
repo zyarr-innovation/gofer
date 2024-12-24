@@ -1,0 +1,72 @@
+/* Container for the whole component */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for each problem */
+  .problem {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for the problem title */
+  h3 {
+    font-size: 18px;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the problem statement */
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the answer section */
+  .answer {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Style for the answer text */
+  .answer p {
+    color: #007bff;
+  }
+  
+  /* Add spacing and alignment */
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Style for each problem when hovered */
+  .problem:hover {
+    background-color: #e0f7fa;
+    border-color: #007bff;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .problem {
+      padding: 10px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  

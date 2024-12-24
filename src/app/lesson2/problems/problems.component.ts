@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './problems.component.html',
   styleUrl: './problems.component.css'
 })
-export class FuncProgL2ProblemsComponent {
+export class lesson2ProblemsComponent {
 
 }

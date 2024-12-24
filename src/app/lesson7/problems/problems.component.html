@@ -1,0 +1,873 @@
+<div class="problems-container">
+    <!-- Problem 1 -->
+    <div class="problem">
+      <h3>Problem 1: Prove the Sum of First n Natural Numbers</h3>
+      <p>Prove that the sum of the first n natural numbers, i.e., 0 + 1 + 2 + ... + n, equals n*(n+1)/2.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        P(0) = 0 = 0*(0+1)/2.
+  
+        Induction Hypothesis:
+        Assume P(n) holds, i.e., sum 0 + 1 + ... + n = n*(n+1)/2.
+  
+        Induction Step:
+        Show that P(n+1) holds, i.e., sum 0 + 1 + ... + n + (n+1) = (n+1)*(n+2)/2.
+        Using the induction hypothesis:
+        n*(n+1)/2 + (n+1) = (n+1)*(n+2)/2.
+      </pre>
+    </div>
+  
+    <!-- Problem 2 -->
+    <div class="problem">
+      <h3>Problem 2: Prove Sum of Squares Formula</h3>
+      <p>Prove that the sum of squares of the first n natural numbers, i.e., 0^2 + 1^2 + 2^2 + ... + n^2, equals n*(n+1)*(2n+1)/6.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        P(0) = 0^2 = 0*(0+1)*(2*0+1)/6.
+  
+        Induction Hypothesis:
+        Assume P(n) holds, i.e., sum 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2n+1)/6.
+  
+        Induction Step:
+        Show that P(n+1) holds, i.e., sum 0^2 + 1^2 + 2^2 + ... + n^2 + (n+1)^2 = (n+1)*(n+2)*(2n+3)/6.
+        Using the induction hypothesis:
+        n*(n+1)*(2n+1)/6 + (n+1)^2 = (n+1)*(n+2)*(2n+3)/6.
+      </pre>
+    </div>
+  
+    <!-- Problem 3 -->
+    <div class="problem">
+      <h3>Problem 3: Prove Sum of Odd Numbers Formula</h3>
+      <p>Prove that the sum of the first n odd numbers, i.e., 1 + 3 + 5 + ... + (2n-1), equals n^2.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        P(0) = 1 = 0^2.
+  
+        Induction Hypothesis:
+        Assume P(n) holds, i.e., sum 1 + 3 + 5 + ... + (2n-1) = n^2.
+  
+        Induction Step:
+        Show that P(n+1) holds, i.e., sum 1 + 3 + 5 + ... + (2n-1) + (2n+1) = (n+1)^2.
+        Using the induction hypothesis:
+        n^2 + (2n+1) = (n+1)^2.
+      </pre>
+    </div>
+  
+    <!-- Problem 4 -->
+    <div class="problem">
+      <h3>Problem 4: Prove the Factorial Formula</h3>
+      <p>Prove the formula for the factorial of a number: n! = n * (n-1)! for n > 0, and 0! = 1.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        P(0) = 0! = 1.
+  
+        Induction Hypothesis:
+        Assume P(n) holds, i.e., n! = n * (n-1)!.
+  
+        Induction Step:
+        Show that P(n+1) holds, i.e., (n+1)! = (n+1) * n!.
+        Using the induction hypothesis:
+        (n+1)! = (n+1) * n! = (n+1) * (n * (n-1)!).
+      </pre>
+    </div>
+  
+    <!-- Problem 5 -->
+    <div class="problem">
+      <h3>Problem 5: Prove the Fibonacci Sequence Formula</h3>
+      <p>Prove that the nth Fibonacci number is defined by the recurrence: F(n) = F(n-1) + F(n-2) with base cases F(0) = 0 and F(1) = 1.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        F(0) = 0, F(1) = 1.
+  
+        Induction Hypothesis:
+        Assume F(n-1) = F(n-2) + F(n-3).
+  
+        Induction Step:
+        Show that F(n) = F(n-1) + F(n-2).
+      </pre>
+    </div>
+  
+    <!-- Problem 6 -->
+    <div class="problem">
+      <h3>Problem 6: Prove the Sum of Powers of 2 Formula</h3>
+      <p>Prove that the sum of powers of 2 from 0 to n, i.e., 2^0 + 2^1 + 2^2 + ... + 2^n, equals 2^(n+1) - 1.</p>
+      <h4>Solution:</h4>
+      <pre>
+        Base Case:
+        P(0) = 2^0 = 1 = 2^(0+1) - 1.
+  
+        Induction Hypothesis:
+        Assume P(n) holds, i.e., sum 2^0 + 2^1 + 2^2 + ... + 2^n = 2^(n+1) - 1.
+  
+        Induction Step:
+        Show that P(n+1) holds, i.e., sum 2^0 + 2^1 + 2^2 + ... + 2^n + 2^(n+1) = 2^(n+2) - 1.
+        Using the induction hypothesis:
+        2^(n+1) - 1 + 2^(n+1) = 2^(n+2) - 1.
+      </pre>
+    </div>
+  
+    <!-- Additional problems would follow the same structure -->
+    <div class="problems-container">
+        <!-- Problem 7 -->
+        <div class="problem">
+          <h3>Problem 7: Prove the Power of a Product Formula</h3>
+          <p>Prove that for any integers a, b, and n: (a*b)^n = a^n * b^n.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (a*b)^0 = 1 and a^0 * b^0 = 1.
+      
+            Induction Hypothesis:
+            Assume P(k) holds, i.e., (a*b)^k = a^k * b^k.
+      
+            Induction Step:
+            Show that P(k+1) holds, i.e., (a*b)^(k+1) = a^(k+1) * b^(k+1).
+            Using the induction hypothesis:
+            (a*b)^(k+1) = (a*b)^k * (a*b) = a^k * b^k * a * b = a^(k+1) * b^(k+1).
+          </pre>
+        </div>
+      
+        <!-- Problem 8 -->
+        <div class="problem">
+          <h3>Problem 8: Prove the Arithmetic Mean-Geometric Mean Inequality</h3>
+          <p>Prove that for non-negative real numbers a and b, the arithmetic mean is greater than or equal to the geometric mean: (a+b)/2 ≥ √(a*b).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(a = b) holds since (a+a)/2 = √(a*a).
+      
+            Induction Hypothesis:
+            Assume the inequality holds for some a and b.
+      
+            Induction Step:
+            Using the properties of squares and algebraic manipulation, show that (a+b)/2 ≥ √(a*b) for arbitrary a and b.
+          </pre>
+        </div>
+      
+        <!-- Problem 9 -->
+        <div class="problem">
+          <h3>Problem 9: Prove the Binomial Theorem</h3>
+          <p>Prove that (a+b)^n = Σ (n choose k) * a^(n-k) * b^k, where the sum is over k from 0 to n.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (a+b)^0 = 1, which is true for all a and b.
+      
+            Induction Hypothesis:
+            Assume the binomial theorem holds for n=k.
+      
+            Induction Step:
+            Show that the binomial theorem holds for n=k+1 using the binomial expansion formula.
+          </pre>
+        </div>
+      
+        <!-- Problem 10 -->
+        <div class="problem">
+          <h3>Problem 10: Prove that the Sum of First n Odd Numbers is n²</h3>
+          <p>Prove that the sum of the first n odd numbers equals n².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1 = 1^2.
+      
+            Induction Hypothesis:
+            Assume the sum of the first k odd numbers equals k^2.
+      
+            Induction Step:
+            Show that the sum of the first k+1 odd numbers equals (k+1)^2 by adding the next odd number.
+            k^2 + (2k+1) = (k+1)^2.
+          </pre>
+        </div>
+      
+        <!-- Problem 11 -->
+        <div class="problem">
+          <h3>Problem 11: Prove the Exponentiation Rule</h3>
+          <p>Prove that for any integer x and positive integer n, x^0 = 1 and x^n * x^m = x^(n+m).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = x^0 = 1 for all x ≠ 0.
+      
+            Induction Hypothesis:
+            Assume x^n * x^m = x^(n+m).
+      
+            Induction Step:
+            Using the properties of exponentiation, show that the rule holds for all positive integers n and m.
+          </pre>
+        </div>
+      
+        <!-- Problem 12 -->
+        <div class="problem">
+          <h3>Problem 12: Prove the Sum of an Arithmetic Series Formula</h3>
+          <p>Prove that the sum of an arithmetic series, 1 + 3 + 5 + ... + (2n-1), equals n^2.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1 = 1^2.
+      
+            Induction Hypothesis:
+            Assume the sum of the first k odd numbers equals k^2.
+      
+            Induction Step:
+            Add the next odd number (2k+1) to the sum, and show that the sum equals (k+1)^2.
+          </pre>
+        </div>
+      
+        <!-- Problem 13 -->
+        <div class="problem">
+          <h3>Problem 13: Prove the Sum of a Geometric Series Formula</h3>
+          <p>Prove that the sum of a geometric series, 1 + r + r² + ... + rⁿ, equals (1 - r^(n+1)) / (1 - r), for r ≠ 1.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = 1.
+      
+            Induction Hypothesis:
+            Assume the formula holds for n=k.
+      
+            Induction Step:
+            Show that the formula holds for n=k+1 by multiplying both sides by r and using the induction hypothesis.
+          </pre>
+        </div>
+      
+        <!-- Problem 14 -->
+        <div class="problem">
+          <h3>Problem 14: Prove the Law of Cosines</h3>
+          <p>Prove the law of cosines: c² = a² + b² - 2ab * cos(θ) for a triangle with sides a, b, and c, and angle θ between sides a and b.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a right triangle, cos(90°) = 0, and the law of cosines becomes the Pythagorean theorem.
+      
+            Induction Hypothesis:
+            Assume the law of cosines holds for a triangle with smaller side lengths.
+      
+            Induction Step:
+            Show that the law of cosines holds for larger triangles using vector and trigonometric identities.
+          </pre>
+        </div>
+      
+        <!-- Problem 15 -->
+        <div class="problem">
+          <h3>Problem 15: Prove the Sum of Cubes Formula</h3>
+          <p>Prove that the sum of cubes of the first n natural numbers equals (n(n+1)/2)².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1^3 = (1(1+1)/2)^2 = 1.
+      
+            Induction Hypothesis:
+            Assume the sum of cubes of the first k numbers equals (k(k+1)/2)^2.
+      
+            Induction Step:
+            Show that adding the next cube (k+1)^3 gives the correct formula for (k+1).
+          </pre>
+        </div>
+      
+        <!-- Problem 16 -->
+        <div class="problem">
+          <h3>Problem 16: Prove that the Sum of First n Even Numbers is n(n+1)</h3>
+          <p>Prove that the sum of the first n even numbers, i.e., 2 + 4 + 6 + ... + 2n, equals n(n+1).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 2 = 1(1+1).
+      
+            Induction Hypothesis:
+            Assume the sum of the first k even numbers equals k(k+1).
+      
+            Induction Step:
+            Show that the sum of the first k+1 even numbers equals (k+1)(k+2).
+          </pre>
+        </div>
+      
+        <!-- Problem 17 -->
+        <div class="problem">
+          <h3>Problem 17: Prove the Pythagorean Theorem</h3>
+          <p>Prove that in a right triangle, a² + b² = c², where a and b are the legs, and c is the hypotenuse.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a 3-4-5 triangle, 3² + 4² = 5².
+      
+            Induction Hypothesis:
+            Assume the Pythagorean theorem holds for smaller right triangles.
+      
+            Induction Step:
+            Show that it holds for larger triangles using geometric reasoning and algebraic manipulation.
+          </pre>
+        </div>
+      
+        <!-- Problem 18 -->
+        <div class="problem">
+          <h3>Problem 18: Prove the Identity (a+b)^2 = a² + 2ab + b²</h3>
+          <p>Prove the algebraic identity: (a+b)² = a² + 2ab + b².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (a+0)^2 = a².
+      
+            Induction Hypothesis:
+            Assume the identity holds for n=a+b.
+      
+            Induction Step:
+            Expand (a+b)² and verify that it equals a² + 2ab + b².
+          </pre>
+        </div>
+      
+        <!-- Problem 19 -->
+        <div class="problem">
+          <h3>Problem 19: Prove that √(a*b) ≤ (a+b)/2</h3>
+          <p>Prove that for non-negative real numbers a and b, the geometric mean is less than or equal to the arithmetic mean: √(a*b) ≤ (a+b)/2.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(a = b) holds as √(a*a) = (a+a)/2.
+      
+            Induction Hypothesis:
+            Assume the inequality holds for some a and b.
+      
+            Induction Step:
+            Use algebraic manipulation and the Arithmetic Mean-Geometric Mean Inequality to prove the inequality holds for any a and b.
+          </pre>
+        </div>
+      
+        <!-- Problem 20 -->
+        <div class="problem">
+          <h3>Problem 20: Prove the Double Angle Identity for Sine</h3>
+          <p>Prove the trigonometric identity: sin(2θ) = 2sin(θ)cos(θ).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = sin(0) = 0.
+      
+            Induction Hypothesis:
+            Assume the identity holds for some angle θ.
+      
+            Induction Step:
+            Use the sum of angles formula for sine: sin(2θ) = sin(θ + θ) = sin(θ)cos(θ) + cos(θ)sin(θ).
+          </pre>
+        </div>
+      </div>
+
+      <div class="problems-container">
+        <!-- Problem 21 -->
+        <div class="problem">
+          <h3>Problem 21: Prove the Sum of the First n Natural Numbers Formula</h3>
+          <p>Prove that the sum of the first n natural numbers is given by the formula: 1 + 2 + 3 + ... + n = n(n+1)/2.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1 = 1(1+1)/2.
+      
+            Induction Hypothesis:
+            Assume the sum of the first k numbers is k(k+1)/2.
+      
+            Induction Step:
+            Add the next term, k+1, to the sum and show that it equals (k+1)(k+2)/2.
+          </pre>
+        </div>
+      
+        <!-- Problem 22 -->
+        <div class="problem">
+          <h3>Problem 22: Prove the Difference of Squares Identity</h3>
+          <p>Prove the identity: a² - b² = (a-b)(a+b).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = 0² - 0² = (0-0)(0+0).
+      
+            Induction Hypothesis:
+            Assume the identity holds for a = b.
+      
+            Induction Step:
+            Use the distributive property to expand (a-b)(a+b) and simplify to a² - b².
+          </pre>
+        </div>
+      
+        <!-- Problem 23 -->
+        <div class="problem">
+          <h3>Problem 23: Prove the Product of Binomials Expansion</h3>
+          <p>Prove that (a + b)(c + d) = ac + ad + bc + bd.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For simple numbers, expand (a + b)(c + d) using the distributive property.
+      
+            Induction Hypothesis:
+            Assume the expansion holds for smaller binomials.
+      
+            Induction Step:
+            Expand (a + b)(c + d) using the distributive property and verify the result.
+          </pre>
+        </div>
+      
+        <!-- Problem 24 -->
+        <div class="problem">
+          <h3>Problem 24: Prove the Double Angle Identity for Cosine</h3>
+          <p>Prove the trigonometric identity: cos(2θ) = cos²(θ) - sin²(θ).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = cos(0) = 1 and cos²(0) - sin²(0) = 1.
+      
+            Induction Hypothesis:
+            Assume the identity holds for some angle θ.
+      
+            Induction Step:
+            Use the sum of angles formula for cosine: cos(2θ) = cos²(θ) - sin²(θ).
+          </pre>
+        </div>
+      
+        <!-- Problem 25 -->
+        <div class="problem">
+          <h3>Problem 25: Prove the Law of Sines</h3>
+          <p>Prove the law of sines for a triangle: (sin A)/a = (sin B)/b = (sin C)/c, where A, B, C are the angles and a, b, c are the opposite sides.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            In a right triangle, the law of sines holds because sin(90°) = 1.
+      
+            Induction Hypothesis:
+            Assume the law of sines holds for a smaller triangle.
+      
+            Induction Step:
+            Show that it holds for larger triangles using trigonometric identities.
+          </pre>
+        </div>
+      
+        <!-- Problem 26 -->
+        <div class="problem">
+          <h3>Problem 26: Prove that (x - y)(x + y) = x² - y²</h3>
+          <p>Prove the algebraic identity: (x - y)(x + y) = x² - y².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (x - 0)(x + 0) = x².
+      
+            Induction Hypothesis:
+            Assume the identity holds for x and y.
+      
+            Induction Step:
+            Use the distributive property to expand (x - y)(x + y) and simplify to x² - y².
+          </pre>
+        </div>
+      
+        <!-- Problem 27 -->
+        <div class="problem">
+          <h3>Problem 27: Prove that the Sum of Interior Angles of a Triangle is 180°</h3>
+          <p>Prove that the sum of the interior angles of a triangle is 180°.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            A right triangle has angles summing to 180°.
+      
+            Induction Hypothesis:
+            Assume the sum of angles for smaller triangles is 180°.
+      
+            Induction Step:
+            Show that the sum of the angles of any triangle is 180° using geometric reasoning.
+          </pre>
+        </div>
+      
+        <!-- Problem 28 -->
+        <div class="problem">
+          <h3>Problem 28: Prove the Identity for a Cubic Polynomial</h3>
+          <p>Prove that a³ + b³ = (a + b)(a² - ab + b²).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1³ + 1³ = (1 + 1)(1² - 1*1 + 1²).
+      
+            Induction Hypothesis:
+            Assume the identity holds for some a and b.
+      
+            Induction Step:
+            Factor the left-hand side and expand to show it equals the right-hand side.
+          </pre>
+        </div>
+      
+        <!-- Problem 29 -->
+        <div class="problem">
+          <h3>Problem 29: Prove the Sum of the First n Cubes Formula</h3>
+          <p>Prove that the sum of the cubes of the first n natural numbers equals (n(n+1)/2)².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1³ = (1(1+1)/2)².
+      
+            Induction Hypothesis:
+            Assume the sum of cubes of the first k numbers equals (k(k+1)/2)².
+      
+            Induction Step:
+            Add the next cube, (k+1)³, and show that the formula holds for (k+1).
+          </pre>
+        </div>
+      
+        <!-- Problem 30 -->
+        <div class="problem">
+          <h3>Problem 30: Prove that the Sum of First n Odd Numbers is n²</h3>
+          <p>Prove that the sum of the first n odd numbers equals n².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1 = 1².
+      
+            Induction Hypothesis:
+            Assume the sum of the first k odd numbers equals k².
+      
+            Induction Step:
+            Add the next odd number, 2k + 1, and show that the sum equals (k+1)².
+          </pre>
+        </div>
+      
+        <!-- Problem 31 -->
+        <div class="problem">
+          <h3>Problem 31: Prove the Sine Addition Formula</h3>
+          <p>Prove the sine addition formula: sin(A + B) = sin(A)cos(B) + cos(A)sin(B).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = sin(0 + 0) = sin(0)cos(0) + cos(0)sin(0).
+      
+            Induction Hypothesis:
+            Assume the formula holds for angles A and B.
+      
+            Induction Step:
+            Show that the formula holds for A + B using trigonometric identities.
+          </pre>
+        </div>
+      
+        <!-- Problem 32 -->
+        <div class="problem">
+          <h3>Problem 32: Prove the Cosine Addition Formula</h3>
+          <p>Prove the cosine addition formula: cos(A + B) = cos(A)cos(B) - sin(A)sin(B).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = cos(0 + 0) = cos(0)cos(0) - sin(0)sin(0).
+      
+            Induction Hypothesis:
+            Assume the formula holds for angles A and B.
+      
+            Induction Step:
+            Show that the formula holds for A + B using trigonometric identities.
+          </pre>
+        </div>
+      
+        <!-- Problem 33 -->
+        <div class="problem">
+          <h3>Problem 33: Prove the Law of Cosines (Alternate Proof)</h3>
+          <p>Prove the law of cosines: c² = a² + b² - 2ab * cos(θ), using the coordinates of the vertices of a triangle.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a right triangle, cos(90°) = 0, and the law of cosines becomes the Pythagorean theorem.
+      
+            Induction Hypothesis:
+            Assume the law of cosines holds for smaller triangles.
+      
+            Induction Step:
+            Use vector geometry to prove the law of cosines for general triangles.
+          </pre>
+        </div>
+      
+        <!-- Problem 34 -->
+        <div class="problem">
+          <h3>Problem 34: Prove the Product of Sines and Cosines Identity</h3>
+          <p>Prove the identity: sin(A)cos(B) = (1/2)[sin(A + B) + sin(A - B)].</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = sin(0)cos(0) = (1/2)[sin(0 + 0) + sin(0 - 0)].
+      
+            Induction Hypothesis:
+            Assume the formula holds for angles A and B.
+      
+            Induction Step:
+            Use the sine addition and subtraction formulas to prove the identity.
+          </pre>
+        </div>
+      
+        <!-- Problem 35 -->
+        <div class="problem">
+          <h3>Problem 35: Prove the Sum of Angles Formula for Tangent</h3>
+          <p>Prove the tangent sum formula: tan(A + B) = (tan(A) + tan(B)) / (1 - tan(A)tan(B)).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = tan(0 + 0) = (tan(0) + tan(0)) / (1 - tan(0)tan(0)).
+      
+            Induction Hypothesis:
+            Assume the formula holds for angles A and B.
+      
+            Induction Step:
+            Use the sine and cosine addition formulas to derive the formula for tan(A + B).
+          </pre>
+        </div>
+      
+        <!-- Problem 36 -->
+        <div class="problem">
+          <h3>Problem 36: Prove the Power of a Power Property for Exponents</h3>
+          <p>Prove that for any integer x and positive integers m and n, (x^m)^n = x^(m*n).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = (x^1)^n = x^(1*n).
+      
+            Induction Hypothesis:
+            Assume the power of a power property holds for smaller exponents.
+      
+            Induction Step:
+            Show that (x^m)^n = x^(m*n) by applying the properties of exponents.
+          </pre>
+        </div>
+      
+        <!-- Problem 37 -->
+        <div class="problem">
+          <h3>Problem 37: Prove the Double Angle Formula for Tangent</h3>
+          <p>Prove the double angle formula for tangent: tan(2θ) = (2tan(θ)) / (1 - tan²(θ)).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = tan(2 * 0) = (2tan(0)) / (1 - tan²(0)).
+      
+            Induction Hypothesis:
+            Assume the formula holds for some angle θ.
+      
+            Induction Step:
+            Use the sine and cosine double angle formulas to derive the formula for tan(2θ).
+          </pre>
+        </div>
+      
+        <!-- Problem 38 -->
+        <div class="problem">
+          <h3>Problem 38: Prove the Identity for the Sum of Squares</h3>
+          <p>Prove the identity: a² + b² = (a + b)² - 2ab.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1² + 1² = (1 + 1)² - 2*1*1.
+      
+            Induction Hypothesis:
+            Assume the identity holds for a and b.
+      
+            Induction Step:
+            Expand (a + b)² and verify the result equals a² + b² - 2ab.
+          </pre>
+        </div>
+      
+        <!-- Problem 39 -->
+        <div class="problem">
+          <h3>Problem 39: Prove the Sum of Two Squares Formula</h3>
+          <p>Prove that the sum of two squares formula is: a² + b² = (a + b)² - 2ab.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = 0² + 0² = (0 + 0)² - 2*0*0.
+      
+            Induction Hypothesis:
+            Assume the formula holds for smaller values of a and b.
+      
+            Induction Step:
+            Expand (a + b)² and show it equals a² + b² - 2ab.
+          </pre>
+        </div>
+      
+        <!-- Problem 40 -->
+        <div class="problem">
+          <h3>Problem 40: Prove the Sine-Cosine Identity</h3>
+          <p>Prove the identity: sin²(θ) + cos²(θ) = 1.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = sin²(0) + cos²(0) = 1.
+      
+            Induction Hypothesis:
+            Assume the identity holds for some angle θ.
+      
+            Induction Step:
+            Use the Pythagorean identity for sine and cosine to prove that sin²(θ) + cos²(θ) = 1.
+          </pre>
+        </div>
+      </div>
+
+      <div class="problems-container">
+        <!-- Problem 41 -->
+        <div class="problem">
+          <h3>Problem 41: Prove the Expansion of (a + b)³</h3>
+          <p>Prove that (a + b)³ = a³ + 3a²b + 3ab² + b³.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (0 + 0)³ = 0³ + 3*0²*0 + 3*0*0² + 0³.
+      
+            Induction Hypothesis:
+            Assume the expansion holds for smaller powers of (a + b).
+      
+            Induction Step:
+            Use the distributive property to expand (a + b)³ and simplify to match the result.
+          </pre>
+        </div>
+      
+        <!-- Problem 42 -->
+        <div class="problem">
+          <h3>Problem 42: Prove the Sum of Cubes Formula</h3>
+          <p>Prove that the sum of the cubes of the first n natural numbers is given by the formula: 1³ + 2³ + ... + n³ = (n(n+1)/2)².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = 1³ = (1(1+1)/2)².
+      
+            Induction Hypothesis:
+            Assume the sum of cubes of the first k numbers equals (k(k+1)/2)².
+      
+            Induction Step:
+            Add the next cube, (k+1)³, and show that the formula holds for (k+1).
+          </pre>
+        </div>
+      
+        <!-- Problem 43 -->
+        <div class="problem">
+          <h3>Problem 43: Prove the Arithmetic Mean-Geometric Mean Inequality (AM-GM)</h3>
+          <p>Prove that for any non-negative numbers a and b, the arithmetic mean is greater than or equal to the geometric mean: (a + b)/2 ≥ √(ab).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(0) = (0 + 0)/2 ≥ √(0 * 0).
+      
+            Induction Hypothesis:
+            Assume the AM-GM inequality holds for smaller values of a and b.
+      
+            Induction Step:
+            Use algebraic manipulation to show that the inequality holds for larger values of a and b.
+          </pre>
+        </div>
+      
+        <!-- Problem 44 -->
+        <div class="problem">
+          <h3>Problem 44: Prove the Binomial Theorem for n = 2</h3>
+          <p>Prove the binomial theorem for n = 2: (a + b)² = a² + 2ab + b².</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = (a + b)² = a² + 2ab + b².
+      
+            Induction Hypothesis:
+            Assume the binomial theorem holds for smaller values of n.
+      
+            Induction Step:
+            Expand (a + b)² using the distributive property to verify the result.
+          </pre>
+        </div>
+      
+        <!-- Problem 45 -->
+        <div class="problem">
+          <h3>Problem 45: Prove the Quadratic Formula</h3>
+          <p>Prove the quadratic formula for solving ax² + bx + c = 0: x = (-b ± √(b² - 4ac)) / 2a.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For b = 0 and a = 1, solve x² + c = 0 using the quadratic formula.
+      
+            Induction Hypothesis:
+            Assume the quadratic formula holds for smaller quadratic equations.
+      
+            Induction Step:
+            Complete the square for ax² + bx + c = 0 and derive the quadratic formula.
+          </pre>
+        </div>
+      
+        <!-- Problem 46 -->
+        <div class="problem">
+          <h3>Problem 46: Prove the Law of Large Numbers</h3>
+          <p>Prove that as the number of trials in a random experiment increases, the sample mean approaches the expected value.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For 1 trial, the sample mean equals the observed value.
+      
+            Induction Hypothesis:
+            Assume the law of large numbers holds for n trials.
+      
+            Induction Step:
+            Show that as n increases, the sample mean converges to the expected value using probability theory.
+          </pre>
+        </div>
+      
+        <!-- Problem 47 -->
+        <div class="problem">
+          <h3>Problem 47: Prove the Sum of an Arithmetic Series Formula</h3>
+          <p>Prove that the sum of the first n terms of an arithmetic series is given by: S_n = n/2 * (2a + (n-1)d), where a is the first term and d is the common difference.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            P(1) = a = 1/2 * (2a + (1-1)d).
+      
+            Induction Hypothesis:
+            Assume the formula holds for the first k terms of the arithmetic series.
+      
+            Induction Step:
+            Show that the formula holds for the first k+1 terms by using the sum of an arithmetic series.
+          </pre>
+        </div>
+      
+        <!-- Problem 48 -->
+        <div class="problem">
+          <h3>Problem 48: Prove the Law of Reflection</h3>
+          <p>Prove that the angle of incidence equals the angle of reflection when light reflects off a surface.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a mirror surface, the angle of incidence equals the angle of reflection.
+      
+            Induction Hypothesis:
+            Assume the law of reflection holds for a small angle of incidence.
+      
+            Induction Step:
+            Use geometry to show that the law of reflection holds for any angle of incidence.
+          </pre>
+        </div>
+      
+        <!-- Problem 49 -->
+        <div class="problem">
+          <h3>Problem 49: Prove the Fundamental Theorem of Calculus</h3>
+          <p>Prove the fundamental theorem of calculus: if f is continuous on [a, b], then the integral of f from a to b is the difference of the values of an antiderivative of f at b and a.</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a simple function, show the result holds using the definition of the definite integral.
+      
+            Induction Hypothesis:
+            Assume the fundamental theorem of calculus holds for functions with simpler behavior.
+      
+            Induction Step:
+            Use the properties of integrals and derivatives to show the result for more complex functions.
+          </pre>
+        </div>
+      
+        <!-- Problem 50 -->
+        <div class="problem">
+          <h3>Problem 50: Prove the Chain Rule for Derivatives</h3>
+          <p>Prove the chain rule for derivatives: if y = f(g(x)), then dy/dx = f'(g(x)) * g'(x).</p>
+          <h4>Solution:</h4>
+          <pre>
+            Base Case:
+            For a simple composite function, demonstrate the chain rule using the definition of the derivative.
+      
+            Induction Hypothesis:
+            Assume the chain rule holds for compositions with simpler functions.
+      
+            Induction Step:
+            Use the definition of the derivative to prove the chain rule for composite functions.
+          </pre>
+        </div>
+      </div>
+      
+  </div>
+  

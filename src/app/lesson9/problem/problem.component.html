@@ -1,0 +1,405 @@
+<div class="problem-container">
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 1:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define a binary function area that computes the area of a rectangle, given the length and breadth.</p>
+        <p><strong>Answer:</strong> area: Num a => (a, a) -> a<br>area (len, br) = len * br</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 2:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of area (5, 10) for the function area from Problem 1?</p>
+        <p><strong>Answer:</strong> 50 : Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 3:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define a function vol to compute the volume of a cylinder, given its radius and height.</p>
+        <p><strong>Answer:</strong> vol: Num a => (a, a) -> a<br>vol (rad, ht) = pi * rad^2 * ht</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 4:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the type of the function vol from Problem 3?</p>
+        <p><strong>Answer:</strong> vol : Num a => (a, a) -> a</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 5:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define area1 for the area of a rectangle, where both sides are integers.</p>
+        <p><strong>Answer:</strong> area1: (Int, Int) -> Int<br>area1 (len, br) = len * br</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 6:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What happens if you call area1 (5.0, 10.0)?</p>
+        <p><strong>Answer:</strong> Error: Type error. area1 expects two Int arguments, not Float.</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 7:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define area2 for the area of a rectangle, where both sides are floats.</p>
+        <p><strong>Answer:</strong> area2: (Float, Float) -> Float<br>area2 (len, br) = len * br</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 8:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of area2 (5.0, 10.0)?</p>
+        <p><strong>Answer:</strong> 50.0 : Float</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 9:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define the curried version of the function area1 as area1c.</p>
+        <p><strong>Answer:</strong> area1c = curry area1</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 10:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of area1c 10 20?</p>
+        <p><strong>Answer:</strong> 200 : Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 11:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of area1c 10?</p>
+        <p><strong>Answer:</strong> Int -> Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 12:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define the uncurried version of area1c as area1u.</p>
+        <p><strong>Answer:</strong> area1u = uncurry area1c</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 13:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define power for exponentiation of a base to an integer power.</p>
+        <p><strong>Answer:</strong> power: Num a => a -> Int -> a<br>power base n = base ^ n</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 14:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the type of power from Problem 13?</p>
+        <p><strong>Answer:</strong> power : Num a => a -> Int -> a</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 15:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of power 2 3?</p>
+        <p><strong>Answer:</strong> 8 : Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 16:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of power 2.0 3?</p>
+        <p><strong>Answer:</strong> 8.0 : Float</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 17:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define mult to compute the multiplication of two integers without using the multiplication operator.</p>
+        <p><strong>Answer:</strong> mult: Int -> Int -> Int<br>mult m n = if n == 0 then 0 else m + mult m (n - 1)</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 18:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What is the result of mult 4 3?</p>
+        <p><strong>Answer:</strong> 12 : Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 19:</h3>
+      </div>
+      <div class="problem-body">
+        <p>What happens if you call mult 5 0?</p>
+        <p><strong>Answer:</strong> 0 : Int</p>
+      </div>
+    </div>
+  
+    <div class="problem">
+      <div class="problem-header">
+        <h3>Problem 20:</h3>
+      </div>
+      <div class="problem-body">
+        <p>Define a ternary function sum3 that computes the sum of three integers.</p>
+        <p><strong>Answer:</strong> sum3: Int -> Int -> Int -> Int<br>sum3 x y z = x + y + z</p>
+      </div>
+    </div>
+  
+    <!-- More problems can be added here following the same pattern -->
+
+    <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 21:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function to compute the factorial of a number recursively.</p>
+          <p><strong>Answer:</strong> factorial: Int -> Int<br>factorial 0 = 1<br>factorial n = n * factorial (n - 1)</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 22:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of factorial 5?</p>
+          <p><strong>Answer:</strong> 120 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 23:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function to compute the Fibonacci sequence recursively.</p>
+          <p><strong>Answer:</strong> fibonacci: Int -> Int<br>fibonacci 0 = 0<br>fibonacci 1 = 1<br>fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 24:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of fibonacci 6?</p>
+          <p><strong>Answer:</strong> 8 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 25:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function that computes the greatest common divisor (GCD) of two integers using recursion.</p>
+          <p><strong>Answer:</strong> gcd: Int -> Int -> Int<br>gcd a 0 = a<br>gcd a b = gcd b (a mod b)</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 26:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of gcd 56 98?</p>
+          <p><strong>Answer:</strong> 14 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 27:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function that checks if a number is prime.</p>
+          <p><strong>Answer:</strong> isPrime: Int -> Bool<br>isPrime 2 = True<br>isPrime n = all (\x -> n `mod` x /= 0) [2..n-1]</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 28:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of isPrime 7?</p>
+          <p><strong>Answer:</strong> True : Bool</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 29:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function that calculates the sum of all elements in a list of integers.</p>
+          <p><strong>Answer:</strong> sumList: [Int] -> Int<br>sumList [] = 0<br>sumList (x:xs) = x + sumList xs</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 30:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of sumList [1, 2, 3, 4, 5]?</p>
+          <p><strong>Answer:</strong> 15 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 31:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function that calculates the length of a list.</p>
+          <p><strong>Answer:</strong> lengthList: [a] -> Int<br>lengthList [] = 0<br>lengthList (x:xs) = 1 + lengthList xs</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 32:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of lengthList [1, 2, 3, 4]?</p>
+          <p><strong>Answer:</strong> 4 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 33:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function that finds the maximum element in a list of integers.</p>
+          <p><strong>Answer:</strong> maxList: [Int] -> Int<br>maxList [x] = x<br>maxList (x:xs) = max x (maxList xs)</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 34:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of maxList [1, 3, 2, 8, 5]?</p>
+          <p><strong>Answer:</strong> 8 : Int</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 35:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function to reverse a list.</p>
+          <p><strong>Answer:</strong> reverseList: [a] -> [a]<br>reverseList [] = []<br>reverseList (x:xs) = reverseList xs ++ [x]</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 36:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of reverseList [1, 2, 3]?</p>
+          <p><strong>Answer:</strong> [3, 2, 1] : [Int]</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 37:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function to compute the power set of a list (the set of all subsets).</p>
+          <p><strong>Answer:</strong> powerSet: [a] -> [[a]]<br>powerSet [] = [[]]<br>powerSet (x:xs) = let ps = powerSet xs in ps ++ map (x:) ps</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 38:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of powerSet [1, 2]?</p>
+          <p><strong>Answer:</strong> [[], [1], [2], [1, 2]] : [[Int]]</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 39:</h3>
+        </div>
+        <div class="problem-body">
+          <p>Define a function to check if a list is sorted in ascending order.</p>
+          <p><strong>Answer:</strong> isSorted: [Int] -> Bool<br>isSorted [] = True<br>isSorted [x] = True<br>isSorted (x:y:xs) = x <= y && isSorted (y:xs)</p>
+        </div>
+      </div>
+      
+      <div class="problem">
+        <div class="problem-header">
+          <h3>Problem 40:</h3>
+        </div>
+        <div class="problem-body">
+          <p>What is the result of isSorted [1, 2, 3, 4]?</p>
+          <p><strong>Answer:</strong> True : Bool</p>
+        </div>
+      </div>
+      
+  </div>
+  

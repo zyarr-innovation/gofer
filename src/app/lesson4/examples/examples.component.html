@@ -1,0 +1,74 @@
+<div class="container">
+    <h1>Gofer Scripting Examples</h1>
+    
+    <!-- Example 1: Basic Variable Binding -->
+    <div class="example">
+      <h2>Example 1: Basic Variable Binding</h2>
+      <h6>Script Content:</h6>
+      
+        <pre>
+          a = 5
+          b = 10
+          c = a + b
+        </pre>
+      
+      <button (click)="loadScript('example1.gs')">Load Script</button>
+      <p>Output: <span>{{ output1 }}</span></p>
+    </div>
+  
+    <!-- Example 2: Using where for Local Bindings -->
+    <div class="example">
+      <h2>Example 2: Using <code>where</code> for Local Bindings</h2>
+      <button (click)="evaluateWhereExample()">Run Example</button>
+      <p>Expression: <code>x + y where (x, y) = (10, 20)</code></p>
+      <p>Output: <span>{{ output2 }}</span></p>
+    </div>
+  
+    <!-- Example 3: Script with Complex Expressions -->
+    <div class="example">
+      <h2>Example 3: Script with Complex Expressions</h2>
+      
+        <h6>Script Content:</h6>
+        <pre>
+          p = 3.14
+          r = 5
+          area = p * r^2
+          circumference = 2 * p * r
+        </pre>
+      
+      <button (click)="loadScript('example2.gs')">Load Script</button>
+      <p>Area: <span>{{ area }}</span></p>
+      <p>Circumference: <span>{{ circumference }}</span></p>
+    </div>
+  
+    <!-- Example 4: Swapping Variable Definitions -->
+    <div class="example">
+      <h2>Example 4: Swapping Variable Definitions</h2>
+      
+        <h6>Script Content:</h6>
+        <pre>
+          z = y + 3
+          y = 2
+        </pre>
+      
+      <button (click)="loadScript('example3.gs')">Load Script</button>
+      <p>Value of z: <span>{{ z }}</span></p>
+    </div>
+  
+    <!-- Example 5: Using let -->
+    <div class="example">
+      <h2>Example 5: Using <code>let</code></h2>
+      <button (click)="evaluateLetExample()">Run Example</button>
+      <p>Expression: <code>let x = 5 in x^2</code></p>
+      <p>Output: <span>{{ output5 }}</span></p>
+    </div>
+  
+    <!-- Example 6: Handling Tuples -->
+    <div class="example">
+      <h2>Example 6: Handling Tuples</h2>
+      <button (click)="evaluateTupleExample()">Run Example</button>
+      <p>Expression: <code>(x, y) = (10, 15) => x + y</code></p>
+      <p>Output: <span>{{ output6 }}</span></p>
+    </div>
+  </div>
+  

@@ -1,0 +1,86 @@
+<div class="lesson-container">
+    <h1>Lesson 8: Lists, Part 2</h1>
+    <h2>Introduction to Lists</h2>
+    <p>
+      Lists in functional programming are sequences of elements of the same type, such as
+      <code>[2, 18, 9, 10]</code>. The list type is denoted as <code>[Int]</code>, representing
+      a list of integers.
+    </p>
+  
+    <h3>Definition</h3>
+    <p>
+      A list is either empty (<code>[]</code>) or consists of a head (single element) and a tail
+      (another list). These are connected by the <code>::</code> operator.
+    </p>
+    <p>Example: <code>[2, 18, 9, 10]</code> is equivalent to <code>2::(18::(9::(10::[])))</code>.</p>
+  
+    <h3>Functions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Signature</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>head</code></td>
+          <td><code>[a] -> a</code></td>
+          <td><code>head([2, 18, 9]) = 2</code></td>
+        </tr>
+        <tr>
+          <td><code>tail</code></td>
+          <td><code>[a] -> [a]</code></td>
+          <td><code>tail([2, 18, 9]) = [18, 9]</code></td>
+        </tr>
+        <tr>
+          <td><code>length</code></td>
+          <td><code>[a] -> Int</code></td>
+          <td><code>length([2, 18, 9]) = 3</code></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3>Recursive Functions</h3>
+    <h4>Length Function</h4>
+    <ul>
+      <li>Base Case: <code>len([]) = 0</code></li>
+      <li>Inductive Case: <code>len(x::xs) = 1 + len(xs)</code></li>
+    </ul>
+  
+    <h4>Sum Function</h4>
+    <ul>
+      <li>Base Case: <code>sum([]) = 0</code></li>
+      <li>Inductive Case: <code>sum(x::xs) = x + sum(xs)</code></li>
+    </ul>
+  
+    <h3>Example Problem Descriptions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>len</code></td>
+          <td>Find the length of a list.</td>
+        </tr>
+        <tr>
+          <td><code>total</code></td>
+          <td>Sum of all elements in the list.</td>
+        </tr>
+        <tr>
+          <td><code>countevens</code></td>
+          <td>Count the number of even numbers in the list.</td>
+        </tr>
+        <tr>
+          <td><code>anee.p</code></td>
+          <td>Check if any element satisfies the predicate <code>p</code>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,50 @@
+<div class="explanation-container">
+  <h1>Introduction to Functional Programming</h1>
+  <h2>Lesson 3: Functions, Types, and Application in Gofer</h2>
+
+  <section class="definition">
+    <h3>What is a Function?</h3>
+    <p>
+      A function is a mapping from a domain to a range, ensuring each input
+      in the domain has a unique corresponding output in the range.
+      <br />
+      Example: <code>square(x) = x^2</code>
+    </p>
+  </section>
+
+
+  <section class="types">
+    <h3>Function Types</h3>
+    <p>In Gofer, function types are written as <code>a -> b</code>, where:</p>
+    <ul>
+      <li><code>a</code>: The input type (domain)</li>
+      <li><code>b</code>: The output type (range)</li>
+    </ul>
+    <p>
+      Example: <code>cos : Float -> Float</code> maps a <code>Float</code> to another <code>Float</code>.
+    </p>
+  </section>
+
+  <section class="application">
+    <h3>Function Application</h3>
+    <p>
+      In Gofer, function application is explicit using the dot operator (<code>.</code>).
+    </p>
+    <p>Example: <code>cos . pi</code> applies the <code>cos</code> function to <code>pi</code>.</p>
+    <p>
+      Functions can also be composed using the semicolon (<code>;</code>) operator:
+      <br>
+      <code>(sq ; dbl ; succ) . 10</code> computes the result of applying the functions in sequence.
+    </p>
+  </section>
+
+  <section class="built-in">
+    <h3>Built-In Functions</h3>
+    <p>Gofer provides built-in functions for tuples and lists:</p>
+    <ul>
+      <li><code>fst</code>, <code>snd</code>: Access tuple components</li>
+      <li><code>head</code>, <code>tail</code>: Access list components</li>
+    </ul>
+    <p>Example: <code>head . [0 ... 5]</code> returns <code>0</code>.</p>
+  </section>
+</div>

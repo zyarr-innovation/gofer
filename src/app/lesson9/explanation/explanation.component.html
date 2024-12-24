@@ -1,0 +1,110 @@
+<div class="lesson-container">
+    <h1>Lesson 9: Functions with Multiple Arguments</h1>
+  
+    <h2>Introduction</h2>
+    <p>
+      This lesson explains how to provide multiple arguments to a function, one at a time, and introduces the concepts of curried and uncurried functions.
+    </p>
+    <p>
+      The file <code>script09.gs</code> contains the functions discussed below.
+    </p>
+  
+    <h2>Summary</h2>
+    <p>How to provide <code>n > 1</code> arguments to a function, one at a time.</p>
+  
+    <h3>Terminology</h3>
+    <ul>
+      <li><strong>Unary Function:</strong> A function with 1 argument.</li>
+      <li><strong>Binary Function:</strong> A function with 2 arguments.</li>
+      <li><strong>Ternary Function:</strong> A function with 3 arguments.</li>
+      <li><strong>n-ary Function:</strong> A function with n arguments.</li>
+    </ul>
+    <p>
+      Examples: Calculating the area of a rectangle (binary function with length and breadth as arguments) or the volume of a cylinder (binary function with radius and height as arguments).
+    </p>
+  
+    <h2>How to Pass Multiple Arguments</h2>
+    <p>
+      In lambda calculus, all functions are unary. In functional programming languages like Gofer, multiple arguments are passed using tuples or by currying.
+    </p>
+    <h3>Using Tuples</h3>
+    <p>
+      Arguments are grouped into a single tuple, e.g.:
+      <code>area: Num.a => (a, a) -> a</code>
+    </p>
+    <pre>
+  area.(2, 3) -- Calculates the area of a rectangle
+  Result: 6 (Int)
+  area.(2.5, 2.0) -- Calculates the area for floating-point values
+  Result: 5.0 (Float)
+  </pre>
+  
+    <h3>Exercise</h3>
+    <p>
+      Write a binary function to compute the volume of a cylinder:
+      <code>vol.(rad, ht) = pi * rad^2 * ht</code>
+    </p>
+    <p>
+      <strong>Hint:</strong> Since <code>pi</code> is a Float, the radius and height should also be Floats.
+    </p>
+  
+    <h2>The Curry and Uncurry Operators</h2>
+    <p>
+      The curry operator allows arguments to be supplied one at a time instead of as a tuple, while the uncurry operator converts curried functions back to their uncurried form.
+    </p>
+    <pre>
+  area1: (Int, Int) -> Int
+  area1c = curry.area1 -- Curried version of area1
+  area1u = uncurry.area1c -- Uncurried version of the curried function
+    </pre>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Type</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>area1</td>
+          <td>(Int, Int) -> Int</td>
+          <td>area1.(5, 10) = 50</td>
+        </tr>
+        <tr>
+          <td>area1c</td>
+          <td>Int -> Int -> Int</td>
+          <td>area1c.5.10 = 50</td>
+        </tr>
+        <tr>
+          <td>area1u</td>
+          <td>(Int, Int) -> Int</td>
+          <td>area1u.(5, 10) = 50</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h2>Experiments</h2>
+    <h3>Experiment 1</h3>
+    <p>
+      Give a single integer as an argument to the curried function <code>area1c</code>:
+      <code>area1c . 10</code>
+    </p>
+    <p>
+      <strong>Outcome:</strong> Returns a function of type <code>Int -> Int</code>.
+    </p>
+  
+    <h3>Experiment 2</h3>
+    <p>
+      Supply another integer to the resulting function: <code>area1c . 10 . 20</code>
+    </p>
+    <p>
+      <strong>Outcome:</strong> Calculates the area of a rectangle with sides 10 and 20, resulting in <code>200</code>.
+    </p>
+  
+    <h2>Problem Example</h2>
+    <p>
+      Define <code>mult.m.n</code>, a function for multiplying two integers using recursion (without using the <code>*</code> operator).
+    </p>
+  </div>
+  

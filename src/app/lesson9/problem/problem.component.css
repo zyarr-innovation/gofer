@@ -1,0 +1,54 @@
+/* General styling for the component */
+.problem {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .problem-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .problem-body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .problem-body p {
+    margin: 10px 0;
+  }
+  
+  strong {
+    color: #000;
+  }
+  
+  code {
+    background-color: #f1f1f1;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    color: #0077cc;
+  }
+  
+  .problem + .problem {
+    border-top: 2px dashed #ddd;
+  }
+  
+  .problem .problem-body {
+    margin-left: 20px;
+  }
+  
+  

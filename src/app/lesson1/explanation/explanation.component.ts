@@ -7,6 +7,6 @@ import { AppComponent } from "../../app.component";
   templateUrl: './explanation.component.html',
   styleUrl: './explanation.component.css'
 })
-export class FuncProgExplanationComponent {
+export class lesson1ExplanationComponent {
 
 }

@@ -1,0 +1,107 @@
+<div class="lesson-container">
+    <h1>Lesson 8: Lists, Part 2</h1>
+    <h2>Introduction to Lists</h2>
+    <p>
+      A list in functional programming is a sequence of elements, all of the same type.
+      For example: <code>[2, 18, 9, 10]</code>. The component type can be any simple or compound type,
+      e.g., <code>[Int]</code>.
+    </p>
+  
+    <h3>Definition</h3>
+    <ul>
+      <li>A list is either empty <code>[]</code>, or consists of a head (a single element) and a tail (another list).</li>
+      <li>The head and tail are connected using the cons operator <code>::</code>.</li>
+    </ul>
+    <p>
+      Example: <code>[2, 18, 9, 10]</code> is equivalent to 
+      <code>2::(18::(9::(10::[])))</code>.
+    </p>
+  
+    <h3>Operators and Functions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Signature</th>
+          <th>Examples</th>
+          <th>Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>head</code></td>
+          <td><code>[a] -> a</code></td>
+          <td><code>head([2, 18, 9, 0]) = 2</code></td>
+          <td><code>head(x::xs) = x</code></td>
+        </tr>
+        <tr>
+          <td><code>tail</code></td>
+          <td><code>[a] -> [a]</code></td>
+          <td><code>tail([2, 18, 9, 0]) = [18, 9, 0]</code></td>
+          <td><code>tail(x::xs) = xs</code></td>
+        </tr>
+        <tr>
+          <td><code>length</code></td>
+          <td><code>[a] -> Int</code></td>
+          <td><code>length([2, 18, 9, 0]) = 4</code></td>
+          <td><code>length([]) = 0</code></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3>Structural Induction</h3>
+    <p>
+      Structural induction is used to prove propositions for recursively defined structures like lists or trees.
+      The base case is typically the empty list <code>[]</code>, and the induction case involves non-empty lists
+      <code>x::xs</code>.
+    </p>
+  
+    <h4>Example: Length Function</h4>
+    <ul>
+      <li><code>len([]) = 0</code> (base case)</li>
+      <li><code>len(x::xs) = 1 + len(xs)</code> (induction case)</li>
+    </ul>
+  
+    <h4>Example: Sum Function</h4>
+    <ul>
+      <li><code>sum([]) = 0</code> (base case)</li>
+      <li><code>sum(x::xs) = x + sum(xs)</code> (induction case)</li>
+    </ul>
+  
+    <h3>Functions and Descriptions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>len</code></td>
+          <td>Length of a list (same as built-in <code>length</code>).</td>
+        </tr>
+        <tr>
+          <td><code>total</code></td>
+          <td>Sum of list elements (same as built-in <code>sum</code>).</td>
+        </tr>
+        <tr>
+          <td><code>countevens</code></td>
+          <td>Count the even numbers in the list.</td>
+        </tr>
+        <tr>
+          <td><code>sumalt1</code></td>
+          <td>Sum of alternating elements starting from the head.</td>
+        </tr>
+        <tr>
+          <td><code>anee.p</code></td>
+          <td>Does any element satisfy predicate <code>p</code>? (same as built-in <code>any</code>).</td>
+        </tr>
+        <tr>
+          <td><code>oll.p</code></td>
+          <td>Do all elements satisfy predicate <code>p</code>? (same as built-in <code>all</code>).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

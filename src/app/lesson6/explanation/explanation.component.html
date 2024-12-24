@@ -1,0 +1,77 @@
+<div class="lesson-container">
+    <h1>Lesson 6: Proof by Induction and Its Relation to Recursive Functions</h1>
+  
+    <!-- Introduction Section -->
+    <section class="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Mathematical induction is a proof technique used to prove that a statement is true for all natural numbers. It includes the base case, the induction hypothesis, and the induction step.
+      </p>
+      <p>
+        Induction is closely related to recursion in programming, where solutions to problems depend on solutions to smaller subproblems.
+      </p>
+    </section>
+  
+    <!-- Example Section -->
+    <section class="example">
+      <h2>Example: Sum of the First n Natural Numbers</h2>
+      <p>
+        Prove that the sum ( 0 + 1 + 2 + ldots + n = fracn(n+1)2 ).
+      </p>
+      <ol>
+        <li>
+          <strong>Base Case:</strong> ( P(0) ) holds since both sides evaluate to 0.
+        </li>
+        <li>
+          <strong>Induction Hypothesis:</strong> Assume ( P(k): 0 + 1 + 2 + ldots + k = frack(k+1)2 ) is true for ( k geq 0 ).
+        </li>
+        <li>
+          <strong>Induction Step:</strong> Show ( P(k+1) ): ( frack(k+1)2 + (k+1) = frac(k+1)(k+2)2 ).
+        </li>
+      </ol>
+      <p>
+        By induction, ( P(n) ) is true for all ( n geq 0 ).
+      </p>
+    </section>
+  
+    <!-- Exercises Section -->
+    <section class="exercises">
+      <h2>Exercises</h2>
+      <p>
+        Prove that the sum of squares ( 0^2 + 1^2 + 2^2 + ldots + n^2 = fracn(n+1)(2n+1)6 ).
+      </p>
+      <p>
+        Prove by induction that the length of a list computed using recursion is correct.
+      </p>
+    </section>
+  
+    <!-- Recursive Function Section -->
+    <section class="recursive-functions">
+      <h2>Recursive Functions</h2>
+      <h3>Sum of Natural Numbers</h3>
+      <pre>
+  <code>
+  sumupto1(0) = 0
+  sumupto1(n) = sumupto1(n-1) + n
+  </code>
+      </pre>
+      <h3>Factorial Function</h3>
+      <pre>
+  <code>
+  factorial(0) = 1
+  factorial(n) = n * factorial(n-1)
+  </code>
+      </pre>
+    </section>
+  
+    <!-- Takeaways Section -->
+    <section class="takeaways">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Induction proves propositions for all natural numbers.</li>
+        <li>Recursion solves problems by breaking them into smaller subproblems.</li>
+        <li>Structural induction extends induction to recursively defined data structures.</li>
+      </ul>
+    </section>
+  </div>
+  

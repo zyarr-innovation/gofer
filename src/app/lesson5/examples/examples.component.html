@@ -1,0 +1,100 @@
+<div class="lesson-container">
+    <h1>Lesson 5: Introduction to Functional Programming</h1>
+    <h2>IPMF 2021</h2>
+    <p>
+      This lesson introduces the term-rewriting model of computation and its
+      comparison with the state-change model. The focus is on declarative
+      programming and equational reasoning using Gofer.
+    </p>
+  
+    <div class="section">
+      <h3>Theoretical Background</h3>
+      <p>
+        Equational reasoning is the basis of functional programming. It treats
+        equality as a definition (e.g., <code>2 + 2 = 4</code>) rather than an
+        assignment action.
+      </p>
+    </div>
+  
+    <div class="section">
+      <h3>Story Example</h3>
+      <p>
+        The example of a student calculating simple interest showcases how Gofer
+        uses term-rewriting, unlike C or Python, which follow a state-change
+        model.
+      </p>
+      <div class="example">
+        <h4>Classroom Exercise</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Classroom Equation</th>
+              <th>Gofer Script</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SI = P * N * R / 100</td>
+              <td><code>si = p * n * (r / 100.0)</code></td>
+            </tr>
+            <tr>
+              <td>Amt = P + SI</td>
+              <td><code>amt = p + si</code></td>
+            </tr>
+            <tr>
+              <td>P = Rs 2000</td>
+              <td><code>p = 2000.0</code></td>
+            </tr>
+            <tr>
+              <td>N = 3 years</td>
+              <td><code>n = 3.0</code></td>
+            </tr>
+            <tr>
+              <td>R = 15% pa</td>
+              <td><code>r = 15.0</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="section">
+      <h3>Key Concepts</h3>
+      <ul>
+        <li>
+          <strong>Term-Rewriting Model:</strong> Equations are facts, and values
+          are derived through substitution.
+        </li>
+        <li>
+          <strong>State-Change Model:</strong> Variables are assigned values,
+          causing memory state changes.
+        </li>
+        <li>
+          <strong>Declarative vs. Imperative:</strong> Declarative programming
+          defines facts, while imperative programming gives instructions.
+        </li>
+        <li>
+          <strong>Referential Transparency:</strong> Function values depend only
+          on inputs and produce the same result every time for the same input.
+        </li>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h3>Practical Exercise (€)</h3>
+      <p>
+        Write the equations in a Gofer script and load it into the interpreter to
+        compute the result step-by-step.
+      </p>
+    </div>
+  
+    <div class="section">
+      <h3>Comparison with Other Languages</h3>
+      <p>
+        In languages like C or Python, the equal sign (<code>=</code>) signifies
+        assignment rather than equality, making them imperative programming
+        languages.
+      </p>
+    </div>
+  </div>
+  

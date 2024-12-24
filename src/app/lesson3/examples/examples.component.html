@@ -1,0 +1,67 @@
+<div class="examples-container">
+  <h1>Function Examples</h1>
+
+  <div class="example-category">
+    <h2>Mathematical Functions</h2>
+    <ul>
+      <li><strong>Absolute Value Function:</strong> ( f(x) = |x| ), Input: ( x = -7 ), Output: ( f(-7) = 7 )</li>
+      <li><strong>Factorial Function:</strong> ( f(n) = n! ), Input: ( n = 4 ), Output: ( f(4) = 24 )</li>
+      <li>
+        <strong>Piecewise Function:</strong>
+        <pre>
+              ( f(x) =
+              <span>{{ '{' }}</span> 
+                x<sup>2</sup> <span>&nbsp;&nbsp;if&nbsp;x&nbsp;&ge;&nbsp;0</span>
+                <br>
+                -x <span>&nbsp;&nbsp;if&nbsp;x&nbsp;&lt;&nbsp;0</span>
+              <span>{{ '}' }}</span>
+              )
+          </pre>
+        Input: ( x = -3 ), Output: ( f(-3) = 3 )
+      </li>
+    </ul>
+  </div>
+
+  <div class="example-category">
+    <h2>Programming Functions in Gofer</h2>
+    <ul>
+      <li><strong>Function Composition:</strong> ( (square ; triple) . 2 = 12 )</li>
+      <li><strong>Higher-Order Function:</strong>
+        <pre>
+            applyTwice(f, x) = f(f(x)) 
+            Input: f = (+2), x = 3 
+            Output: 7
+          </pre>
+      </li>
+      <li><strong>Curried Functions:</strong> multiply(x) = (y -> x * y), multiplyBy2(5) = 10</li>
+    </ul>
+  </div>
+
+  <div class="example-category">
+    <h2>Real-World Analogies</h2>
+    <ul>
+      <li><strong>Vending Machine:</strong> Input: "A1", Output: "Chips"</li>
+      <li>
+        <strong>Temperature Conversion:</strong>
+        <span [innerHTML]="
+            '( f(C) = C * 9/5 + 32 ), Input: ( C = 100 ), Output: ( 212 )'
+          "></span>
+      </li>
+      <li>
+        <strong>Area of Circle:</strong>
+        <span [innerHTML]="
+            '( areaOfCircle(r) = pi * r^2 ), Input: ( r = 3 ), Output: ( 28.26 )'
+          "></span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="example-category">
+    <h2>Working with Lists in Gofer</h2>
+    <ul>
+      <li><strong>Mapping:</strong> ( map square [1, 2, 3, 4] ), Output: [1, 4, 9, 16]</li>
+      <li><strong>Filtering:</strong> ( filter isEven [1, 2, 3, 4, 5, 6] ), Output: [2, 4, 6]</li>
+      <li><strong>Reducing:</strong> ( foldr (+) 0 [1, 2, 3, 4] ), Output: 10</li>
+    </ul>
+  </div>
+</div>

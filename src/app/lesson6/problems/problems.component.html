@@ -1,0 +1,754 @@
+<div class="container">
+    <!-- Problem 1 -->
+    <div class="problem">
+      <h3>Problem 1: Recursive Function for Factorial</h3>
+      <p><strong>Question:</strong> Write a recursive function in Gofer to compute the factorial of a number.</p>
+      <pre><code>
+        factorial : Int -> Int
+        factorial 0 = 1
+        factorial n = n * factorial (n - 1)
+      </code></pre>
+    </div>
+  
+    <!-- Problem 2 -->
+    <div class="problem">
+      <h3>Problem 2: Proof by Induction for Factorial Formula</h3>
+      <p><strong>Question:</strong> Prove by induction that \(n! = n \times (n-1)!\).</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li><strong>Base Case:</strong> For \(n = 0\), \(0! = 1\) and \(0! = 0 \times (-1)!\) (by definition), which is true.</li>
+        <li><strong>Inductive Hypothesis:</strong> Assume that the formula holds for some \(n = k\), i.e., \(k! = k \times (k-1)!\).</li>
+        <li><strong>Inductive Step:</strong> Show that the formula holds for \(n = k+1\).  
+          \[
+          (k+1)! = (k+1) \times k! = (k+1) \times (k \times (k-1)!) = (k+1)!
+          \]
+          Thus, the formula holds for all \(n\).
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Problem 3 -->
+    <div class="problem">
+      <h3>Problem 3: Recursive Function for Fibonacci Sequence</h3>
+      <p><strong>Question:</strong> Write a recursive function in Gofer to compute the \(n\)-th Fibonacci number.</p>
+      <pre><code>
+        fibonacci : Int -> Int
+        fibonacci 0 = 0
+        fibonacci 1 = 1
+        fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
+      </code></pre>
+    </div>
+  
+    <!-- Problem 4 -->
+    <div class="problem">
+      <h3>Problem 4: Proof by Induction for Fibonacci Formula</h3>
+      <p><strong>Question:</strong> Prove by induction that the Fibonacci sequence satisfies \(F_n = F_n-1 + F_n-2\).</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li><strong>Base Case:</strong> For \(n = 2\), \(F_2 = F_1 + F_0\), which is true.</li>
+        <li><strong>Inductive Hypothesis:</strong> Assume the formula holds for some \(n = k\), i.e., \(F_k = F_k-1 + F_k-2\).</li>
+        <li><strong>Inductive Step:</strong> Show that the formula holds for \(n = k+1\).  
+          \[
+          F_k+1 = F_k + F_k-1 = (F_k-1 + F_k-2) + F_k-1 = F_k + F_k-1
+          \]
+          Thus, the formula holds for all \(n\).
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Problem 5 -->
+    <div class="problem">
+      <h3>Problem 5: Recursive Function for Sum of First \(n\) Natural Numbers</h3>
+      <p><strong>Question:</strong> Write a recursive function in Gofer to compute the sum of the first \(n\) natural numbers.</p>
+      <pre><code>
+        sum : Int -> Int
+        sum 0 = 0
+        sum n = n + sum (n - 1)
+      </code></pre>
+    </div>
+  
+    <!-- Problem 6 -->
+    <div class="problem">
+      <h3>Problem 6: Proof by Induction for Sum of First \(n\) Natural Numbers</h3>
+      <p><strong>Question:</strong> Prove by induction that the sum of the first \(n\) natural numbers is given by:  
+        \[
+        S_n = \fracn(n+1)2
+        \]
+      </p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li><strong>Base Case:</strong> For \(n = 1\),  
+          \[
+          S_1 = 1 = \frac1(1+1)2
+          \]
+          which is true.</li>
+        <li><strong>Inductive Hypothesis:</strong> Assume that for some \(n = k\),  
+          \[
+          S_k = \frack(k+1)2
+          \]
+        </li>
+        <li><strong>Inductive Step:</strong> Prove the formula holds for \(n = k+1\).  
+          The sum of the first \(k+1\) natural numbers is  
+          \[
+          S_k+1 = S_k + (k+1)
+          \]
+          By the inductive hypothesis,  
+          \[
+          S_k+1 = \frack(k+1)2 + (k+1) = \frac(k+1)(k+2)2
+          \]
+          Hence, the formula holds for \(n = k+1\), completing the proof.
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Problem 7 -->
+    <div class="problem">
+      <h3>Problem 7: Recursive Function for Power of a Number</h3>
+      <p><strong>Question:</strong> Write a recursive function in Gofer to compute \(x^n\).</p>
+      <pre><code>
+        power : Int -> Int -> Int
+        power _ 0 = 1
+        power x n = x * power x (n - 1)
+      </code></pre>
+    </div>
+  
+    <!-- Problem 8 -->
+    <div class="problem">
+      <h3>Problem 8: Proof by Induction for Power Formula</h3>
+      <p><strong>Question:</strong> Prove by induction that \(x^n = x \times x^n-1\).</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li><strong>Base Case:</strong> For \(n = 0\), \(x^0 = 1\) and \(x^0 = x \times x^-1\), which is true.</li>
+        <li><strong>Inductive Hypothesis:</strong> Assume that the formula holds for \(n = k\), i.e.,  
+          \[
+          x^k = x \times x^k-1
+          \]
+        </li>
+        <li><strong>Inductive Step:</strong> Show that the formula holds for \(n = k+1\).  
+          By the inductive hypothesis,  
+          \[
+          x^k+1 = x \times x^k = x \times (x \times x^k-1) = x^k+1
+          \]
+          Thus, the formula holds for all \(n\).
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Problem 9 -->
+    <div class="problem">
+      <h3>Problem 9: Recursive Function for Length of List</h3>
+      <p><strong>Question:</strong> Write a recursive function in Gofer to find the length of a list.</p>
+      <pre><code>
+        length : [a] -> Int
+        length [] = 0
+        length (x::xs) = 1 + length xs
+      </code></pre>
+    </div>
+  
+    <!-- Problem 10 -->
+    <div class="problem">
+      <h3>Problem 10: Proof by Induction for Length of List</h3>
+      <p><strong>Question:</strong> Prove by induction that the `length` function correctly computes the length of a list.</p>
+      <p><strong>Solution:</strong></p>
+      <ul>
+        <li><strong>Base Case:</strong> For an empty list `[]`, `length [] = 0`, which is correct.</li>
+        <li><strong>Inductive Hypothesis:</strong> Assume that the `length` function works for some list `xs`.</li>
+        <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+          \[
+          length (x::xs) = 1 + length xs
+          \]
+          By the inductive hypothesis, `length xs` correctly computes the number of elements in `xs`. Thus, `length (x::xs)` correctly computes the number of elements in the list.
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+        <!-- Problem 11 -->
+        <div class="problem">
+          <h3>Problem 11: Recursive Function for List Reversal</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to reverse a list.</p>
+          <pre><code>
+            reverse : [a] -> [a]
+            reverse [] = []
+            reverse (x::xs) = reverse xs ++ [x]
+          </code></pre>
+        </div>
+      
+        <!-- Problem 12 -->
+        <div class="problem">
+          <h3>Problem 12: Proof by Induction for List Reversal</h3>
+          <p><strong>Question:</strong> Prove by induction that the `reverse` function correctly reverses a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `reverse [] = []`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `reverse` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              reverse (x::xs) = reverse xs ++ [x]
+              \]
+              By the inductive hypothesis, `reverse xs` correctly reverses `xs`. Thus, `reverse (x::xs)` correctly reverses the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 13 -->
+        <div class="problem">
+          <h3>Problem 13: Recursive Function for Maximum Element in a List</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to find the maximum element in a list of integers.</p>
+          <pre><code>
+            maximum : [Int] -> Int
+            maximum [x] = x
+            maximum (x::xs) = if x > maximum xs then x else maximum xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 14 -->
+        <div class="problem">
+          <h3>Problem 14: Proof by Induction for Maximum Element in List</h3>
+          <p><strong>Question:</strong> Prove by induction that the `maximum` function correctly returns the maximum element in a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For a list with one element `[x]`, `maximum [x] = x`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `maximum` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              maximum (x::xs) = if x > maximum xs then x else maximum xs
+              \]
+              By the inductive hypothesis, `maximum xs` correctly computes the maximum of the sublist `xs`. Thus, `maximum (x::xs)` correctly computes the maximum of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 15 -->
+        <div class="problem">
+          <h3>Problem 15: Recursive Function for List Length</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the length of a list.</p>
+          <pre><code>
+            length : [a] -> Int
+            length [] = 0
+            length (x::xs) = 1 + length xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 16 -->
+        <div class="problem">
+          <h3>Problem 16: Proof by Induction for List Length</h3>
+          <p><strong>Question:</strong> Prove by induction that the `length` function correctly computes the length of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `length [] = 0`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `length` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              length (x::xs) = 1 + length xs
+              \]
+              By the inductive hypothesis, `length xs` correctly computes the length of `xs`. Thus, `length (x::xs)` correctly computes the length of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 17 -->
+        <div class="problem">
+          <h3>Problem 17: Recursive Function for List Sum</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the sum of a list of integers.</p>
+          <pre><code>
+            sumList : [Int] -> Int
+            sumList [] = 0
+            sumList (x::xs) = x + sumList xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 18 -->
+        <div class="problem">
+          <h3>Problem 18: Proof by Induction for List Sum</h3>
+          <p><strong>Question:</strong> Prove by induction that the `sumList` function correctly computes the sum of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `sumList [] = 0`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `sumList` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              sumList (x::xs) = x + sumList xs
+              \]
+              By the inductive hypothesis, `sumList xs` correctly computes the sum of `xs`. Thus, `sumList (x::xs)` correctly computes the sum of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 19 -->
+        <div class="problem">
+          <h3>Problem 19: Recursive Function for List Concatenation</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to concatenate two lists.</p>
+          <pre><code>
+            appendList : [a] -> [a] -> [a]
+            appendList [] ys = ys
+            appendList (x::xs) ys = x :: appendList xs ys
+          </code></pre>
+        </div>
+      
+        <!-- Problem 20 -->
+        <div class="problem">
+          <h3>Problem 20: Proof by Induction for List Concatenation</h3>
+          <p><strong>Question:</strong> Prove by induction that the `appendList` function correctly concatenates two lists.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`,  
+              \[
+              appendList [] ys = ys
+              \]
+              which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `appendList` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)` and list `ys`,  
+              \[
+              appendList (x::xs) ys = x :: appendList xs ys
+              \]
+              By the inductive hypothesis, `appendList xs ys` correctly concatenates `xs` and `ys`. Thus, `appendList (x::xs) ys` correctly concatenates the two lists.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 21 -->
+        <div class="problem">
+          <h3>Problem 21: Recursive Function for List Membership</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to check if an element is a member of a list.</p>
+          <pre><code>
+            member : a -> [a] -> Bool
+            member _ [] = False
+            member x (y::ys) = if x == y then True else member x ys
+          </code></pre>
+        </div>
+      
+        <!-- Problem 22 -->
+        <div class="problem">
+          <h3>Problem 22: Proof by Induction for List Membership</h3>
+          <p><strong>Question:</strong> Prove by induction that the `member` function correctly checks if an element is a member of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `member x [] = False`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `member` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(y::ys)`,  
+              \[
+              member x (y::ys) = if x == y then True else member x ys
+              \]
+              By the inductive hypothesis, `member x ys` correctly checks if `x` is a member of `ys`. Thus, `member x (y::ys)` correctly checks if `x` is a member of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 23 -->
+        <div class="problem">
+          <h3>Problem 23: Recursive Function for Factorial of a List</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the product of elements in a list.</p>
+          <pre><code>
+            productList : [Int] -> Int
+            productList [] = 1
+            productList (x::xs) = x * productList xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 24 -->
+        <div class="problem">
+          <h3>Problem 24: Proof by Induction for Factorial of List</h3>
+          <p><strong>Question:</strong> Prove by induction that the `productList` function correctly computes the product of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `productList [] = 1`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `productList` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              productList (x::xs) = x * productList xs
+              \]
+              By the inductive hypothesis, `productList xs` correctly computes the product of `xs`. Thus, `productList (x::xs)` correctly computes the product of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 25 -->
+        <div class="problem">
+          <h3>Problem 25: Recursive Function for List Intersection</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to find the intersection of two lists.</p>
+          <pre><code>
+            intersection : [a] -> [a] -> [a]
+            intersection [] _ = []
+            intersection (x::xs) ys = if member x ys then x :: intersection xs ys else intersection xs ys
+          </code></pre>
+        </div>
+      
+        <!-- Problem 26 -->
+        <div class="problem">
+          <h3>Problem 26: Proof by Induction for List Intersection</h3>
+          <p><strong>Question:</strong> Prove by induction that the `intersection` function correctly computes the intersection of two lists.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For an empty list `[]`,  
+              \[
+              intersection [] ys = []
+              \]
+              which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `intersection` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)` and list `ys`,  
+              \[
+              intersection (x::xs) ys = if member x ys then x :: intersection xs ys else intersection xs ys
+              \]
+              By the inductive hypothesis, `intersection xs ys` correctly computes the intersection of `xs` and `ys`. Thus, `intersection (x::xs) ys` correctly computes the intersection of the two lists.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 27 -->
+        <div class="problem">
+          <h3>Problem 27: Recursive Function for List Difference</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to find the difference between two lists (i.e., elements in the first list but not in the second list).</p>
+          <pre><code>
+            difference : [a] -> [a] -> [a]
+            difference [] _ = []
+            difference (x::xs) ys = if member x ys then difference xs ys else x :: difference xs ys
+          </code></pre>
+        </div>
+      
+        <!-- Problem 28 -->
+        <div class="problem">
+          <h3>Problem 28: Proof by Induction for List Difference</h3>
+          <p><strong>Question:</strong> Prove by induction that the `difference` function correctly computes the difference between two lists.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`,  
+              \[
+              difference [] ys = []
+              \]
+              which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `difference` function works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)` and list `ys`,  
+              \[
+              difference (x::xs) ys = if member x ys then difference xs ys else x :: difference xs ys
+              \]
+              By the inductive hypothesis, `difference xs ys` correctly computes the difference of `xs` and `ys`. Thus, `difference (x::xs) ys` correctly computes the difference of the two lists.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 29 -->
+        <div class="problem">
+          <h3>Problem 29: Recursive Function for List Flattening</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to flatten a list of lists into a single list.</p>
+          <pre><code>
+            flatten : [[a]] -> [a]
+            flatten [] = []
+            flatten (x::xs) = x ++ flatten xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 30 -->
+        <div class="problem">
+          <h3>Problem 30: Proof by Induction for List Flattening</h3>
+          <p><strong>Question:</strong> Prove by induction that the `flatten` function correctly flattens a list of lists.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`,  
+              \[
+              flatten [] = []
+              \]
+              which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the `flatten` function works for a list of lists `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              flatten (x::xs) = x ++ flatten xs
+              \]
+              By the inductive hypothesis, `flatten xs` correctly flattens the sublist `xs`. Thus, `flatten (x::xs)` correctly flattens the entire list of lists.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Problem 31 -->
+        <div class="problem">
+          <h3>Problem 31: Recursive Function for Binary Search</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to perform binary search on a sorted list of integers.</p>
+          <pre><code>
+            binarySearch : [Int] -> Int -> Bool
+            binarySearch [] _ = False
+            binarySearch (x::xs) y = if x == y then True
+                                     else if y < x then binarySearch xs y
+                                     else binarySearch xs y
+          </code></pre>
+        </div>
+      
+        <!-- Problem 32 -->
+        <div class="problem">
+          <h3>Problem 32: Proof by Induction for Binary Search</h3>
+          <p><strong>Question:</strong> Prove by induction that the `binarySearch` function correctly searches a sorted list of integers.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For an empty list `[]`, `binarySearch [] y = False`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `binarySearch` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)` and element `y`,  
+              \[
+              binarySearch (x::xs) y = if x == y then True else binarySearch xs y
+              \]
+              By the inductive hypothesis, `binarySearch xs y` correctly checks for the element `y` in the sublist `xs`. Thus, `binarySearch (x::xs) y` works for the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 33 -->
+        <div class="problem">
+          <h3>Problem 33: Recursive Function for Fibonacci Sequence</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the Fibonacci sequence.</p>
+          <pre><code>
+            fibonacci : Int -> Int
+            fibonacci 0 = 0
+            fibonacci 1 = 1
+            fibonacci n = fibonacci (n-1) + fibonacci (n-2)
+          </code></pre>
+        </div>
+      
+        <!-- Problem 34 -->
+        <div class="problem">
+          <h3>Problem 34: Proof by Induction for Fibonacci Sequence</h3>
+          <p><strong>Question:</strong> Prove by induction that the `fibonacci` function correctly computes the Fibonacci numbers.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For `fibonacci 0 = 0` and `fibonacci 1 = 1`, both are correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that the function works for `n = k` and `n = k-1`.</li>
+            <li><strong>Inductive Step:</strong> For `n = k+1`,  
+              \[
+              fibonacci (k+1) = fibonacci k + fibonacci (k-1)
+              \]
+              By the inductive hypothesis, `fibonacci k` and `fibonacci (k-1)` are correct, so the result for `fibonacci (k+1)` is correct as well.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 35 -->
+        <div class="problem">
+          <h3>Problem 35: Recursive Function for Power of a Number</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to calculate the power of a number.</p>
+          <pre><code>
+            power : Int -> Int -> Int
+            power _ 0 = 1
+            power x n = x * power x (n-1)
+          </code></pre>
+        </div>
+      
+        <!-- Problem 36 -->
+        <div class="problem">
+          <h3>Problem 36: Proof by Induction for Power of a Number</h3>
+          <p><strong>Question:</strong> Prove by induction that the `power` function correctly calculates the power of a number.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For `power x 0 = 1`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `power x n` is correct for a given `n`.</li>
+            <li><strong>Inductive Step:</strong> For `power x (n+1)`,  
+              \[
+              power x (n+1) = x * power x n
+              \]
+              By the inductive hypothesis, `power x n` is correct, so `power x (n+1)` is correct.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 37 -->
+        <div class="problem">
+          <h3>Problem 37: Recursive Function for List Product</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the product of a list of integers.</p>
+          <pre><code>
+            productList : [Int] -> Int
+            productList [] = 1
+            productList (x::xs) = x * productList xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 38 -->
+        <div class="problem">
+          <h3>Problem 38: Proof by Induction for List Product</h3>
+          <p><strong>Question:</strong> Prove by induction that the `productList` function correctly computes the product of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `productList [] = 1`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `productList` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              productList (x::xs) = x * productList xs
+              \]
+              By the inductive hypothesis, `productList xs` correctly computes the product of `xs`. Thus, `productList (x::xs)` correctly computes the product of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 39 -->
+        <div class="problem">
+          <h3>Problem 39: Recursive Function for List Maximum</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to find the maximum element in a list of integers.</p>
+          <pre><code>
+            maximum : [Int] -> Int
+            maximum [x] = x
+            maximum (x::xs) = if x > maximum xs then x else maximum xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 40 -->
+        <div class="problem">
+          <h3>Problem 40: Proof by Induction for List Maximum</h3>
+          <p><strong>Question:</strong> Prove by induction that the `maximum` function correctly finds the maximum element in a list of integers.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For a list with one element `[x]`, `maximum [x] = x`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `maximum` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              maximum (x::xs) = if x > maximum xs then x else maximum xs
+              \]
+              By the inductive hypothesis, `maximum xs` correctly computes the maximum of `xs`. Thus, `maximum (x::xs)` correctly computes the maximum of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 41 -->
+        <div class="problem">
+          <h3>Problem 41: Recursive Function for List Minimum</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to find the minimum element in a list of integers.</p>
+          <pre><code>
+            minimum : [Int] -> Int
+            minimum [x] = x
+            minimum (x::xs) = if x < minimum xs then x else minimum xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 42 -->
+        <div class="problem">
+          <h3>Problem 42: Proof by Induction for List Minimum</h3>
+          <p><strong>Question:</strong> Prove by induction that the `minimum` function correctly finds the minimum element in a list of integers.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For a list with one element `[x]`, `minimum [x] = x`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `minimum` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              minimum (x::xs) = if x < minimum xs then x else minimum xs
+              \]
+              By the inductive hypothesis, `minimum xs` correctly computes the minimum of `xs`. Thus, `minimum (x::xs)` correctly computes the minimum of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 43 -->
+        <div class="problem">
+          <h3>Problem 43: Recursive Function for List Length</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to compute the length of a list.</p>
+          <pre><code>
+            length : [a] -> Int
+            length [] = 0
+            length (x::xs) = 1 + length xs
+          </code></pre>
+        </div>
+      
+        <!-- Problem 44 -->
+        <div class="problem">
+          <h3>Problem 44: Proof by Induction for List Length</h3>
+          <p><strong>Question:</strong> Prove by induction that the `length` function correctly computes the length of a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `length [] = 0`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `length` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              length (x::xs) = 1 + length xs
+              \]
+              By the inductive hypothesis, `length xs` correctly computes the length of `xs`. Thus, `length (x::xs)` correctly computes the length of the entire list.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 45 -->
+        <div class="problem">
+          <h3>Problem 45: Recursive Function for List Append</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to append two lists.</p>
+          <pre><code>
+            appendList : [a] -> [a] -> [a]
+            appendList [] ys = ys
+            appendList (x::xs) ys = x :: appendList xs ys
+          </code></pre>
+        </div>
+      
+        <!-- Problem 46 -->
+        <div class="problem">
+          <h3>Problem 46: Proof by Induction for List Append</h3>
+          <p><strong>Question:</strong> Prove by induction that the `appendList` function correctly appends two lists.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`,  
+              \[
+              appendList [] ys = ys
+              \]
+              which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `appendList` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)` and list `ys`,  
+              \[
+              appendList (x::xs) ys = x :: appendList xs ys
+              \]
+              By the inductive hypothesis, `appendList xs ys` correctly appends `xs` and `ys`. Thus, `appendList (x::xs) ys` correctly appends the two lists.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 47 -->
+        <div class="problem">
+          <h3>Problem 47: Recursive Function for Palindrome Check</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to check if a list is a palindrome.</p>
+          <pre><code>
+            isPalindrome : [a] -> Bool
+            isPalindrome [] = True
+            isPalindrome [x] = True
+            isPalindrome (x::xs) = x == last xs && isPalindrome (init xs)
+          </code></pre>
+        </div>
+      
+        <!-- Problem 48 -->
+        <div class="problem">
+          <h3>Problem 48: Proof by Induction for Palindrome Check</h3>
+          <p><strong>Question:</strong> Prove by induction that the `isPalindrome` function correctly checks if a list is a palindrome.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `isPalindrome [] = True`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `isPalindrome` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              isPalindrome (x::xs) = x == last xs && isPalindrome (init xs)
+              \]
+              By the inductive hypothesis, `isPalindrome (init xs)` correctly checks if `init xs` is a palindrome. Thus, `isPalindrome (x::xs)` correctly checks if the entire list is a palindrome.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Problem 49 -->
+        <div class="problem">
+          <h3>Problem 49: Recursive Function for Reverse List</h3>
+          <p><strong>Question:</strong> Write a recursive function in Gofer to reverse a list.</p>
+          <pre><code>
+            reverseList : [a] -> [a]
+            reverseList [] = []
+            reverseList (x::xs) = reverseList xs ++ [x]
+          </code></pre>
+        </div>
+      
+        <!-- Problem 50 -->
+        <div class="problem">
+          <h3>Problem 50: Proof by Induction for Reverse List</h3>
+          <p><strong>Question:</strong> Prove by induction that the `reverseList` function correctly reverses a list.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li><strong>Base Case:</strong> For the empty list `[]`, `reverseList [] = []`, which is correct.</li>
+            <li><strong>Inductive Hypothesis:</strong> Assume that `reverseList` works for a list `xs`.</li>
+            <li><strong>Inductive Step:</strong> For a non-empty list `(x::xs)`,  
+              \[
+              reverseList (x::xs) = reverseList xs ++ [x]
+              \]
+              By the inductive hypothesis, `reverseList xs` correctly reverses `xs`. Thus, `reverseList (x::xs)` correctly reverses the entire list.
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+  </div>
+  

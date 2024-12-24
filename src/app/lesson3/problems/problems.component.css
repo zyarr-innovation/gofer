@@ -1,0 +1,51 @@
+/* Style for headings */
+h2 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for ordered lists */
+  ol {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+  }
+  
+  /* Style for list items */
+  ol li {
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style for bolded text within the problems */
+  ol li b {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  /* Add spacing between the problem description and solution */
+  ol li br + b {
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  /* Highlight solutions for better readability */
+  ol li b + br + b {
+    color: #228b22;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+    
+    ol li {
+      font-size: 14px;
+    }
+  }
+  

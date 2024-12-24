@@ -1,0 +1,97 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .code-snippet {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .code-snippet pre {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  .output {
+    background-color: #e9f7ef;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    color: #155724;
+  }
+  
+  .output p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .example {
+    margin-bottom: 30px;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .output {
+    background-color: #fdfd96;
+    border: 1px solid #ffecb5;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .code-snippet pre {
+    color: #6c757d;
+  }
+  .output p {
+    font-size: 1rem;
+    color: #28a745;
+  }
+  .code-snippet {
+    background-color: #f0f8ff;
+    border: 1px solid #cce5ff;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .output {
+    color: #dc3545;
+  }
+  .code-snippet pre {
+    font-size: 1rem;
+  }
+  .output p {
+    font-weight: bold;
+  }
+        
