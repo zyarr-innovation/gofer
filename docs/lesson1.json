@@ -1,0 +1,151 @@
+[{
+    "id": 1,
+    "question": "What does the Gofer interpreter primarily function as?",
+    "options": ["Compiler", "Expression evaluator", "Assembler", "Syntax checker"],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "What does the `:` symbol in `2 : Int` represent?",
+    "options": ["Assignment", "Type definition", "Of type", "Equals"],
+    "answer": 3
+  },
+  {
+    "id": 3,
+    "question": "Which of these is not a simple type in Gofer?",
+    "options": ["Int", "String", "Bool", "Float"],
+    "answer": 4
+  },
+  {
+    "id": 4,
+    "question": "What happens if you enter `2+2:Char` in the Gofer interpreter?",
+    "options": ["The value `4` is displayed.", "A syntax error is reported.", "A type error is reported.", "The program terminates."],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "What is the result of evaluating the expression `2.0 + 2.1`?",
+    "options": ["4.1", "Type error", "Syntax error", "Undefined variable"],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "How does the Gofer interpreter treat the expression `3 + 4.0`?",
+    "options": ["Returns `7.0`", "Syntax error", "Type error", "Returns `7`"],
+    "answer": 3
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is a valid type in Gofer?",
+    "options": ["Int32", "Real", "Bool", "Decimal"],
+    "answer": 3
+  },
+  {
+    "id": 8,
+    "question": "The type of a literal enclosed in single quotes, like `'a'`, is:",
+    "options": ["String", "Char", "Literal", "None of these"],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "question": "What is the result of the Boolean expression `True || False`?",
+    "options": ["True", "False", "Syntax error", "Undefined"],
+    "answer": 1
+  },
+  {
+    "id":10,
+    "question": "Which operator is used for string concatenation in Gofer?",
+    "options": ["`+`", "`&`", "`++`", "`@`"],
+    "answer": 3
+  },
+  {
+    "id": 11,
+    "question": "Which of these is a valid Gofer command?",
+    "options": ["if x > y then True else \"False\"", "if x < 0 then 'Negative' else 'Positive'", "if x == y then 1 else 0", "None of the above"],
+    "answer": 3
+  },
+  {
+    "id": 12,
+    "question": "What does the interpreter command `:t` do?",
+    "options": ["Sets type annotations", "Displays the type of an expression", "Runs a test suite", "None of these"],
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "question": "The result of the expression `\"hello\" ++ \" world\"` is:",
+    "options": ["\"hello world\"", "\"helloworld\"", "hello world", "Syntax error"],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "What will the interpreter display for `123000000.0`?",
+    "options": ["123000000.0", "1.23e8", "Type error", "123.000.000.0"],
+    "answer": 2
+  },
+  {
+    "id": 15,
+    "question": "What is the type of `if True then 10 else 20`?",
+    "options": ["Bool", "Int", "Conditional", "Expression"],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "Why does the expression `if True then 1 else 'a'` fail in Gofer?",
+    "options": ["The condition is invalid.", "The types of branches do not match.", "The condition must be a literal.", "Gofer doesn't allow `if-then-else`."],
+    "answer": 2
+  },
+  {
+    "id": 17,
+    "question": "Which data type can only have two values in Gofer?",
+    "options": ["Char", "Int", "Bool", "Float"],
+    "answer": 3
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is a valid conditional expression in Gofer?",
+    "options": ["if x > y then x else y", "if x > y then \"x\" else 42", "if x + 2 > y then 1", "if True then 2, else 3"],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "What is the type of an empty string (`\"\"`) in Gofer?",
+    "options": ["Char", "String", "None", "Void"],
+    "answer": 2
+  },
+  {
+    "id": 20,
+    "question": "What type error is reported if an `Int` is added to a `Float`?",
+    "options": ["Syntax error", "Undefined variable", "Mismatched types", "Overflow error"],
+    "answer": 3
+  },
+  {
+    "id": 21,
+    "question": "What does the `where` keyword in Gofer do?",
+    "options": ["Declares new variables", "Defines local bindings", "Represents conditional logic", "Indicates a function's type"],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "question": "Which of these will result in a valid output in Gofer?",
+    "options": ["if False then 100 else \"error\"", "True && False", "\"abc\" + \"def\"", "3.14 : Int"],
+    "answer": 3
+  },
+  {
+    "id": 23,
+    "question": "How does Gofer treat the expression `if 1 > 2 then \"A\" else \"B\"`?",
+    "options": ["Type error", "Returns \"B\"", "Returns \"A\"", "Syntax error"],
+    "answer": 2
+  },
+  {
+    "id": 24,
+    "question": "Which of the following types is not matched correctly?",
+    "options": ["Int → 42", "Float → `3.14`", "Char → \"x\"", "Bool → `True`"],
+    "answer": 3
+  },
+  {
+    "id": 25,
+    "question": "What does Gofer output for `if False then 10 else 20`?",
+    "options": ["Type error", "20", "10", "Syntax error"],
+    "answer": 2
+  }
+]

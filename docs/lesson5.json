@@ -1,0 +1,254 @@
+[{
+    "id":1,
+    "question": "What does the '=' symbol represent in the term-rewriting model of computation?",
+    "options": [
+      "Equality by definition",
+      "Assignment",
+      "Arithmetic operation",
+      "Variable declaration"
+    ],
+    "answer": 1
+  },
+  {
+    "id":2,
+    "question": "What is equational reasoning similar to?",
+    "options": [
+      "Algebra",
+      "Machine learning",
+      "Object-oriented programming",
+      "Data analysis"
+    ],
+    "answer": 1
+  },
+  {
+    "id":3,
+    "question": "In the term-rewriting model, what happens when you replace one term with another?",
+    "options": [
+      "The expression is changed",
+      "The value of the larger expression remains unchanged",
+      "The term becomes undefined",
+      "The result is unpredictable"
+    ],
+    "answer": 2
+  },
+  {
+    "id":4,
+    "question": "In Gofer, what data type is required for constants used in expressions like p*n*(r/100.0)?",
+    "options": [
+      "Integer",
+      "Floating point",
+      "Boolean",
+      "String"
+    ],
+    "answer": 2
+  },
+  {
+    "id":5,
+    "question": "How does the Gofer interpreter perform calculations?",
+    "options": [
+      "Using equational reasoning",
+      "By assignment of values",
+      "By running compiled code",
+      "By random selection"
+    ],
+    "answer": 1
+  },
+  {
+    "id":6,
+    "question": "What is the result when Gofer finishes evaluating an expression?",
+    "options": [
+      "An undefined value",
+      "An irreducible form",
+      "A compilation error",
+      "A syntax error"
+    ],
+    "answer": 2
+  },
+  {
+    "id":7,
+    "question": "What does the state-change model of computation rely on?",
+    "options": [
+      "Equations",
+      "Assignment",
+      "Rewriting terms",
+      "Referential transparency"
+    ],
+    "answer": 2
+  },
+  {
+    "id":8,
+    "question": "What type of programming is associated with the term-rewriting model?",
+    "options": [
+      "Imperative programming",
+      "Declarative programming",
+      "Procedural programming",
+      "Object-oriented programming"
+    ],
+    "answer": 2
+  },
+  {
+    "id":9,
+    "question": "What does the '=' symbol stand for in imperative programming languages like C or Python?",
+    "options": [
+      "Equality",
+      "Assignment",
+      "Addition",
+      "Comparison"
+    ],
+    "answer": 2
+  },
+  {
+    "id":10,
+    "question": "In the Gofer language, what is the main reason for using floating-point constants?",
+    "options": [
+      "For avoiding integer division",
+      "To allow binary operations",
+      "To simplify syntax",
+      "To speed up computations"
+    ],
+    "answer": "For avoiding integer division"
+  },
+  {
+    "id":11,
+    "question": "What does the term 'referential transparency' mean in functional programming?",
+    "options": [
+      "A function always produces the same output for the same input",
+      "Memory locations are mutable",
+      "Functions rely on external variables",
+      "The function value changes over time"
+    ],
+    "answer": 1
+  },
+  {
+    "id":12,
+    "question": "Which of the following is NOT a characteristic of the term-rewriting model?",
+    "options": [
+      "Rewriting terms based on equations",
+      "Storing mutable state",
+      "Equations replacing variables with values",
+      "Declarative programming style"
+    ],
+    "answer": 2
+  },
+  {
+    "id":13,
+    "question": "Which programming style avoids the use of mutable state?",
+    "options": [
+      "Declarative programming",
+      "Imperative programming",
+      "Procedural programming",
+      "Event-driven programming"
+    ],
+    "answer": 1
+  },
+  {
+    "id":14,
+    "question": "Which of the following does the Gofer interpreter NOT use?",
+    "options": [
+      "Assignment",
+      "Equational reasoning",
+      "Term-rewriting",
+      "Mathematical functions"
+    ],
+    "answer": 1
+  },
+  {
+    "id":15,
+    "question": "What would happen if you entered the expression 'amt' in the Gofer interpreter?",
+    "options": [
+      "It returns the value of amt",
+      "It causes a runtime error",
+      "It shows the expression for amt",
+      "It waits for further input"
+    ],
+    "answer": 1
+  },
+  {
+    "id":16,
+    "question": "What does the term 'state-change model' imply in programming languages like C or Python?",
+    "options": [
+      "Changes in memory locations",
+      "Rewriting terms in equations",
+      "Referential transparency",
+      "Immutable state"
+    ],
+    "answer": 1
+  },
+  {
+    "id":17,
+    "question": "What is a key feature of functional programming?",
+    "options": [
+      "Mutable memory",
+      "Side effects",
+      "Function values do not change",
+      "Imperative instructions"
+    ],
+    "answer": 3
+  },
+  {
+    "id":18,
+    "question": "In the Gofer language, which type of number is used for operations like 2000 * 3 * 15 / 100?",
+    "options": [
+      "Integer",
+      "Floating point",
+      "Complex number",
+      "Rational number"
+    ],
+    "answer": 2
+  },
+  {
+    "id":19,
+    "question": "What happens when the Gofer interpreter performs calculations step by step?",
+    "options": [
+      "It changes the program state",
+      "It rewrites terms one by one",
+      "It immediately computes the final result",
+      "It pauses execution"
+    ],
+    "answer": 2
+  },
+  {
+    "id":20,
+    "question": "What is the significance of the term 'irreducible form' in Gofer?",
+    "options": [
+      "The expression is simplified and cannot be reduced further",
+      "The program enters an infinite loop",
+      "The value is undefined",
+      "The expression is ignored"
+    ],
+    "answer": 1
+  },
+  {
+    "id":21,
+    "question": "Which of the following is true about the Gofer interpreter?",
+    "options": [
+      "It uses mutable variables",
+      "It performs calculations by rewriting terms",
+      "It executes statements",
+      "It relies on assignment operations"
+    ],
+    "answer": 2
+  },
+  {
+    "id":22,
+    "question": "Which programming paradigm uses the term 'declarative'?",
+    "options": [
+      "Functional programming",
+      "Imperative programming",
+      "Object-oriented programming",
+      "Procedural programming"
+    ],
+    "answer": 1
+  },
+  {
+    "id":23,
+    "question": "What does the term 'imperative programming' describe?",
+    "options": [
+      "Describing actions to be performed",
+      "Describing facts or declarations",
+      "Avoiding side effects",
+      "Using mathematical functions"
+    ],
+    "answer": 1
+  }
+]
