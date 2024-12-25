@@ -6,7 +6,7 @@
       <mat-list-item *ngFor="let item of menuItems">
         <mat-icon
           [class.disabled]="!item.submenu || item.submenu.length === 0"
-          (click)="item.submenu?.length ? toggleSubMenu(item) : null">
+          (click)="item.submenu!.length ? toggleSubMenu(item) : null">
           {{ item.expanded ? 'expand_less' : 'expand_more' }}
         </mat-icon>
   
