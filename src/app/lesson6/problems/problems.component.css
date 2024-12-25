@@ -1,86 +1,91 @@
 /* Container for all the problems */
 .container {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Individual problem box styling */
-  .problem {
-    background-color: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px; /* Padding applied correctly */
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word; /* Ensures text wraps correctly inside the box */
-  }
-  
-  /* Styling for the problem number */
-  .problem h3 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  /* Styling for the paragraph text */
-  .problem p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  /* Code block styling */
-  pre code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  /* Strong text */
-  strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Styling for lists (solutions, steps, etc.) */
-  ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-  }
-  
-  ul li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 8px;
-    line-height: 1.6;
-  }
-  
-  ul li::before {
-    content: "\2022"; /* Bullet point */
-    color: #333;
-    padding-right: 8px;
-  }
-  
-  /* Heading for the solutions */
-  h4 {
-    font-size: 1.4rem;
-    color: #444;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  /* Add spacing between problem blocks */
-  .problem + .problem {
-    margin-top: 40px;
-  }
-  
+  width: 100%;
+  max-width: 1200px; /* Ensures the container doesn't stretch too wide */
+  margin: 20px auto;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif; /* Comprehensive fallback */
+  box-sizing: border-box; /* Includes padding in total width */
+}
+
+/* Individual problem box styling */
+.problem {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Ensures text wraps correctly inside the box */
+  overflow: hidden; /* Prevents content overflow */
+}
+
+/* Styling for the problem number */
+.problem h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Styling for the paragraph text */
+.problem p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Code block styling */
+pre code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap; /* Supports wrapping for long code lines */
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  color: #333;
+  display: block; /* Ensures consistent alignment */
+  overflow-x: auto; /* Adds horizontal scrolling for overflow */
+}
+
+/* Strong text */
+strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for lists (solutions, steps, etc.) */
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+ul li::before {
+  content: "\2022"; /* Bullet point */
+  color: #333;
+  padding-right: 8px;
+}
+
+/* Heading for the solutions */
+h4 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Add spacing between problem blocks */
+.problem + .problem {
+  margin-top: 40px;
+}
