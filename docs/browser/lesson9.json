@@ -1,0 +1,232 @@
+[{
+    "id":1,
+    "question": "What is a unary function?",
+    "options": [
+      "A) A function that takes no arguments",
+      "B) A function that takes one argument",
+      "C) A function that takes two arguments",
+      "D) A function that takes more than two arguments"
+    ],
+    "answer": 2
+  },
+  {
+    "id":2,
+    "question": "In Gofer, what does the dot (.) operator represent in the expression `f.x`?",
+    "options": [
+      "A) It is used for applying multiple functions",
+      "B) It is used for defining the function",
+      "C) It is used for applying a unary function to its argument",
+      "D) It is used to combine arguments into a tuple"
+    ],
+    "answer": 3
+  },
+  {
+    "id":3,
+    "question": "What is the result of the expression `area . (2, 3)` where `area` is defined as `area: Num.a => (a, a) -> a`?",
+    "options": [
+      "A) 6 : Int",
+      "B) 5.0 : Float",
+      "C) 2.0 : Float",
+      "D) 3.0 : Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id":4,
+    "question": "What is the type of the function `vol` defined as `vol.(rad, ht) = pi * rad^2 * ht` in Gofer?",
+    "options": [
+      "A) Float -> Int -> Float",
+      "B) Num.a => (a, a) -> a",
+      "C) (Float, Float) -> Float",
+      "D) Int -> (Int -> Int)"
+    ],
+    "answer": 3
+  },
+  {
+    "id":5,
+    "question": "What happens when a function is curried in Gofer?",
+    "options": [
+      "A) It can take multiple arguments at once",
+      "B) It can take arguments one at a time",
+      "C) It combines the arguments into a tuple",
+      "D) It changes the function's return type"
+    ],
+    "answer": 2
+  },
+  {
+    "id":6,
+    "question": "Which operator is used to apply a curried function in Gofer?",
+    "options": [
+      "A) `:`",
+      "B) `.`",
+      "C) `*`",
+      "D) `=>`"
+    ],
+    "answer": 2
+  },
+  {
+    "id":7,
+    "question": "What is the type of the curried function `area1c` where `area1` is defined as `(Int, Int) -> Int`?",
+    "options": [
+      "A) Int -> Int -> Int",
+      "B) Int -> (Int -> Int)",
+      "C) (Int, Int) -> Int",
+      "D) Num.a => a -> a"
+    ],
+    "answer": 1
+  },
+  {
+    "id":8,
+    "question": "In the curried version of `area1c`, what is the result of `area1c . 10 . 20`?",
+    "options": [
+      "A) 30 : Int",
+      "B) 200 : Int",
+      "C) 560 : Int",
+      "D) Error: Type mismatch"
+    ],
+    "answer": 2
+  },
+  {
+    "id":9,
+    "question": "What is the main difference between a curried and uncurried function in Gofer?",
+    "options": [
+      "A) Curried functions require all arguments to be supplied at once",
+      "B) Uncurried functions can accept arguments one at a time",
+      "C) Curried functions accept arguments one at a time, while uncurried functions take all arguments at once",
+      "D) There is no difference"
+    ],
+    "answer": 3
+  },
+  {
+    "id":10,
+    "question": "What is the type of the function `power` defined as `power: Num.a => a -> Int -> a`?",
+    "options": [
+      "A) Int -> Int -> Int",
+      "B) Num.a => a -> Int -> a",
+      "C) (Int, Int) -> a",
+      "D) Num.a => (a, Int) -> a"
+    ],
+    "answer": 2
+  },
+  {
+    "id":11,
+    "question": "Which of the following is the correct way to define a recursive function for multiplication of two integers `m` and `n` without using the multiplication operator?",
+    "options": [
+      "A) `mult: Num.a => a -> a -> a`",
+      "B) `mult: Num.a => a -> Int -> a`",
+      "C) `mult.m.n = m + mult.m.n-1`",
+      "D) `mult: Int -> Int -> Int` with recursive definition"
+    ],
+    "answer": 4
+  },
+  {
+    "id":12,
+    "question": "What is the result of the expression `power . 2 . 5` where `power` is a curried function?",
+    "options": [
+      "A) 32 : Int",
+      "B) 32.0 : Float",
+      "C) Error: Type mismatch",
+      "D) 25 : Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id":13,
+    "question": "In Gofer, what is the function `expo` in file `script08.gs` supposed to do?",
+    "options": [
+      "A) Calculate the exponential of a number",
+      "B) Calculate the logarithm of a number",
+      "C) Calculate the power of a number",
+      "D) Return the base of natural logarithms"
+    ],
+    "answer": 1
+  },
+  {
+    "id":14,
+    "question": "Which function is used to compute the volume of a cylinder in the lesson?",
+    "options": [
+      "A) `area`",
+      "B) `vol`",
+      "C) `power`",
+      "D) `expo`"
+    ],
+    "answer": 2
+  },
+  {
+    "id":15,
+    "question": "What type error occurs when trying to apply `area1` with arguments `(5.0, 10.0)`?",
+    "options": [
+      "A) Type error: mismatched function and argument types",
+      "B) Type error: cannot apply a float to an integer",
+      "C) Type error: missing arguments",
+      "D) Type error: invalid function definition"
+    ],
+    "answer": 1
+  },
+  {
+    "id":16,
+    "question": "What is the type of `len10` when it is defined as `len10 = area1c.10`?",
+    "options": [
+      "A) Int -> Int",
+      "B) Float -> Int",
+      "C) Int -> Float",
+      "D) Num.a => a -> Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id":17,
+    "question": "What does the function `power` calculate in Gofer?",
+    "options": [
+      "A) The logarithm of a number",
+      "B) The square of a number",
+      "C) The base raised to an integer power",
+      "D) The exponent of a floating point number"
+    ],
+    "answer": 3
+  },
+  {
+    "id":18,
+    "question": "Which Gofer operator is used to convert a function from curried to uncurried form?",
+    "options": [
+      "A) `uncurry`",
+      "B) `curry`",
+      "C) `apply`",
+      "D) `bind`"
+    ],
+    "answer": 1
+  },
+  {
+    "id":19,
+    "question": "Which of the following expressions correctly applies the function `area2` with curried form in Gofer?",
+    "options": [
+      "A) `area2 . 5.0 . 10.0`",
+      "B) `area2c . 5.0 . 10.0`",
+      "C) `area2c . (5.0, 10.0)`",
+      "D) `area2 . (5.0, 10.0)`"
+    ],
+    "answer": 1
+  },
+  {
+    "id":20,
+    "question": "In the context of curried functions, what does `area1c` represent?",
+    "options": [
+      "A) A function that computes the area given two integers",
+      "B) A function that computes the area given one integer at a time",
+      "C) A function for computing the perimeter of a rectangle",
+      "D) A function that returns the result of `area1` immediately"
+    ],
+    "answer": 2
+  },
+  {
+    "id":21,
+    "question": "What is the type of `mult.m.n = m + mult.m.n-1` intended to multiply two integers using recursion?",
+    "options": [
+      "A) Num.a => a -> a -> a",
+      "B) Int -> Int -> Int",
+      "C) Int -> Int",
+      "D) Num.a => a -> Int -> a"
+    ],
+    "answer": 2
+  }
+]

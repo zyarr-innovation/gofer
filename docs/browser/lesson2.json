@@ -1,0 +1,151 @@
+[{
+    "id": 1,
+    "question": "What symbol is used to denote a tuple in Gofer?",
+    "options": ["{}", "[]", "()", "<>"],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "What type of values can a tuple contain in Gofer?",
+    "options": ["Only integers", "Only characters", "Any legal Gofer type", "Only strings"],
+    "answer": 3
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is the correct notation for an empty tuple in Gofer?",
+    "options": ["()", "[]", "{}", "(empty)"],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "What is the type of the following Gofer expression: (1, 2.0, 'a', True)?",
+    "options": ["(Int, Float, Char, Bool)", "(Int, Bool, Char, Float)", "(Char, Int, Bool, Float)", "(Int, Char, Float, Bool)"],
+    "answer": 1
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is NOT a valid tuple in Gofer?",
+    "options": ["(1, 2, 3)", "('a', 'b', 'c')", "(1, 'b', [1, 2])", "('1', 2.0, True, 'a')"],
+    "answer": 3
+  },
+  {
+    "id": 6,
+    "question": "What is the type of the following Gofer list: [1, 2, 3, 4]?",
+    "options": ["[Int]", "[Char]", "[Bool]", "[Float]"],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "question": "In Gofer, what is the type of the list [] (empty list)?",
+    "options": ["[Int]", "[a] (where a is a type variable)", "[Char]", "[]"],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "What does the error message 'Type error in list' indicate in Gofer?",
+    "options": ["The list has too many elements.", "The list contains components of different types.", "The list is too large.", "The list contains invalid characters."],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "question": "Which Gofer symbol is used for concatenating two lists?",
+    "options": ["+", "++", "--", "//"],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "question": "What will be the output of the expression [4,3...0] in Gofer?",
+    "options": ["[4, 3, 2, 1, 0]", "[4, 3, 2]", "[]", "Error"],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "Which of the following represents the Gofer type of a string?",
+    "options": ["String", "[Char]", "Char", "[String]"],
+    "answer": 2
+  },
+  {
+    "id": 12,
+    "question": "What is the type of the following expression: [ 'A', '1', '?' ] in Gofer?",
+    "options": ["[Char]", "[String]", "[Int]", "[Bool]"],
+    "answer": 1
+  },
+  {
+    "id": 13,
+    "question": "Which of the following is a valid Gofer tuple containing another tuple as a component?",
+    "options": ["(1, 2.0, ('a', 'b'), 3)", "('a', 'b', (1, 2))", "(('a', 'b'), 3, 4)", "All of the above"],
+    "answer": 4
+  },
+  {
+    "id": 14,
+    "question": "What is the type of the following list expression: [(10^1, 1.0, 'a'), (10^2, 2.0, 'b')]?",
+    "options": ["[(Int, Float, Char)]", "[Int]", "[Char]", "[Float]"],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "What does the ellipsis '...' operator do when used in Gofer list expressions?",
+    "options": ["It creates an infinite list.", "It specifies a range of numbers.", "It joins two lists together.", "It concatenates a string."],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "question": "What is the type of the following Gofer expression: [1, 2, 3, 4.0]?",
+    "options": ["[Int]", "[Float]", "Type error", "[Int, Float]"],
+    "answer": 3
+  },
+  {
+    "id": 17,
+    "question": "What is the type of the tuple ( [], [] ) in Gofer?",
+    "options": ["([a], [b])", "[a, a]", "([a], [a])", "[a]"],
+    "answer": 3
+  },
+  {
+    "id": 18,
+    "question": "What is the type of a Gofer tuple ( [], [], [] )?",
+    "options": ["([a], [b], [c])", "([a], [a], [a])", "([a, b], [a, c])", "[a, b, c]"],
+    "answer": 2
+  },
+  {
+    "id": 19,
+    "question": "What is the output of the expression '? [4 ... 0]' in Gofer?",
+    "options": ["[4, 3, 2, 1, 0]", "[]", "Type error", "[4, 3, 2]"],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is NOT a valid Gofer list?",
+    "options": ["[1, 2, 3]", "['a', 'b', 'c']", "[1, 'b', 2]", "[True, False]"],
+    "answer": 3
+  },
+  {
+    "id": 21,
+    "question": "What is the type of the following list expression: [[], [], [], []]?",
+    "options": ["[[a]]", "[a]", "[Int]", "[Int]"],
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "How are infinite lists represented in Gofer?",
+    "options": ["By using '...' to specify an endless sequence.", "By concatenating a list repeatedly.", "By using a fixed size with a recursive structure.", "They cannot be represented."],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "What is the Gofer type of the string 'Hello World'?",
+    "options": ["String", "[Char]", "Char", "[String]"],
+    "answer": 2
+  },
+  {
+    "id": 24,
+    "question": "What is the output of the expression '? \"abcd\" == ['a', 'b', 'c', 'd']' in Gofer?",
+    "options": ["False", "True", "Error", "Undefined"],
+    "answer": 2
+  },
+  {
+    "id": 25,
+    "question": "What is the type of the Gofer expression [] ++ [0 ... 4]?",
+    "options": ["[Int]", "[a]", "[Char]", "[String]"],
+    "answer": 1
+  }
+]
