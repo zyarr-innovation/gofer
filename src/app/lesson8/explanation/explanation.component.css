@@ -1,62 +1,63 @@
 .lesson-container {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-  }
-  
-  .lesson-container h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #003366;
-  }
-  
-  .lesson-container h2,
-  .lesson-container h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    color: #004080;
-  }
-  
-  .lesson-container h4 {
-    font-size: 1.3em;
-    margin-top: 15px;
-    color: #00509e;
-  }
-  
-  .lesson-container p {
-    margin: 10px 0;
-  }
-  
-  .lesson-container ul {
-    margin: 10px 0 10px 20px;
-  }
-  
-  .lesson-container ul li {
-    margin-bottom: 5px;
-  }
-  
-  .lesson-container code {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 2px 4px;
-    border-radius: 4px;
-  }
-  
-  .lesson-container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
-  .lesson-container table th,
-  .lesson-container table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .lesson-container table th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  width: 80%;
+  height: 100vh;
+}
+
+.lesson-container h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.lesson-container h2,
+.lesson-container h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #004080;
+}
+
+.lesson-container h4 {
+  font-size: 1.3em;
+  margin-top: 15px;
+  color: #00509e;
+}
+
+.lesson-container p {
+  margin: 10px 0;
+}
+
+.lesson-container ul {
+  margin: 10px 0 10px 20px;
+}
+
+.lesson-container ul li {
+  margin-bottom: 5px;
+}
+
+.lesson-container code {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.lesson-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.lesson-container table th,
+.lesson-container table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.lesson-container table th {
+  background-color: #f2f2f2;
+  color: #333;
+}

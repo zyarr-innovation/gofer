@@ -1,29 +1,27 @@
 <div class="container">
   <div class="sidebar" [class.collapsed]="isCollapsed">
     <button (click)="toggleSidebar()">Menu</button>
-
+  
     <mat-nav-list>
       <mat-list-item *ngFor="let item of menuItems">
-        <mat-icon [class.disabled]="!item.submenu || item.submenu.length === 0"
-          (click)="item.submenu && item.submenu.length > 0 ? toggleSubMenu(item) : null">
+        <mat-icon
+          [class.disabled]="!item.submenu || item.submenu.length === 0"
+          (click)="item.submenu?.length ? toggleSubMenu(item) : null">
           {{ item.expanded ? 'expand_less' : 'expand_more' }}
         </mat-icon>
-
+  
         <a [routerLink]="item.link" routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }">{{ item.name }}</a>
-
-        <!-- Submenu list -->
+  
         <mat-list *ngIf="item.expanded" class="submenu">
           <mat-list-item *ngFor="let subItem of item.submenu">
             <a [routerLink]="subItem.link" routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }">{{ subItem.name }}</a>
-
           </mat-list-item>
         </mat-list>
       </mat-list-item>
     </mat-nav-list>
   </div>
-
   <div class="content">
     <router-outlet></router-outlet>
   </div>

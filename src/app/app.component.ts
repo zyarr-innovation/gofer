@@ -21,7 +21,9 @@ export class AppComponent {
       name: '1. Simple Data Types',
       link: '/les1-exp',
       submenu: [
-        { name: 'Example', link: '/les1-exam' }
+        { name: 'Example', link: '/les1-exam' },
+        { name: 'Problem', link: '/les1-prob' },
+        { name: 'Quiz', link: '/quiz/1' }
       ],
       expanded: false
     },
@@ -31,7 +33,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les2-exam' },
         { name: 'Problem', link: '/les2-prob' },
-        { name: 'Quiz - Missing', link: '/les2-prob' }
+        { name: 'Quiz', link: '/quiz/2' }
       ],
       expanded: false
     },
@@ -41,7 +43,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les3-exam' },
         { name: 'Problem', link: '/les3-prob' },
-        { name: 'Quiz - Missing', link: '/les3-prob' }
+        { name: 'Quiz', link: '/quiz/3' }
       ],
       expanded: false
     },
@@ -51,7 +53,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les4-exam' },
         { name: 'Problem', link: '/les4-prob' },
-        { name: 'Quiz - Missing', link: '/les4-prob' }
+        { name: 'Quiz', link: '/quiz/4' }
       ],
       expanded: false
     },
@@ -61,7 +63,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les5-exam' },
         { name: 'Problem', link: '/les5-prob' },
-        { name: 'Quiz - Missing', link: '/les5-prob' }
+        { name: 'Quiz', link: '/quiz/5' }
       ],
       expanded: false
     },
@@ -69,9 +71,9 @@ export class AppComponent {
       name: '6. Proof by Induction',
       link: '/les6-exp',
       submenu: [
-        { name: 'Example', link: '/les5-exam' },
-        { name: 'Problem', link: '/les5-prob' },
-        { name: 'Quiz - Missing', link: '/les5-prob' }
+        { name: 'Example', link: '/les6-exam' },
+        { name: 'Problem', link: '/les6-prob' },
+        { name: 'Quiz', link: '/quiz/6' }
       ],
       expanded: false
     },
@@ -81,7 +83,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les7-exam' },
         { name: 'Problem', link: '/les7-prob' },
-        { name: 'Quiz - Missing', link: '/les7-prob' }
+        { name: 'Quiz', link: '/quiz/7' }
       ],
       expanded: false
     },
@@ -91,7 +93,7 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les8-exam' },
         { name: 'Problem', link: '/les8-prob' },
-        { name: 'Quiz - Missing', link: '/les8-prob' }
+        { name: 'Quiz', link: '/quiz/8' }
       ],
       expanded: false
     },
@@ -101,17 +103,19 @@ export class AppComponent {
       submenu: [
         { name: 'Example', link: '/les9-exam' },
         { name: 'Problem', link: '/les9-prob' },
-        { name: 'Quiz - Missing', link: '/les9-prob' }
+        { name: 'Quiz', link: '/quiz/9' }
       ],
       expanded: false
     },
   ];
 
-  toggleSubMenu(item: any) {
-    item.expanded = !item.expanded;
+  toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+    console.log('Sidebar collapsed:', this.isCollapsed);
   }
 
-  toggleSidebar() {
-    this.isSidebarCollapsed = !this.isSidebarCollapsed;
+  toggleSubMenu(item: any) {
+    item.expanded = !item.expanded;
+    console.log('Toggling submenu for:', item.name, 'Expanded:', item.expanded);
   }
 }

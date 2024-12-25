@@ -26,12 +26,14 @@ import { lesson6ProblemsComponent } from './lesson6/problems/problems.component'
 import { lesson7ProblemsComponent } from './lesson7/problems/problems.component';
 import { lesson8ProblemComponent } from './lesson8/problem/problem.component';
 import { lesson9ProblemComponent } from './lesson9/problem/problem.component';
-import { lesson1QuizComponent } from './lesson1/quiz/quiz.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { lesson1ProblemComponent } from './lesson1/problem/problem.component';
 
 
 export const routes: Routes = [
     { path: 'les1-exp', component: lesson1ExplanationComponent },
     { path: 'les1-exam', component: lesson1ExamplesComponent },
+    { path: 'les1-prob', component: lesson1ProblemComponent },
     { path: 'les2-exp', component: lesson2ExplanationComponent },
     { path: 'les2-exam', component: lesson2ExamplesComponent },
     { path: 'les2-prob', component: lesson2ProblemsComponent },
@@ -56,8 +58,8 @@ export const routes: Routes = [
     { path: 'les9-exp', component: lesson9ExplanationComponent },
     { path: 'les9-exam', component: lesson9ExampleComponent },
     { path: 'les9-prob', component: lesson9ProblemComponent },
-    { path: 'les1-quiz', component: lesson1QuizComponent },
     { path: 'intro', component: IntroExplanationComponent },
+    { path: 'quiz/:lessonId', component: QuizComponent },
     { path: '', component: IntroExplanationComponent },
     { path: '**', component: IntroExplanationComponent },
 

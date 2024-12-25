@@ -1,5 +1,6 @@
 [
     {
+      "id":1,
       "question": "What is the output of the following expression in Gofer? \\(2 + 3 * 4\\)",
       "options": [
         "14",
@@ -7,9 +8,11 @@
         "12",
         "8"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+
+      "id":2,
       "question": "What is the correct way to define a function in Gofer?",
       "options": [
         "def add(x, y) = x + y",
@@ -17,9 +20,10 @@
         "add(x, y) = x + y end",
         "add x y = x + y"
       ],
-      "answer": 3
+      "answer": 4
     },
     {
+      "id":3,
       "question": "Which of the following is a valid list in Gofer?",
       "options": [
         "[1, 2, 3]",
@@ -27,9 +31,10 @@
         "{1, 2, 3}",
         "<1, 2, 3>"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":4,
       "question": "What does the 'let' keyword do in Gofer?",
       "options": [
         "It defines a new function.",
@@ -37,9 +42,10 @@
         "It creates a list.",
         "It starts a loop."
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":5,
       "question": "Which of the following types is supported in Gofer?",
       "options": [
         "int",
@@ -47,9 +53,10 @@
         "list",
         "all of the above"
       ],
-      "answer": 3
+      "answer": 4
     },
     {
+      "id":6,
       "question": "What is the correct syntax for a recursive function in Gofer?",
       "options": [
         "function factorial(x) = x * factorial(x-1)",
@@ -57,9 +64,10 @@
         "factorial(x) = if x == 0 then 1 else x * factorial(x-1) end",
         "function factorial(x) { return x == 0 ? 1 : x * factorial(x-1); }"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":7,
       "question": "Which of these expressions will return the first element of the list [1, 2, 3] in Gofer?",
       "options": [
         "head([1, 2, 3])",
@@ -67,9 +75,10 @@
         "first([1, 2, 3])",
         "init([1, 2, 3])"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":8,
       "question": "What will the expression '(++) [1, 2] [3, 4]' return in Gofer?",
       "options": [
         "[1, 2, 3, 4]",
@@ -77,9 +86,10 @@
         "error",
         "[1, 2, 4, 5]"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":9,
       "question": "What is the purpose of 'where' in Gofer?",
       "options": [
         "It defines a local function within a function.",
@@ -87,9 +97,10 @@
         "It loops over a list.",
         "It initializes a list."
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":10,
       "question": "Which of the following is a valid Gofer expression?",
       "options": [
         "let x = 5 in x + 2",
@@ -97,9 +108,10 @@
         "x = 5 then x + 2",
         "x let 5 = x + 2"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":11,
       "question": "What is the output of the expression 'sum([1, 2, 3, 4])' in Gofer?",
       "options": [
         "10",
@@ -107,9 +119,10 @@
         "7",
         "6"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":12,
       "question": "What is the primary use of a 'data type' in Gofer?",
       "options": [
         "To define variables only.",
@@ -117,9 +130,10 @@
         "To declare functions.",
         "To store the results of functions."
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":13,
       "question": "What is the Gofer syntax for defining a list comprehension?",
       "options": [
         "[x | x <- [1..10]]",
@@ -127,9 +141,10 @@
         "{x, x <- [1..10]}",
         "list(x, x <- [1..10])"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":14,
       "question": "Which of the following is not a valid function type in Gofer?",
       "options": [
         "(Int -> Int)",
@@ -137,9 +152,10 @@
         "(List -> List)",
         "(List -> Int)"
       ],
-      "answer": 3
+      "answer": 4
     },
     {
+      "id":15,
       "question": "In Gofer, what will 'if True then 5 else 10' return?",
       "options": [
         "5",
@@ -147,9 +163,10 @@
         "error",
         "True"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":16,
       "question": "Which of these is a valid Gofer tuple?",
       "options": [
         "(1, 2, 3)",
@@ -157,9 +174,10 @@
         "{1, 2, 3}",
         "(1; 2; 3)"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":17,
       "question": "Which of the following expressions would be used to reverse a list in Gofer?",
       "options": [
         "reverse([1, 2, 3])",
@@ -167,9 +185,10 @@
         "rev([1, 2, 3])",
         "revert([1, 2, 3])"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":18,
       "question": "What is the correct way to check the type of a variable in Gofer?",
       "options": [
         "type(x)",
@@ -177,9 +196,10 @@
         ":t x",
         ":type x"
       ],
-      "answer": 2
+      "answer": 3
     },
     {
+      "id":19,
       "question": "Which of the following operators is used for function application in Gofer?",
       "options": [
         "*",
@@ -187,9 +207,10 @@
         "+",
         " "
       ],
-      "answer": 3
+      "answer": 4
     },
     {
+      "id":20,
       "question": "Which of the following is an example of a first-class function in Gofer?",
       "options": [
         "A function passed as an argument to another function.",
@@ -197,9 +218,10 @@
         "A function that can return another function.",
         "All of the above."
       ],
-      "answer": 3
+      "answer": 4
     },
     {
+      "id":21,
       "question": "Which Gofer function can be used to check if a list is empty?",
       "options": [
         "null",
@@ -207,9 +229,10 @@
         "isEmpty",
         "isnull"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":22,
       "question": "How do you define a tuple in Gofer?",
       "options": [
         "[1, 2, 3]",
@@ -217,9 +240,10 @@
         "{1, 2, 3}",
         "<1, 2, 3>"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":23,
       "question": "Which of the following operators is used to append two lists in Gofer?",
       "options": [
         "::",
@@ -227,9 +251,10 @@
         ":",
         "+"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":24,
       "question": "What is the default order of precedence for arithmetic operations in Gofer?",
       "options": [
         "Addition first, then multiplication.",
@@ -237,9 +262,10 @@
         "Division first, then addition.",
         "Exponentiation first, then multiplication."
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":25,
       "question": "What does the 'head' function do in Gofer?",
       "options": [
         "It returns the first element of a list.",
@@ -247,9 +273,10 @@
         "It removes the first element from a list.",
         "It creates a new list."
       ],
-      "answer": 0
+      "answer": 1
     },
     {
+      "id":26,
       "question": "What will the expression 'not (5 > 3)' return in Gofer?",
       "options": [
         "True",
@@ -257,9 +284,10 @@
         "Error",
         "5"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
+      "id":27,
       "question": "Which of the following is the correct syntax for defining a local function?",
       "options": [
         "let func x = x + 1",
@@ -267,7 +295,7 @@
         "func x = x + 1 where",
         "def func(x) { x + 1 }"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
   

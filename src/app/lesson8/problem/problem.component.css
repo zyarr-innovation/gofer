@@ -2,6 +2,8 @@
 .container {
     padding: 20px;
     font-family: Arial, sans-serif;
+    width: 80%;
+    height: 100vh;
   }
   
   /* Style for each problem */

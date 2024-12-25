@@ -1,255 +1,277 @@
-{
-    "quiz": [
-      {
-        "question": "What is the primary purpose of mathematical induction?",
-        "options": [
-          "a) To prove that a function is recursive",
-          "b) To prove that a statement holds for all natural numbers",
-          "c) To calculate the sum of a sequence",
-          "d) To define recursive functions"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What is the base case in an inductive proof?",
-        "options": [
-          "a) The general assumption that P(n) is true",
-          "b) A case that is assumed to be true without proof",
-          "c) The first value in the sequence, often n = 0 or n = 1",
-          "d) The final value in the proof"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "In a proof by induction, what is the induction hypothesis?",
-        "options": [
-          "a) The assumption that the base case is true",
-          "b) The assumption that P(n) holds for all n",
-          "c) The assumption that P(n) holds for a specific n",
-          "d) The conclusion of the proof"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "What is the purpose of the induction step in a proof by induction?",
-        "options": [
-          "a) To prove that the base case holds",
-          "b) To show that P(n) leads to P(n+1)",
-          "c) To show that P(n) does not hold for n = 1",
-          "d) To prove the validity of recursive functions"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following is the correct induction step for the proposition 'The sum of 0 + 1 + ... + n = n*(n+1)/2'?",
-        "options": [
-          "a) Assume P(n) holds, show P(n-1)",
-          "b) Assume P(n+1) holds, show P(n)",
-          "c) Assume P(n) holds, show P(n+1)",
-          "d) Prove P(0) directly"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "What does 'P(n) => P(n+1)' mean in induction?",
-        "options": [
-          "a) P(n) implies that P(n) is false",
-          "b) P(n) leads to P(n+1) being true",
-          "c) P(n+1) implies P(n)",
-          "d) P(n) is equivalent to P(n+1)"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which function computes the sum of natural numbers up to n in Gofer?",
-        "options": [
-          "a) sumupto1",
-          "b) sumupto2",
-          "c) factorial",
-          "d) squareSum"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "In the sumupto1 function, what is the base case for n = 0?",
-        "options": [
-          "a) 1",
-          "b) 0",
-          "c) n*(n+1)/2",
-          "d) sumupto1(n-1)"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following is an example of a recursive function in Gofer?",
-        "options": [
-          "a) sumupto1",
-          "b) sumupto2",
-          "c) both sumupto1 and sumupto2",
-          "d) neither sumupto1 nor sumupto2"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "What is the induction hypothesis in the example of sumupto2?",
-        "options": [
-          "a) P(n-1)",
-          "b) P(n)",
-          "c) P(n+1)",
-          "d) P(n-2)"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is the formula for the sum of the first n natural numbers?",
-        "options": [
-          "a) n*(n+1)",
-          "b) n*(n+1)/2",
-          "c) n*(n-1)/2",
-          "d) (n+1)*(n+2)/2"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What does the term 'strong induction' refer to?",
-        "options": [
-          "a) Induction using a hypothesis for all values up to n",
-          "b) Induction with a weak hypothesis",
-          "c) The assumption that P(n-1) holds for some n",
-          "d) Induction that doesn't require a base case"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which type of induction is typically used for recursive structures like lists?",
-        "options": [
-          "a) Mathematical induction",
-          "b) Structural induction",
-          "c) Weak induction",
-          "d) Strong induction"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which Gofer function computes the length of a list?",
-        "options": [
-          "a) sum",
-          "b) length",
-          "c) len",
-          "d) listLength"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "In the function sum, which of the following represents the base case?",
-        "options": [
-          "a) sum . [ ] = 1",
-          "b) sum . [ ] = 0",
-          "c) sum . (x::xs) = x + sum . xs",
-          "d) sum . (x::xs) = 0"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What does the term 'recursive definition' mean in programming?",
-        "options": [
-          "a) A function defined in terms of other functions",
-          "b) A function defined in terms of itself",
-          "c) A function that uses iteration",
-          "d) A function that cannot be computed"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What is the factorial function an example of in recursive programming?",
-        "options": [
-          "a) Base case",
-          "b) Recursive case",
-          "c) Recursive definition",
-          "d) Non-recursive function"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "Which of the following is the correct recursive definition of factorial in Gofer?",
-        "options": [
-          "a) n! = 1, if n = 0",
-          "b) n! = 0, if n = 0",
-          "c) n! = n * n!, if n > 0",
-          "d) n! = 1, if n > 0"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "In recursion, what is typically the role of the base case?",
-        "options": [
-          "a) To define the recursive structure",
-          "b) To terminate the recursion",
-          "c) To handle larger values of n",
-          "d) To simplify the induction hypothesis"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "How does structural induction differ from mathematical induction?",
-        "options": [
-          "a) Structural induction is for numbers; mathematical induction is for structures",
-          "b) Structural induction is applied to recursively defined structures like lists",
-          "c) Mathematical induction cannot be used for recursive structures",
-          "d) There is no difference between the two"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following is an example of using recursion in an algorithm?",
-        "options": [
-          "a) Summing the elements of a list",
-          "b) Checking if a list is sorted",
-          "c) Sorting a list using merge sort",
-          "d) All of the above"
-        ],
-        "answer": 3
-      },
-      {
-        "question": "In a recursive function, what does the recursive step typically involve?",
-        "options": [
-          "a) Performing a final calculation",
-          "b) Defining the function for larger values",
-          "c) Applying the function to smaller subproblems",
-          "d) Returning a constant value"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "Which algorithm is an example of using divide and conquer in functional programming?",
-        "options": [
-          "a) Bubble sort",
-          "b) Merge sort",
-          "c) Insertion sort",
-          "d) Selection sort"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "In proof by induction, what is the purpose of the induction step?",
-        "options": [
-          "a) To prove the base case",
-          "b) To show that P(n) leads to P(n+1)",
-          "c) To assume that P(n) is false",
-          "d) To calculate the value of n"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What is the result of applying induction to prove the sum of squares formula?",
-        "options": [
-          "a) Proving that the sum of squares is always even",
-          "b) Proving that the sum of squares equals n*(n+1)*(2n+1)/6",
-          "c) Proving that the sum of squares is equal to n*n",
-          "d) Proving that the sum of squares is always odd"
-        ],
-        "answer": 1
-      }
-    ]
+[{
+    "id":1,
+    "question": "What is the primary purpose of mathematical induction?",
+    "options": [
+      "a) To prove that a function is recursive",
+      "b) To prove that a statement holds for all natural numbers",
+      "c) To calculate the sum of a sequence",
+      "d) To define recursive functions"
+    ],
+    "answer": 2
+  },
+  {
+
+    "id":2,
+    "question": "What is the base case in an inductive proof?",
+    "options": [
+      "a) The general assumption that P(n) is true",
+      "b) A case that is assumed to be true without proof",
+      "c) The first value in the sequence, often n = 0 or n = 1",
+      "d) The final value in the proof"
+    ],
+    "answer": 3
+  },
+  {
+    "id":3,
+    "question": "In a proof by induction, what is the induction hypothesis?",
+    "options": [
+      "a) The assumption that the base case is true",
+      "b) The assumption that P(n) holds for all n",
+      "c) The assumption that P(n) holds for a specific n",
+      "d) The conclusion of the proof"
+    ],
+    "answer": 3
+  },
+  {
+    "id":4,
+    "question": "What is the purpose of the induction step in a proof by induction?",
+    "options": [
+      "a) To prove that the base case holds",
+      "b) To show that P(n) leads to P(n+1)",
+      "c) To show that P(n) does not hold for n = 1",
+      "d) To prove the validity of recursive functions"
+    ],
+    "answer": 2
+  },
+  {
+    "id":5,
+    "question": "Which of the following is the correct induction step for the proposition 'The sum of 0 + 1 + ... + n = n*(n+1)/2'?",
+    "options": [
+      "a) Assume P(n) holds, show P(n-1)",
+      "b) Assume P(n+1) holds, show P(n)",
+      "c) Assume P(n) holds, show P(n+1)",
+      "d) Prove P(0) directly"
+    ],
+    "answer": 3
+  },
+  {
+    "id":6,
+    "question": "What does 'P(n) => P(n+1)' mean in induction?",
+    "options": [
+      "a) P(n) implies that P(n) is false",
+      "b) P(n) leads to P(n+1) being true",
+      "c) P(n+1) implies P(n)",
+      "d) P(n) is equivalent to P(n+1)"
+    ],
+    "answer": 2
+  },
+  {
+    "id":7,
+    "question": "Which function computes the sum of natural numbers up to n in Gofer?",
+    "options": [
+      "a) sumupto1",
+      "b) sumupto2",
+      "c) factorial",
+      "d) squareSum"
+    ],
+    "answer": 1
+  },
+  {
+    "id":8,
+    "question": "In the sumupto1 function, what is the base case for n = 0?",
+    "options": [
+      "a) 1",
+      "b) 0",
+      "c) n*(n+1)/2",
+      "d) sumupto1(n-1)"
+    ],
+    "answer": 2
+  },
+  {
+    "id":9,
+    "question": "Which of the following is an example of a recursive function in Gofer?",
+    "options": [
+      "a) sumupto1",
+      "b) sumupto2",
+      "c) both sumupto1 and sumupto2",
+      "d) neither sumupto1 nor sumupto2"
+    ],
+    "answer": 3
+  },
+  {
+    "id":10,
+    "question": "What is the induction hypothesis in the example of sumupto2?",
+    "options": [
+      "a) P(n-1)",
+      "b) P(n)",
+      "c) P(n+1)",
+      "d) P(n-2)"
+    ],
+    "answer": 1
+  },
+  {
+    "id":11,
+    "question": "Which of the following is the formula for the sum of the first n natural numbers?",
+    "options": [
+      "a) n*(n+1)",
+      "b) n*(n+1)/2",
+      "c) n*(n-1)/2",
+      "d) (n+1)*(n+2)/2"
+    ],
+    "answer": 2
+  },
+  {
+    "id":12,
+    "question": "What does the term 'strong induction' refer to?",
+    "options": [
+      "a) Induction using a hypothesis for all values up to n",
+      "b) Induction with a weak hypothesis",
+      "c) The assumption that P(n-1) holds for some n",
+      "d) Induction that doesn't require a base case"
+    ],
+    "answer": 1
+  },
+  {
+    "id":13,
+    "question": "Which type of induction is typically used for recursive structures like lists?",
+    "options": [
+      "a) Mathematical induction",
+      "b) Structural induction",
+      "c) Weak induction",
+      "d) Strong induction"
+    ],
+    "answer": 2
+  },
+  {
+    "id":14,
+    "question": "Which Gofer function computes the length of a list?",
+    "options": [
+      "a) sum",
+      "b) length",
+      "c) len",
+      "d) listLength"
+    ],
+    "answer": 3
+  },
+  {
+    "id":15,
+    "question": "In the function sum, which of the following represents the base case?",
+    "options": [
+      "a) sum . [ ] = 1",
+      "b) sum . [ ] = 0",
+      "c) sum . (x::xs) = x + sum . xs",
+      "d) sum . (x::xs) = 0"
+    ],
+    "answer": 2
+  },
+  {
+    "id":16,
+    "question": "What does the term 'recursive definition' mean in programming?",
+    "options": [
+      "a) A function defined in terms of other functions",
+      "b) A function defined in terms of itself",
+      "c) A function that uses iteration",
+      "d) A function that cannot be computed"
+    ],
+    "answer": 2
+  },
+  {
+    "id":17,
+    "question": "What is the factorial function an example of in recursive programming?",
+    "options": [
+      "a) Base case",
+      "b) Recursive case",
+      "c) Recursive definition",
+      "d) Non-recursive function"
+    ],
+    "answer": 3
+  },
+  {
+    "id":18,
+    "question": "Which of the following is the correct recursive definition of factorial in Gofer?",
+    "options": [
+      "a) n! = 1, if n = 0",
+      "b) n! = 0, if n = 0",
+      "c) n! = n * n!, if n > 0",
+      "d) n! = 1, if n > 0"
+    ],
+    "answer": 1
+  },
+  {
+    "id":19,
+    "question": "In recursion, what is typically the role of the base case?",
+    "options": [
+      "a) To define the recursive structure",
+      "b) To terminate the recursion",
+      "c) To handle larger values of n",
+      "d) To simplify the induction hypothesis"
+    ],
+    "answer": 2
+  },
+  {
+    "id":20,
+    "question": "How does structural induction differ from mathematical induction?",
+    "options": [
+      "a) Structural induction is for numbers; mathematical induction is for structures",
+      "b) Structural induction is applied to recursively defined structures like lists",
+      "c) Mathematical induction cannot be used for recursive structures",
+      "d) There is no difference between the two"
+    ],
+    "answer": 2
+  },
+  {
+    "id":21,
+    "question": "Which of the following is an example of using recursion in an algorithm?",
+    "options": [
+      "a) Summing the elements of a list",
+      "b) Checking if a list is sorted",
+      "c) Sorting a list using merge sort",
+      "d) All of the above"
+    ],
+    "answer": 4
+  },
+  {
+    "id":22,
+    "question": "In a recursive function, what does the recursive step typically involve?",
+    "options": [
+      "a) Performing a final calculation",
+      "b) Defining the function for larger values",
+      "c) Applying the function to smaller subproblems",
+      "d) Returning a constant value"
+    ],
+    "answer": 3
+  },
+  {
+    "id":23,
+    "question": "Which algorithm is an example of using divide and conquer in functional programming?",
+    "options": [
+      "a) Bubble sort",
+      "b) Merge sort",
+      "c) Insertion sort",
+      "d) Selection sort"
+    ],
+    "answer": 2
+  },
+  {
+    "id":24,
+    "question": "In proof by induction, what is the purpose of the induction step?",
+    "options": [
+      "a) To prove the base case",
+      "b) To show that P(n) leads to P(n+1)",
+      "c) To assume that P(n) is false",
+      "d) To calculate the value of n"
+    ],
+    "answer": 2
+  },
+  {
+    "id":25,
+    "question": "What is the result of applying induction to prove the sum of squares formula?",
+    "options": [
+      "a) Proving that the sum of squares is always even",
+      "b) Proving that the sum of squares equals n*(n+1)*(2n+1)/6",
+      "c) Proving that the sum of squares is equal to n*n",
+      "d) Proving that the sum of squares is always odd"
+    ],
+    "answer": 2
   }
-  
+]

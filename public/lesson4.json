@@ -1,235 +1,257 @@
-{
-    "quiz": [
-      {
-        "question": "What does REPL stand for?",
-        "options": [
-          "Read-Evaluate-Print Loop",
-          "Read-Execute-Print Loop",
-          "Run-Evaluate-Print Loop",
-          "Read-Evaluate-Play Loop"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which command is used to load a script into the Gofer interpreter?",
-        "options": [
-          ":reload",
-          ":load",
-          ":run",
-          ":execute"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "In Gofer, what is the symbol used to bind a name to a value?",
-        "options": [
-          "=",
-          ":",
-          "->",
-          ":="
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is true about variable bindings in Gofer?",
-        "options": [
-          "Bindings can be changed after being set.",
-          "Bindings are mutable.",
-          "Bindings are immutable.",
-          "Bindings can only be used in scripts."
-        ],
-        "answer": 2
-      },
-      {
-        "question": "How do you define a variable in Gofer?",
-        "options": [
-          "variable = value",
-          "let variable = value",
-          "variable := value",
-          "var variable = value"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What is the file extension for a Gofer script?",
-        "options": [
-          ".gs",
-          ".gofer",
-          ".txt",
-          ".src"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is an example of defining a variable in Gofer?",
-        "options": [
-          "x = 5",
-          "let x = 5 in x + 1",
-          "5 = x",
-          "var x = 5"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "What does the ':r' command do in Gofer?",
-        "options": [
-          "Reloads the last loaded file.",
-          "Resets the interpreter.",
-          "Removes all definitions.",
-          "Runs the Gofer script."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What will happen if you try to evaluate an expression with an undefined variable in Gofer?",
-        "options": [
-          "The interpreter will print an error message.",
-          "The interpreter will evaluate the variable as 0.",
-          "The interpreter will prompt for input.",
-          "The expression will be skipped."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is an example of using the 'let' keyword in Gofer?",
-        "options": [
-          "let x = 10 in x + 2",
-          "let x := 10 in x + 2",
-          "let x = 10; x + 2",
-          "let(x = 10, x + 2)"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "How are multiple variables bound in Gofer using 'let'?",
-        "options": [
-          "By using a tuple.",
-          "By using a list.",
-          "By chaining 'let' statements.",
-          "By using an array."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is true about Gofer scripts?",
-        "options": [
-          "They must be saved with the '.gofer' extension.",
-          "They can only contain one line of code.",
-          "They consist of definitions that bind names to values.",
-          "They must contain function definitions."
-        ],
-        "answer": 2
-      },
-      {
-        "question": "What happens when you reload a file in Gofer using ':r'?",
-        "options": [
-          "The interpreter will re-evaluate the file and load the updated definitions.",
-          "The file is reset to its initial state.",
-          "The file is deleted from memory.",
-          "The file will be compiled into a script."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "In Gofer, what does the following expression do: 'let x = 10 in x + 5'?",
-        "options": [
-          "It defines x and evaluates x + 5 as 15.",
-          "It defines x and outputs 5.",
-          "It redefines x to 15.",
-          "It outputs 10 + 5."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What does the Gofer interpreter do when there is an indentation error in a script?",
-        "options": [
-          "It stops loading the script and shows an error message.",
-          "It automatically fixes the indentation.",
-          "It skips the erroneous line and loads the rest of the script.",
-          "It ignores the indentation and evaluates the script anyway."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "How does Gofer treat variable definitions in terms of order?",
-        "options": [
-          "The order of definitions is significant.",
-          "The order of definitions is not significant.",
-          "Only the last definition of a variable is valid.",
-          "The first definition of a variable is invalid."
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Which command is used to check the type of a variable in Gofer?",
-        "options": [
-          ":type",
-          ":info",
-          ":t",
-          ":check"
-        ],
-        "answer": 2
-      },
-      {
-        "question": "What is the result of the following expression in Gofer: '10 ^ 2'?",
-        "options": [
-          "100",
-          "20",
-          "10",
-          "2"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What happens if a Gofer script contains a syntax error due to incorrect indentation?",
-        "options": [
-          "The interpreter displays a syntax error and stops loading.",
-          "The script is evaluated with warnings.",
-          "The script is skipped and no error is shown.",
-          "The interpreter tries to fix the error automatically."
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What is the correct way to define a tuple in Gofer?",
-        "options": [
-          "(x, y, z)",
-          "[x, y, z]",
-          "{x, y, z}",
-          "(x; y; z)"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which Gofer command lists all known names in the interpreter?",
-        "options": [
-          ":names",
-          ":list",
-          ":vars",
-          ":show"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Which symbol is used for exponentiation in Gofer?",
-        "options": [
-          "^",
-          "**",
-          "^^",
-          "exp"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "What should you do if you make changes to a Gofer script and want to reload it into the interpreter?",
-        "options": [
-          "Save the file and use the ':reload' command.",
-          "Use the ':r' command without saving the file.",
-          "Reopen the script in the editor.",
-          "Delete the script and create a new one."
-        ],
-        "answer": 0
-      }
-    ]
+[
+
+  {
+    "id":1,
+    "question": "What does REPL stand for?",
+    "options": [
+      "Read-Evaluate-Print Loop",
+      "Read-Execute-Print Loop",
+      "Run-Evaluate-Print Loop",
+      "Read-Evaluate-Play Loop"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which command is used to load a script into the Gofer interpreter?",
+    "options": [
+      ":reload",
+      ":load",
+      ":run",
+      ":execute"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "In Gofer, what is the symbol used to bind a name to a value?",
+    "options": [
+      "=",
+      ":",
+      "->",
+      ":="
+    ],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is true about variable bindings in Gofer?",
+    "options": [
+      "Bindings can be changed after being set.",
+      "Bindings are mutable.",
+      "Bindings are immutable.",
+      "Bindings can only be used in scripts."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "How do you define a variable in Gofer?",
+    "options": [
+      "variable = value",
+      "let variable = value",
+      "variable := value",
+      "var variable = value"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "What is the file extension for a Gofer script?",
+    "options": [
+      ".gs",
+      ".gofer",
+      ".txt",
+      ".src"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is an example of defining a variable in Gofer?",
+    "options": [
+      "x = 5",
+      "let x = 5 in x + 1",
+      "5 = x",
+      "var x = 5"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "What does the ':r' command do in Gofer?",
+    "options": [
+      "Reloads the last loaded file.",
+      "Resets the interpreter.",
+      "Removes all definitions.",
+      "Runs the Gofer script."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "question": "What will happen if you try to evaluate an expression with an undefined variable in Gofer?",
+    "options": [
+      "The interpreter will print an error message.",
+      "The interpreter will evaluate the variable as 0.",
+      "The interpreter will prompt for input.",
+      "The expression will be skipped."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is an example of using the 'let' keyword in Gofer?",
+    "options": [
+      "let x = 10 in x + 2",
+      "let x := 10 in x + 2",
+      "let x = 10; x + 2",
+      "let(x = 10, x + 2)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "How are multiple variables bound in Gofer using 'let'?",
+    "options": [
+      "By using a tuple.",
+      "By using a list.",
+      "By chaining 'let' statements.",
+      "By using an array."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is true about Gofer scripts?",
+    "options": [
+      "They must be saved with the '.gofer' extension.",
+      "They can only contain one line of code.",
+      "They consist of definitions that bind names to values.",
+      "They must contain function definitions."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 13,
+    "question": "What happens when you reload a file in Gofer using ':r'?",
+    "options": [
+      "The interpreter will re-evaluate the file and load the updated definitions.",
+      "The file is reset to its initial state.",
+      "The file is deleted from memory.",
+      "The file will be compiled into a script."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "In Gofer, what does the following expression do: 'let x = 10 in x + 5'?",
+    "options": [
+      "It defines x and evaluates x + 5 as 15.",
+      "It defines x and outputs 5.",
+      "It redefines x to 15.",
+      "It outputs 10 + 5."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "What does the Gofer interpreter do when there is an indentation error in a script?",
+    "options": [
+      "It stops loading the script and shows an error message.",
+      "It automatically fixes the indentation.",
+      "It skips the erroneous line and loads the rest of the script.",
+      "It ignores the indentation and evaluates the script anyway."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "question": "How does Gofer treat variable definitions in terms of order?",
+    "options": [
+      "The order of definitions is significant.",
+      "The order of definitions is not significant.",
+      "Only the last definition of a variable is valid.",
+      "The first definition of a variable is invalid."
+    ],
+    "answer": 2
+  },
+  {
+    "id": 17,
+    "question": "Which command is used to check the type of a variable in Gofer?",
+    "options": [
+      ":type",
+      ":info",
+      ":t",
+      ":check"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 18,
+    "question": "What is the result of the following expression in Gofer: '10 ^ 2'?",
+    "options": [
+      "100",
+      "20",
+      "10",
+      "2"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "What happens if a Gofer script contains a syntax error due to incorrect indentation?",
+    "options": [
+      "The interpreter displays a syntax error and stops loading.",
+      "The script is evaluated with warnings.",
+      "The script is skipped and no error is shown.",
+      "The interpreter tries to fix the error automatically."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "What is the correct way to define a tuple in Gofer?",
+    "options": [
+      "(x, y, z)",
+      "[x, y, z]",
+      "{x, y, z}",
+      "(x; y; z)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "question": "Which Gofer command lists all known names in the interpreter?",
+    "options": [
+      ":names",
+      ":list",
+      ":vars",
+      ":show"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "Which symbol is used for exponentiation in Gofer?",
+    "options": [
+      "^",
+      "**",
+      "^^",
+      "exp"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "What should you do if you make changes to a Gofer script and want to reload it into the interpreter?",
+    "options": [
+      "Save the file and use the ':reload' command.",
+      "Use the ':r' command without saving the file.",
+      "Reopen the script in the editor.",
+      "Delete the script and create a new one."
+    ],
+    "answer": 1
   }
-  
+
+]

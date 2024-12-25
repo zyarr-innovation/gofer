@@ -1,252 +1,276 @@
-[
-    {
-        "question": "Which of the following is the correct notation for a function that maps an integer to an integer in Gofer?",
-        "options": [
-            "f: Int -> Int",
-            "Int -> Int: f",
-            "f: Integer -> Integer",
-            "Int -> f -> Int"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "In Gofer, which of the following operators is used for function application?",
-        "options": [
-            ":",
-            ".",
-            "->",
-            "=>"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What does the following Gofer expression return: :t cos?",
-        "options": [
-            "cos: Float -> Float",
-            "cos: Int -> Int",
-            "Float -> Float",
-            "Invalid syntax"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which of the following is an example of a first-class function in Gofer?",
-        "options": [
-            "square: Int -> Int",
-            "x: Int -> x + 2",
-            "A function passed as an argument to another function",
-            "None of the above"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "The function fst in Gofer is used to:",
-        "options": [
-            "Apply a function to the first argument",
-            "Return the first element of a pair",
-            "Return the second element of a pair",
-            "Create a pair from two elements"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which of the following is a correct way to define a function that squares an integer in Gofer?",
-        "options": [
-            "square(x) = x^2",
-            "square(x) = x * x",
-            "square(x) = x^3",
-            "square(x) = 2 * x"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which of the following Gofer expressions will return the second element of the pair (1, 2)?",
-        "options": [
-            "fst(1, 2)",
-            "snd(1, 2)",
-            "pair(1, 2)",
-            "snd(2, 1)"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "In Gofer, which function type would be used to represent a function that takes a Boolean and returns an Integer?",
-        "options": [
-            "Bool -> Int",
-            "Int -> Bool",
-            "Bool -> Bool",
-            "Int -> Int"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which of the following expressions will check the type of the function square?",
-        "options": [
-            ":t square",
-            ":type square",
-            "type square",
-            "type: square"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "If the function square is defined as square(x) = x * x, what is the result of square(5) in Gofer?",
-        "options": [
-            "25",
-            "10",
-            "x * x",
-            "5"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "The function snd in Gofer works with:",
-        "options": [
-            "Lists",
-            "Pairs",
-            "Integers",
-            "Strings"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What is the result of the expression :t fst in Gofer?",
-        "options": [
-            "fst: a -> (a, b) -> a",
-            "fst: (a, b) -> a",
-            "fst: a -> b -> a",
-            "fst: a -> b -> b"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "How do you apply a function f to the argument x in Gofer?",
-        "options": [
-            "f(x)",
-            "x.f()",
-            "f . x",
-            "x . f"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which of the following statements is true about functions in Gofer?",
-        "options": [
-            "Functions are not first-class citizens.",
-            "Functions can only be applied to integers.",
-            "Functions can be passed as arguments to other functions.",
-            "Functions in Gofer cannot be recursive."
-        ],
-        "answer": 2
-    },
-    {
-        "question": "What will square(3) return in Gofer if square(x) = x * x?",
-        "options": [
-            "6",
-            "9",
-            "33",
-            "x * x"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Which of the following types in Gofer represents a function that adds two integers and returns an integer?",
-        "options": [
-            "Int -> Int -> Int",
-            "Int -> Int -> Bool",
-            "Int -> Bool -> Int",
-            "Int -> Int"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "The function snd is used with which type of data in Gofer?",
-        "options": [
-            "Lists",
-            "Tuples",
-            "Integers",
-            "Strings"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What does :t do in Gofer?",
-        "options": [
-            "Returns the function type of an expression",
-            "Tests whether a function is valid",
-            "Transforms a function into a different type",
-            "Runs a function"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Which of the following is NOT a valid function in Gofer?",
-        "options": [
-            "add(x, y) = x + y",
-            "multiply(x) = x * 2",
-            "square(x) = x^2",
-            "concat(x, y) = x - y"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "What is the result of applying the function square to a pair (3, 5) in Gofer if square(x) = x * x?",
-        "options": [
-            "(9, 25)",
-            "9",
-            "25",
-            "Invalid application"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Which operator would you use to chain function applications in Gofer?",
-        "options": [
-            "->",
-            ".",
-            ":",
-            "=>"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What will the expression :t snd return if snd is a function that returns the second element of a pair?",
-        "options": [
-            "(a, b) -> b",
-            "a -> b",
-            "(a, b) -> a",
-            "b -> a"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "What is the result of the expression :t fst in Gofer?",
-        "options": [
-            "fst: Int -> Int",
-            "fst: (a, b) -> a",
-            "fst: Int -> b",
-            "fst: (a, b) -> b"
-        ],
-        "answer": 1
-    },
-    {
-        "question": "What does the . operator in Gofer represent?",
-        "options": [
-            "A comment",
-            "A function composition operator",
-            "A list concatenation operator",
-            "A function application operator"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "What will the expression :t snd return if snd is a function that returns the second element of a pair?",
-        "options": [
-            "(a, b) -> b",
-            "a -> b",
-            "(a, b) -> a",
-            "b -> a"
-        ],
-        "answer": 0
-    }
+[{
+    "id":1,
+    "question": "Which of the following is the correct notation for a function that maps an integer to an integer in Gofer?",
+    "options": [
+      "f: Int -> Int",
+      "Int -> Int: f",
+      "f: Integer -> Integer",
+      "Int -> f -> Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "In Gofer, which of the following operators is used for function application?",
+    "options": [
+      ":",
+      ".",
+      "->",
+      "=>"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "What does the following Gofer expression return: :t cos?",
+    "options": [
+      "cos: Float -> Float",
+      "cos: Int -> Int",
+      "Float -> Float",
+      "Invalid syntax"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is an example of a first-class function in Gofer?",
+    "options": [
+      "square: Int -> Int",
+      "x: Int -> x + 2",
+      "A function passed as an argument to another function",
+      "None of the above"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "The function fst in Gofer is used to:",
+    "options": [
+      "Apply a function to the first argument",
+      "Return the first element of a pair",
+      "Return the second element of a pair",
+      "Create a pair from two elements"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is a correct way to define a function that squares an integer in Gofer?",
+    "options": [
+      "square(x) = x^2",
+      "square(x) = x * x",
+      "square(x) = x^3",
+      "square(x) = 2 * x"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 7,
+    "question": "Which of the following Gofer expressions will return the second element of the pair (1, 2)?",
+    "options": [
+      "fst(1, 2)",
+      "snd(1, 2)",
+      "pair(1, 2)",
+      "snd(2, 1)"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "In Gofer, which function type would be used to represent a function that takes a Boolean and returns an Integer?",
+    "options": [
+      "Bool -> Int",
+      "Int -> Bool",
+      "Bool -> Bool",
+      "Int -> Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "question": "Which of the following expressions will check the type of the function square?",
+    "options": [
+      ":t square",
+      ":type square",
+      "type square",
+      "type: square"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 10,
+    "question": "If the function square is defined as square(x) = x * x, what is the result of square(5) in Gofer?",
+    "options": [
+      "25",
+      "10",
+      "x * x",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "The function snd in Gofer works with:",
+    "options": [
+      "Lists",
+      "Pairs",
+      "Integers",
+      "Strings"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 12,
+    "question": "What is the result of the expression :t fst in Gofer?",
+    "options": [
+      "fst: a -> (a, b) -> a",
+      "fst: (a, b) -> a",
+      "fst: a -> b -> a",
+      "fst: a -> b -> b"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "question": "How do you apply a function f to the argument x in Gofer?",
+    "options": [
+      "f(x)",
+      "x.f()",
+      "f . x",
+      "x . f"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "Which of the following statements is true about functions in Gofer?",
+    "options": [
+      "Functions are not first-class citizens.",
+      "Functions can only be applied to integers.",
+      "Functions can be passed as arguments to other functions.",
+      "Functions in Gofer cannot be recursive."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 15,
+    "question": "What will square(3) return in Gofer if square(x) = x * x?",
+    "options": [
+      "6",
+      "9",
+      "33",
+      "x * x"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "Which of the following types in Gofer represents a function that adds two integers and returns an integer?",
+    "options": [
+      "Int -> Int -> Int",
+      "Int -> Int -> Bool",
+      "Int -> Bool -> Int",
+      "Int -> Int"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 17,
+    "question": "The function snd is used with which type of data in Gofer?",
+    "options": [
+      "Lists",
+      "Tuples",
+      "Integers",
+      "Strings"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "question": "What does :t do in Gofer?",
+    "options": [
+      "Returns the function type of an expression",
+      "Tests whether a function is valid",
+      "Transforms a function into a different type",
+      "Runs a function"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is NOT a valid function in Gofer?",
+    "options": [
+      "add(x, y) = x + y",
+      "multiply(x) = x * 2",
+      "square(x) = x^2",
+      "concat(x, y) = x - y"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 20,
+    "question": "What is the result of applying the function square to a pair (3, 5) in Gofer if square(x) = x * x?",
+    "options": [
+      "(9, 25)",
+      "9",
+      "25",
+      "Invalid application"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 21,
+    "question": "Which operator would you use to chain function applications in Gofer?",
+    "options": [
+      "->",
+      ".",
+      ":",
+      "=>"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 22,
+    "question": "What will the expression :t snd return if snd is a function that returns the second element of a pair?",
+    "options": [
+      "(a, b) -> b",
+      "a -> b",
+      "(a, b) -> a",
+      "b -> a"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "What is the result of the expression :t fst in Gofer?",
+    "options": [
+      "fst: Int -> Int",
+      "fst: (a, b) -> a",
+      "fst: Int -> b",
+      "fst: (a, b) -> b"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 24,
+    "question": "What does the . operator in Gofer represent?",
+    "options": [
+      "A comment",
+      "A function composition operator",
+      "A list concatenation operator",
+      "A function application operator"
+    ],
+    "answer": 4
+  },
+  {
+    "id": 25,
+    "question": "What will the expression :t snd return if snd is a function that returns the second element of a pair?",
+    "options": [
+      "(a, b) -> b",
+      "a -> b",
+      "(a, b) -> a",
+      "b -> a"
+    ],
+    "answer": 1
+  }
 ]

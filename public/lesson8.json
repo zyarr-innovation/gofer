@@ -1,130 +1,152 @@
-{
-    "questions": [
-      {
-        "question": "What is the Gofer syntax for a non-empty list?",
-        "options": ["[a, b, c]", "[]", "::", "head::tail"],
-        "answer": 0
-      },
-      {
-        "question": "In Gofer, what does `head [2,18,9,10]` return?",
-        "options": ["2", "[2, 18, 9, 10]", "[18, 9, 10]", "18"],
-        "answer": 0
-      },
-      {
-        "question": "Which operator is used in Gofer to connect the head and tail of a list?",
-        "options": ["::", "=>", "[]", "-"],
-        "answer": 0
-      },
-      {
-        "question": "What is the result of `tail [2,18,9,10]`?",
-        "options": ["[2, 18, 9, 10]", "2", "[18, 9, 10]", "18"],
-        "answer": 2
-      },
-      {
-        "question": "What does the function `length []` return in Gofer?",
-        "options": ["1", "0", "[]", "error"],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following defines the base case for the `len` function?",
-        "options": ["len x = 1 + len xs", "len xs = 0", "len [] = 0", "len xs = len (tail xs)"],
-        "answer": 2
-      },
-      {
-        "question": "What is the induction case for the `len` function in Gofer?",
-        "options": ["len x::xs = len xs + 1", "len x::xs = 1 + len xs", "len xs = len x + len xs", "len xs = 0"],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following is the recursive definition for the `sum` function in Gofer?",
-        "options": ["sum [] = 0", "sum (x::xs) = x + sum xs", "sum xs = 1 + sum xs", "Both a and b"],
-        "answer": 3
-      },
-      {
-        "question": "What does `sum [2, 18, 9, 10]` return in Gofer?",
-        "options": ["2", "39", "18", "10"],
-        "answer": 1
-      },
-      {
-        "question": "What does the `allare.q` function check in Gofer?",
-        "options": ["If any list element satisfies predicate `q'", "If all list elements satisfy predicate `q'", "If a specific element occurs in the list", "The length of the list"],
-        "answer": 1
-      },
-      {
-        "question": "What is the result of `sumalt1 [2,18,9,10]`?",
-        "options": ["18", "10", "30", "9"],
-        "answer": 2
-      },
-      {
-        "question": "What does `prod [2, 3, 4]` return?",
-        "options": ["24", "9", "3", "0"],
-        "answer": 0
-      },
-      {
-        "question": "Which function counts the even numbers in a list in Gofer?",
-        "options": ["countevens", "sumEvens", "sumalt1", "allare"],
-        "answer": 0
-      },
-      {
-        "question": "Which of the following is used to check if a value exists in a list in Gofer?",
-        "options": ["allare", "any", "isin", "sum"],
-        "answer": 2
-      },
-      {
-        "question": "Which of the following describes the recursive structure of a Gofer list?",
-        "options": ["It is either empty or has a head and a tail.", "It is always non-empty.", "It contains only integers.", "It is a single element."],
-        "answer": 0
-      },
-      {
-        "question": "What does the expression `x::xs` in Gofer represent?",
-        "options": ["A base case for lists.", "A recursive structure for non-empty lists.", "A tail of the list.", "A function to sum elements."],
-        "answer": 1
-      },
-      {
-        "question": "Which of the following is true about structural induction in Gofer?",
-        "options": ["It is used to prove propositions about numbers.", "It applies to recursively defined structures like lists.", "It is only applicable to non-recursive functions.", "It does not apply to lists."],
-        "answer": 1
-      },
-      {
-        "question": "What does the `head` function do in Gofer?",
-        "options": ["Returns the entire list.", "Returns the last element of the list.", "Returns the first element of the list.", "Returns the length of the list."],
-        "answer": 2
-      },
-      {
-        "question": "Which function defines the sum of the even numbers in a list?",
-        "options": ["sumEvens", "sum", "sumalt1", "prod"],
-        "answer": 0
-      },
-      {
-        "question": "What does the `map` function do in Gofer?",
-        "options": ["It filters a list based on a condition.", "It returns a list with elements modified by a function.", "It checks if a list is empty.", "It combines elements of a list."],
-        "answer": 1
-      },
-      {
-        "question": "What is the output of `len [1,2,3]` in Gofer?",
-        "options": ["0", "1", "2", "3"],
-        "answer": 3
-      },
-      {
-        "question": "What type of data structure is best represented by recursive lists in Gofer?",
-        "options": ["Linear data structures", "Trees and graphs", "Stacks and queues", "Arrays"],
-        "answer": 1
-      },
-      {
-        "question": "What does `tail (x::xs)` return?",
-        "options": ["x", "xs", "[x]", "Empty list []"],
-        "answer": 1
-      },
-      {
-        "question": "Which function in Gofer can be used to test if all elements in a list satisfy a condition?",
-        "options": ["any", "allare", "count", "sumalt1"],
-        "answer": 1
-      },
-      {
-        "question": "What is the output of `sumalt2 [2,18,9,10]`?",
-        "options": ["39", "18", "10", "28"],
-        "answer": 2
-      }
-    ]
+[{
+  "id":1,
+    "question": "What is the Gofer syntax for a non-empty list?",
+    "options": ["[a, b, c]", "[]", "::", "head::tail"],
+    "answer": 1
+  },
+  {
+
+    "id":2,
+    "question": "In Gofer, what does `head [2,18,9,10]` return?",
+    "options": ["2", "[2, 18, 9, 10]", "[18, 9, 10]", "18"],
+    "answer": 1
+  },
+  {
+    "id":3,
+    "question": "Which operator is used in Gofer to connect the head and tail of a list?",
+    "options": ["::", "=>", "[]", "-"],
+    "answer": 1
+  },
+  {
+    "id":4,
+    "question": "What is the result of `tail [2,18,9,10]`?",
+    "options": ["[2, 18, 9, 10]", "2", "[18, 9, 10]", "18"],
+    "answer": 2
+  },
+  {
+    "id":5,
+    "question": "What does the function `length []` return in Gofer?",
+    "options": ["1", "0", "[]", "error"],
+    "answer": 2
+  },
+  {
+    "id":6,
+    "question": "Which of the following defines the base case for the `len` function?",
+    "options": ["len x = 1 + len xs", "len xs = 0", "len [] = 0", "len xs = len (tail xs)"],
+    "answer": 2
+  },
+  {
+    "id":7,
+    "question": "What is the induction case for the `len` function in Gofer?",
+    "options": ["len x::xs = len xs + 1", "len x::xs = 1 + len xs", "len xs = len x + len xs", "len xs = 0"],
+    "answer": 2
+  },
+  {
+    "id":8,
+    "question": "Which of the following is the recursive definition for the `sum` function in Gofer?",
+    "options": ["sum [] = 0", "sum (x::xs) = x + sum xs", "sum xs = 1 + sum xs", "Both a and b"],
+    "answer": 2
+  },
+  {
+    "id":9,
+    "question": "What does `sum [2, 18, 9, 10]` return in Gofer?",
+    "options": ["2", "39", "18", "10"],
+    "answer": 2
+  },
+  {
+    "id":10,
+    "question": "What does the `allare.q` function check in Gofer?",
+    "options": ["If any list element satisfies predicate `q'", "If all list elements satisfy predicate `q'", "If a specific element occurs in the list", "The length of the list"],
+    "answer": 2
+  },
+  {
+    "id":11,
+    "question": "What is the result of `sumalt1 [2,18,9,10]`?",
+    "options": ["18", "10", "30", "9"],
+    "answer": 2
+  },
+  {
+    "id":12,
+    "question": "What does `prod [2, 3, 4]` return?",
+    "options": ["24", "9", "3", "0"],
+    "answer": 1
+  },
+  {
+    "id":13,
+    "question": "Which function counts the even numbers in a list in Gofer?",
+    "options": ["countevens", "sumEvens", "sumalt1", "allare"],
+    "answer": 1
+  },
+  {
+    "id":14,
+    "question": "Which of the following is used to check if a value exists in a list in Gofer?",
+    "options": ["allare", "any", "isin", "sum"],
+    "answer": 2
+  },
+  {
+    "id":15,
+    "question": "Which of the following describes the recursive structure of a Gofer list?",
+    "options": ["It is either empty or has a head and a tail.", "It is always non-empty.", "It contains only integers.", "It is a single element."],
+    "answer": 1
+  },
+  {
+    "id":16,
+    "question": "What does the expression `x::xs` in Gofer represent?",
+    "options": ["A base case for lists.", "A recursive structure for non-empty lists.", "A tail of the list.", "A function to sum elements."],
+    "answer": 2
+  },
+  {
+    "id":17,
+    "question": "Which of the following is true about structural induction in Gofer?",
+    "options": ["It is used to prove propositions about numbers.", "It applies to recursively defined structures like lists.", "It is only applicable to non-recursive functions.", "It does not apply to lists."],
+    "answer": 2
+  },
+  {
+    "id":18,
+    "question": "What does the `head` function do in Gofer?",
+    "options": ["Returns the entire list.", "Returns the last element of the list.", "Returns the first element of the list.", "Returns the length of the list."],
+    "answer": 2
+  },
+  {
+    "id":19,
+    "question": "Which function defines the sum of the even numbers in a list?",
+    "options": ["sumEvens", "sum", "sumalt1", "prod"],
+    "answer": 1
+  },
+  {
+    "id":20,
+    "question": "What does the `map` function do in Gofer?",
+    "options": ["It filters a list based on a condition.", "It returns a list with elements modified by a function.", "It checks if a list is empty.", "It combines elements of a list."],
+    "answer": 2
+  },
+  {
+    "id":21,
+    "question": "What is the output of `len [1,2,3]` in Gofer?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id":22,
+    "question": "What type of data structure is best represented by recursive lists in Gofer?",
+    "options": ["Linear data structures", "Trees and graphs", "Stacks and queues", "Arrays"],
+    "answer": 2
+  },
+  {
+    "id":23,
+    "question": "What does `tail (x::xs)` return?",
+    "options": ["x", "xs", "[x]", "Empty list []"],
+    "answer": 2
+  },
+  {
+    "id":24,
+    "question": "Which function in Gofer can be used to test if all elements in a list satisfy a condition?",
+    "options": ["any", "allare", "count", "sumalt1"],
+    "answer": 2
+  },
+  {
+    "id":25,
+    "question": "What is the output of `sumalt2 [2,18,9,10]`?",
+    "options": ["39", "18", "10", "28"],
+    "answer": 2
   }
-  
+]
