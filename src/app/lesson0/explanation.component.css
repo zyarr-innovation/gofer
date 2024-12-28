@@ -8,6 +8,8 @@
   background-color: #f9f9f9;
   width: 80%;
   min-height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .title {
