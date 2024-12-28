@@ -1,29 +1,40 @@
 .lesson-container {
   font-family: Arial, sans-serif;
-  line-height: 1.7; /* Slightly increased for better readability */
+  line-height: 1.7;
+  /* Slightly increased for better readability */
   margin: 20px auto;
-  max-width: 900px; /* Restricts width for better focus on content */
+  max-width: 900px;
+  /* Restricts width for better focus on content */
   padding: 20px;
-  background-color: #ffffff; /* Clean background for contrast */
+  background-color: #ffffff;
+  /* Clean background for contrast */
   border: 1px solid #e0e0e0;
-  border-radius: 10px; /* Subtle rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 10px;
+  /* Subtle rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
 }
 
 .lesson-container h1 {
-  font-size: 2.5em; /* Larger for prominence */
-  color: #1d3557; /* Deep blue for a professional tone */
+  font-size: 2.5em;
+  /* Larger for prominence */
+  color: #1d3557;
+  /* Deep blue for a professional tone */
   margin-bottom: 20px;
-  text-align: center; /* Centers the heading */
-  font-weight: bold; /* Adds emphasis */
-  letter-spacing: 1px; /* Slightly spaced for elegance */
-  
+  text-align: center;
+  /* Centers the heading */
+  font-weight: bold;
+  /* Adds emphasis */
+  letter-spacing: 1px;
+  /* Slightly spaced for elegance */
+
 }
 
 .lesson-container h2,
 .lesson-container h3,
 .lesson-container h4 {
-  color: #457b9d; /* Softer blue for subheadings */
+  color: #457b9d;
+  /* Softer blue for subheadings */
   margin-top: 30px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -31,18 +42,23 @@
 
 .lesson-container p {
   margin: 15px 0;
-  color: #4a4a4a; /* Neutral dark gray for readability */
-  font-size: 1.1em; /* Slightly larger for easy reading */
+  color: #4a4a4a;
+  /* Neutral dark gray for readability */
+  font-size: 1.1em;
+  /* Slightly larger for easy reading */
 }
 
 .lesson-container code {
-  background: #f1faee; /* Light greenish tint for differentiation */
-  padding: 5px 10px; /* Comfortable padding for visibility */
+  background: #f1faee;
+  /* Light greenish tint for differentiation */
+  padding: 5px 10px;
+  /* Comfortable padding for visibility */
   border-radius: 5px;
   font-family: 'Courier New', monospace;
   font-size: 0.95em;
   color: #1d3557;
-  border: 1px solid #a8dadc; /* Subtle border for clarity */
+  border: 1px solid #a8dadc;
+  /* Subtle border for clarity */
 }
 
 .lesson-container table {
@@ -50,10 +66,11 @@
   border-collapse: collapse;
   margin-top: 20px;
   overflow-x: auto;
-  display: block;
+
   background-color: #ffffff;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for tables */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Slight shadow for tables */
 }
 
 .lesson-container table th,
@@ -62,15 +79,18 @@
   padding: 12px;
   text-align: left;
   vertical-align: top;
-  font-size: 1em; /* Consistent text size */
+  font-size: 1em;
+  /* Consistent text size */
   color: #333;
 }
 
 .lesson-container table th {
-  background: #a8dadc; /* Light blue for header */
+  background: #a8dadc;
+  /* Light blue for header */
   color: #1d3557;
   font-weight: bold;
-  text-transform: uppercase; /* Capitalized for distinction */
+  text-transform: uppercase;
+  /* Capitalized for distinction */
 }
 
 .lesson-container ul {
@@ -80,14 +100,17 @@
 
 .lesson-container ul li {
   margin-bottom: 10px;
-  line-height: 1.6; /* Better spacing for items */
+  line-height: 1.6;
+  /* Better spacing for items */
   color: #4a4a4a;
   font-size: 1.1em;
 }
 
 .lesson-container ul li::before {
-  content: "\2022"; /* Bullet point */
-  color: #1d3557; /* Matches the theme color */
+  content: "\2022";
+  /* Bullet point */
+  color: #1d3557;
+  /* Matches the theme color */
   font-size: 1.2em;
   margin-right: 8px;
 }
@@ -106,5 +129,6 @@
 }
 
 .lesson-container button:hover {
-  background-color: #1d3557; /* Darker blue on hover */
+  background-color: #1d3557;
+  /* Darker blue on hover */
 }

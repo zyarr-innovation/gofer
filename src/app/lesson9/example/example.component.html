@@ -1,40 +1,55 @@
 <div class="container">
-    <h1>Functional Programming Examples</h1>
-  
-    <!-- Volume of a Cylinder -->
-    <section>
-      <h2>Volume of a Cylinder</h2>
-      <label>Radius: <input type="number" /></label>
-      <label>Height: <input type="number" /></label>
-      <button>Calculate</button>
-      <p>Volume: <!-- Volume result displayed here --></p>
-    </section>
-  
-    <!-- Currying Example -->
-    <section>
-      <h2>Curried Function for Rectangle Area</h2>
-      <label>Length: <input type="number" /></label>
-      <label>Breadth: <input type="number" /></label>
-      <button>Calculate</button>
-      <p>Area: <!-- Area result displayed here --></p>
-    </section>
-  
-    <!-- Recursive Multiplication -->
-    <section>
-      <h2>Recursive Multiplication</h2>
-      <label>Number 1: <input type="number" /></label>
-      <label>Number 2: <input type="number" /></label>
-      <button>Calculate</button>
-      <p>Result: <!-- Multiplication result displayed here --></p>
-    </section>
-  
-    <!-- Power Function -->
-    <section>
-      <h2>Power Function</h2>
-      <label>Base: <input type="number" /></label>
-      <label>Exponent: <input type="number" /></label>
-      <button>Calculate</button>
-      <p>Result: <!-- Power result displayed here --></p>
-    </section>
-  </div>
-  
+  <h1>Functional Programming Examples</h1>
+
+  <!-- Volume of a Cylinder -->
+  <section>
+    <h2>Volume of a Cylinder</h2>
+    <label>
+      Radius: <input type="number" #radiusInput (input)="updateRadius(radiusInput.value)" />
+    </label>
+    <label>
+      Height: <input type="number" #heightInput (input)="updateHeight(heightInput.value)" />
+    </label>
+    <button (click)="calculateVolume()">Calculate</button>
+    <p>Volume: {{ volume }}</p>
+  </section>
+
+  <!-- Currying Example -->
+  <section>
+    <h2>Curried Function for Rectangle Area</h2>
+    <label>
+      Length: <input type="number" #lengthInput (input)="updateLength(lengthInput.value)" />
+    </label>
+    <label>
+      Breadth: <input type="number" #breadthInput (input)="updateBreadth(breadthInput.value)" />
+    </label>
+    <button (click)="calculateArea()">Calculate</button>
+    <p>Area: {{ area }}</p>
+  </section>
+
+  <!-- Recursive Multiplication -->
+  <section>
+    <h2>Recursive Multiplication</h2>
+    <label>
+      Number 1: <input type="number" #num1Input (input)="updateNum1(num1Input.value)" />
+    </label>
+    <label>
+      Number 2: <input type="number" #num2Input (input)="updateNum2(num2Input.value)" />
+    </label>
+    <button (click)="calculateRecursiveMultiplication()">Calculate</button>
+    <p>Result: {{ multiplicationResult }}</p>
+  </section>
+
+  <!-- Power Function -->
+  <section>
+    <h2>Power Function</h2>
+    <label>
+      Base: <input type="number" #baseInput (input)="updateBase(baseInput.value)" />
+    </label>
+    <label>
+      Exponent: <input type="number" #exponentInput (input)="updateExponent(exponentInput.value)" />
+    </label>
+    <button (click)="calculatePower()">Calculate</button>
+    <p>Result: {{ powerResult }}</p>
+  </section>
+</div>
