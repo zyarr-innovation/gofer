@@ -1,76 +1,74 @@
-  /* Container */
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
+.container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 95%;
+}
 
-  /* Header Section */
-  .header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  .header h1 {
-    font-size: 2em;
-    color: #333;
-  }
+.header h1 {
+  font-size: 36px;
+  color: #333;
+}
 
-  .header p {
-    font-size: 1.2em;
-    color: #666;
-  }
+.header p {
+  font-size: 20px;
+  color: #333;
+}
 
-  /* Section Styles */
-  .section {
-    margin-bottom: 20px;
-  }
+.section {
+  margin-bottom: 20px;
+}
 
-  .section h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-  }
+.section h2 {
+  font-size: 20px;
+  color: #0056b3;
+  border-bottom: 2px solid #007acc;
+  margin-top: 20px;
+}
 
-  .section h3 {
-    font-size: 1.5em;
-    color: #555;
-  }
+.section h3 {
+  font-size: 18px;
+  color: #333;
+}
 
-  ul,
-  ol {
-    margin-left: 20px;
-    color: #444;
-  }
+ul,
+ol {
+  margin-left: 20px;
+  color: #333;
+}
 
-  code {
-    font-size: 1.2em;
-    background-color: #eaeaea;
-    padding: 4px 6px;
-    border-radius: 4px;
-  }
+code {
+  font-size: 14px;
+  background-color: #eef;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
 
-  /* Preformatted code block */
-  pre code {
-    font-size: 1.1em;
-    background-color: #2d2d2d;
-    color: #fff;
-    padding: 12px;
-    border-radius: 4px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
+pre code {
+  font-size: 14px;
+  background-color: #eef;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
-  /* Links */
-  a {
-    text-decoration: none;
-    color: #0066cc;
-  }
+a {
+  text-decoration: none;
+  color: #0056b3;
+}
 
-  a:hover {
-    color: #004d99;
-  }
+a:hover {
+  color: #003d80;
+}

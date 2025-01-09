@@ -1,36 +1,36 @@
 .problem-container {
-    padding: 20px;
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .problem {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #0056b3;
-  }
-  
-  pre {
-    background-color: #e7f3fe;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    margin: 10px 0;
-  }
-  
-  p {
-    font-size: 1em;
-    color: #555;
-  }
-  
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.problem {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+h2 {
+  color: #0056b3;
+}
+
+pre {
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}

@@ -1,63 +1,126 @@
 .lesson-container {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 20px;
+  color: #333;
+  width: 95%; /* Ensures the container takes up 95% of the screen width */
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.lesson-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lesson-container h2,
+.lesson-container h3 {
+  margin-top: 20px;
+  color: #1d5a91;
+  border-bottom: 2px solid #007acc;
+  font-weight: bold;
+}
+
+.lesson-container p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.lesson-container pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-left: 4px solid #2a6ebb;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+.lesson-container code {
+  background: #e6f7ff;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.lesson-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.lesson-container table th,
+.lesson-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.lesson-container table th {
+  background: #2a6ebb;
+  color: #fff;
+}
+
+.lesson-container table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.lesson-container table tr:hover {
+  background: #f1f1f1;
+}
+
+.lesson-container ul {
+  margin-left: 20px;
+}
+
+.lesson-container ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.lesson-container ul li::before {
+  content: "\2022";
+  color: #2a6ebb;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .lesson-container {
+    padding: 15px;
+    margin: 10px;
+    width: 95%; /* Ensures it remains 95% width on smaller screens */
   }
-  
+
   .lesson-container h1 {
     font-size: 2rem;
-    color: #2a6ebb;
-    text-align: center;
   }
-  
+
   .lesson-container h2,
   .lesson-container h3 {
-    margin-top: 20px;
-    color: #1d5a91;
+    font-size: 1.4rem;
   }
-  
+
   .lesson-container p {
-    margin: 10px 0;
+    font-size: 1rem;
   }
-  
+
   .lesson-container pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-left: 4px solid #2a6ebb;
-    overflow-x: auto;
-    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
   }
-  
-  .lesson-container code {
-    background: #e6f7ff;
-    padding: 2px 5px;
-    border-radius: 4px;
-  }
-  
-  .lesson-container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
+
   .lesson-container table th,
   .lesson-container table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+    padding: 8px;
+    font-size: 0.9rem;
   }
-  
-  .lesson-container table th {
-    background: #2a6ebb;
-    color: #fff;
-  }
-  
+
   .lesson-container ul {
-    margin-left: 20px;
+    margin-left: 15px;
   }
-  
-  .lesson-container ul li {
-    margin-bottom: 5px;
-  }
-  
+}

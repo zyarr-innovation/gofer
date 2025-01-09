@@ -6,8 +6,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
-  width: 80%;
-  
+  width: 95%;
 }
 
 .title {
@@ -17,12 +16,15 @@
 
 h2 {
   color: #0056b3;
+  border-bottom: 2px solid #007acc;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 ul {
   list-style: disc;
   margin-left: 20px;
+  padding-left: 20px;
 }
 
 code {
@@ -30,4 +32,25 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   font-family: monospace;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  code {
+    font-size: 0.85rem;
+  }
 }

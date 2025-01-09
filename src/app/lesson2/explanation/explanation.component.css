@@ -1,71 +1,106 @@
+.lesson-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 95%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px; /* Adjusted to match reference */
+}
+
+h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #007acc;
+  margin-top: 20px;
+  font-size: 20px; 
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  margin: 10px 0 20px 20px;
+  list-style: disc;
+  color: #333;
+}
+
+ul ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+code {
+  font-family: monospace;
+  background: #eef;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: #0056b3;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .lesson-container {
-    width: 95%;
-    height: 100vh;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
+    width: 90%;
+    padding: 15px;
   }
 
   h1 {
-    text-align: center;
-    color: #0056b3;
+    font-size: 28px; /* Slightly smaller for mobile */
   }
 
   h2 {
-    color: #00509e;
-    margin-top: 20px;
-  }
-
-  .section {
-    margin-bottom: 20px;
+    font-size: 16px; /* Slightly smaller for mobile */
   }
 
   p {
-    margin: 10px 0;
+    font-size: 13px;
   }
 
   ul {
-    margin: 10px 0 20px 20px;
-    list-style: disc;
-  }
-
-  ul ul {
-    list-style: circle;
-    margin-left: 20px;
-  }
-
-  code {
-    font-family: monospace;
-    background: #f4f4f4;
-    padding: 2px 5px;
-    border-radius: 4px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    margin-left: 15px;
   }
 
   table th,
   table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+    padding: 8px;
   }
-
-  table th {
-    background: #0056b3;
-    color: #fff;
-  }
-
-  table tr:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  table tr:hover {
-    background: #f1f1f1;
-  }
+}

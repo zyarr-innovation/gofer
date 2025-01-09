@@ -1,56 +1,58 @@
 /* Lesson Container */
 .lesson-container {
+  font-family: Arial, sans-serif;
   width: 95%;
-  height: 100vh;
+  height: auto;
   margin: 20px auto;
-  background: #fff;
+  background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  line-height: 1.6;
 }
 
 /* Headings */
 .lesson-container h1 {
   color: #333;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .lesson-container h2 {
-  color: #444;
+  color: #0056b3;
   font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #007acc;
+  border-bottom: 2px solid #0056b3;
   padding-bottom: 5px;
 }
 
 /* Paragraphs */
 .lesson-container p {
-  color: #555;
+  color: #333;
   margin: 10px 0;
+  font-size: 1rem;
 }
 
 /* Highlight Code Blocks */
 pre,
 code {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background: #eef;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   padding: 10px;
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 code {
   display: inline;
   padding: 2px 5px;
+  background: #f4f4f4;
 }
 
 /* Lists */
@@ -68,11 +70,12 @@ code {
 
 /* Links */
 .lesson-container a {
-  color: #007acc;
+  color: #0056b3;
   text-decoration: none;
 }
 
 .lesson-container a:hover {
+  color: #003d80;
   text-decoration: underline;
 }
 
@@ -80,8 +83,9 @@ code {
 .lesson-container .highlight {
   background-color: #ffffe0;
   border-left: 4px solid #ffeb3b;
-  padding: 1px;
-  margin: 2px;
+  padding: 5px;
+  margin: 5px 0;
+  font-size: 1rem;
 }
 
 /* Responsive Design */
@@ -97,5 +101,13 @@ code {
 
   .lesson-container h2 {
     font-size: 1.3rem;
+  }
+
+  .lesson-container p {
+    font-size: 0.9rem;
+  }
+
+  .lesson-container code {
+    font-size: 0.8rem;
   }
 }
